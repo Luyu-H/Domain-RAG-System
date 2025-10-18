@@ -1,0 +1,105 @@
+{
+  "queries": [
+    {
+      "id": "query_1",
+      "query": "What medications are used to treat high blood pressure and cardiovascular conditions?",
+      "description": "Cardiovascular disease treatment drug query",
+      "expected_fields": [
+        "indications",
+        "purpose",
+        "active_ingredients"
+      ],
+      "difficulty": "medium",
+      "type": "therapeutic_use"
+    },
+    {
+      "id": "query_2",
+      "query": "Find drugs that contain acetaminophen and are safe for pregnant women",
+      "description": "Pregnancy-safe acetaminophen drug query",
+      "expected_fields": [
+        "active_ingredients",
+        "pregnancy_or_breast_feeding",
+        "warnings"
+      ],
+      "difficulty": "high",
+      "type": "safety_ingredient"
+    },
+    {
+      "id": "query_3",
+      "query": "What are the side effects and warnings for medications used to treat depression and anxiety?",
+      "description": "Antidepressant anxiety drug side effects query",
+      "expected_fields": [
+        "warnings",
+        "indications",
+        "overdosage"
+      ],
+      "difficulty": "high",
+      "type": "safety_warnings"
+    },
+    {
+      "id": "query_4",
+      "query": "Find over-the-counter pain relievers that can be taken with food and have minimal drug interactions",
+      "description": "OTC pain reliever safety and interaction query",
+      "expected_fields": [
+        "purpose",
+        "dosage_and_administration",
+        "warnings",
+        "other_safety_information"
+      ],
+      "difficulty": "very_high",
+      "type": "complex_safety"
+    }
+  ],
+  "ground_truth": {
+    "query_1": [
+      "7279ac51-fd23-4fd7-b97e-6eb7a8e60f76",
+      "a035edd9-948f-4168-b74b-9961a2cb219a",
+      "057844aa-5d7e-4e83-b71f-9072d2a2b93d",
+      "64db5fb3-c133-422f-9cf5-98e60d98bdc4",
+      "8ce3fe4e-f32a-4028-a920-86d638628cca",
+      "4007e92c-5f78-73ea-e063-6394a90a92a3",
+      "e1bcdea3-57f6-4e3c-aadc-a9204dff2f9e",
+      "e06c5d5f-878e-6bb1-793c-642751592404",
+      "02d755ba-6993-4d01-aabe-33b06d56d4c1",
+      "3b5c08ee-3c0c-616f-e063-6394a90a379a"
+    ],
+    "query_2": [
+      "d9b90990-529a-42ff-95dc-3b775fa46b76",
+      "ebd7a2b4-3e38-4894-a4ff-d323d46cddb6",
+      "a80ded9e-2f30-4db6-89ac-07af3d13c6b7",
+      "5e566e5f-2fef-4d70-8cfe-c24b13659b8e",
+      "d290994e-ebcf-404a-b9c5-3aa528599328",
+      "72d95f36-5b6b-4e5d-8906-a3b914e34af3",
+      "20ba65ce-d620-0f56-e063-6394a90a019d",
+      "17ca6054-a679-22d9-e063-6394a90a2958",
+      "327969f4-8a7a-be37-e063-6394a90a1a85",
+      "2860515b-46f8-6018-e063-6294a90af085"
+    ],
+    "query_3": [
+      "f5b2bc0f-f937-4d59-9805-9c20d478b217",
+      "d9b90990-529a-42ff-95dc-3b775fa46b76",
+      "08485d09-e2ec-4ea8-b05a-067e51f51b1b",
+      "2b35649b-3399-ef25-e063-6294a90a1efb",
+      "2c97ace4-ac1b-4425-a25f-358436c15b5b",
+      "8105505f-9df6-4bc4-b201-7281a2d3af00",
+      "e65148e1-876d-4a22-ae88-4d5ca046252a",
+      "8ce3fe4e-f32a-4028-a920-86d638628cca",
+      "ebd7a2b4-3e38-4894-a4ff-d323d46cddb6",
+      "a80ded9e-2f30-4db6-89ac-07af3d13c6b7"
+    ],
+    "query_4": [
+      "d9b90990-529a-42ff-95dc-3b775fa46b76",
+      "3b5c08ee-3c0c-616f-e063-6394a90a379a",
+      "303d4f9d-cb3f-1bfa-e063-6294a90a16aa",
+      "ebd7a2b4-3e38-4894-a4ff-d323d46cddb6",
+      "a80ded9e-2f30-4db6-89ac-07af3d13c6b7",
+      "5e566e5f-2fef-4d70-8cfe-c24b13659b8e",
+      "d290994e-ebcf-404a-b9c5-3aa528599328",
+      "8105505f-9df6-4bc4-b201-7281a2d3af00",
+      "d893474d-4a41-4771-88d3-25ea749deeff",
+      "3507d3aa-6c7f-962d-e063-6294a90ae333"
+    ]
+  },
+  "total_documents": 986,
+  "description": "OpenFDA Drug Label Data Test Query Set"
+}
