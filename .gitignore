@@ -1,6 +1,7 @@
 # 大文件
-*.json
-*.txt
+extracted_drug_documents.json
+extracted_drug_documents_texts.txt
+drug-label-0001-of-0013.json
 
 # 但保留小文件
 !test_queries.json
