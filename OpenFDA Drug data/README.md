@@ -11,7 +11,7 @@ The project processes drug label data from OpenFDA and creates test queries to e
 - `data_extractor.py` - Main script for extracting and cleaning drug label data
 - `test_queries.py` - Script for generating realistic test queries
 - `FAISS_test.py` - FAISS vector search testing script
-- `drug-label-0001-of-0013.json` - Original OpenFDA drug label dataset
+- `drug-label-0001-of-0013.json` - Original OpenFDA drug label dataset (You should download this data from https://open.fda.gov/apis/drug/label/download/)
 - `extracted_drug_documents.json` - Processed drug documents
 - `extracted_drug_documents_texts.txt` - Plain text version of extracted documents
 - `test_queries.json` - Generated test queries with ground truth
