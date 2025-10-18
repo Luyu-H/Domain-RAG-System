@@ -1,0 +1,29 @@
+# 大文件
+*.json
+*.txt
+
+# 但保留小文件
+!test_queries.json
+!faiss_test_results.json
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 环境变量
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
