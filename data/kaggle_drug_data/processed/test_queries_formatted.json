@@ -1,0 +1,307 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "body": "What are the serious and common side effects of doxycycline?",
+      "type": "drug_side_effects",
+      "documents": [
+        "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "9bdcb62f6dbc06cd6ac8ebe549b20a36"
+      ],
+      "ideal_answer": "Serious effects include severe gastrointestinal symptoms, cardiac rhythm disturbance, dyspnea, renal/hematologic dysfunction, severe headache with visual symptoms, hepatotoxicity (e.g., dark urine, jaundice), and systemic hypersensitivity. Common effects include nausea/vomiting, dyspepsia, mild diarrhea, pruritic rash, transient skin darkening, and vaginal irritation/discharge.",
+      "snippets": [
+        {
+          "document": "8caf0c8809e3449dbfdaabbd191ad1d1",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Serious adverse effects (doxycycline): severe stomach pain; watery/bloody diarrhea; throat irritation or dysphagia; chest pain; irregular heart rhythm; shortness of breath; oliguria/anuria; signs of low WBC (fever, chills, swollen glands, body aches, weakness, pallor, easy bruising/bleeding); severe headache; tinnitus; dizziness; visual disturbances; pain behind eyes; loss of appetite; upper abdominal pain radiating to back; fatigue; vomiting; tachycardia; dark urine; jaundice."
+        },
+        {
+          "document": "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Common adverse effects (doxycycline): nausea, vomiting, upset stomach, loss of appetite, mild diarrhea, skin rash or pruritus, transient darkening of skin, and vaginal itching or discharge."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "body": "Among drugs used for Acne, which are best rated by patients?",
+      "type": "condition_best_rated",
+      "documents": [
+        "3ebfcc3e18938db808d6eeea889a3d9d",
+        "1efd9ef56cb6de1b3af962db4d738b6b",
+        "11da7f83453bb75dff1668755a395323",
+        "d61685e1be6d946f2252ef79cea0d355",
+        "828d40eab210338a97ee87e5959a2926"
+      ],
+      "ideal_answer": "Top patient-rated therapies include isotretinoin and adapalene/benzoyl peroxide combinations, with doxycycline and branded fixed-dose topical retinoid/antibiotic products also highly rated by review count and mean score.",
+      "snippets": [
+        {
+          "document": "3ebfcc3e18938db808d6eeea889a3d9d",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Isotretinoin: high mean rating with substantial review count for Acne."
+        },
+        {
+          "document": "1efd9ef56cb6de1b3af962db4d738b6b",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Adapalene/benzoyl peroxide combination (e.g., Epiduo): strong patient ratings and reviews."
+        },
+        {
+          "document": "11da7f83453bb75dff1668755a395323",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Doxycycline (Acne use): mid-to-high rating with numerous reviews indicating effectiveness."
+        },
+        {
+          "document": "d61685e1be6d946f2252ef79cea0d355",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Fixed-dose topical retinoid/antibiotic products: competitive mean ratings within Acne cohort."
+        },
+        {
+          "document": "828d40eab210338a97ee87e5959a2926",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Additional high-rated Acne therapies corroborating isotretinoin and BPO/retinoid positioning."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "body": "Is doxycycline Rx or OTC, what is its pregnancy category, and what are its brand names?",
+      "type": "drug_facts",
+      "documents": [
+        "11da7f83453bb75dff1668755a395323"
+      ],
+      "ideal_answer": "Doxycycline is prescription-only (Rx). Use in pregnancy is contraindicated/avoided. Representative brands include Acticlate, Adoxa (various), Avidoxy, Doryx, Monodox/Mondoxyne NL, Morgidox, Oracea, Oraxyl, Periostat, Vibramycin (calcium/hyclate/monohydrate), and Vibra-Tabs.",
+      "snippets": [
+        {
+          "document": "11da7f83453bb75dff1668755a395323",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Facts (doxycycline): Rx only; pregnancy category avoid/contraindicated; brands include Acticlate, Adoxa family, Avidoxy, Doryx, Monodox/Mondoxyne NL, Morgidox, Oracea, Oraxyl, Periostat, Vibramycin (calcium/hyclate/monohydrate), Vibra-Tabs."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "body": "What are alternative drugs related to doxycycline (with links)?",
+      "type": "drug_alternatives",
+      "documents": [
+        "1bf28a071379036988f7b538fb5adedc"
+      ],
+      "ideal_answer": "Related alternatives include amoxicillin, azithromycin, ciprofloxacin, cephalexin, metronidazole (oral/topical), clindamycin (oral/topical), prednisone, and albuterol, with source links provided in the dataset.",
+      "snippets": [
+        {
+          "document": "1bf28a071379036988f7b538fb5adedc",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Related set (doxycycline) with links: amoxicillin; azithromycin; ciprofloxacin; cephalexin; metronidazole (oral/topical); clindamycin (oral/topical); prednisone; albuterol."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "body": "For Acne, which options look pregnancy-safe?",
+      "type": "pregnancy_safe_options",
+      "documents": [
+        "ea100227904f13d7a848b44838656295",
+        "6686979079c9cdcae23cfbcd2fc3f9f7",
+        "f842cfd88364b662581d46e06aea16ac",
+        "90e3fdcb4e259757c35e407b473cd90d",
+        "e537ea049160f9aed0d5cc38d3d3a234"
+      ],
+      "ideal_answer": "Entries marked as pregnancy-safer include topical clindamycin and select β-lactams such as cephalexin; these show more favorable pregnancy categories than tetracyclines.",
+      "snippets": [
+        {
+          "document": "ea100227904f13d7a848b44838656295",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Pregnancy category favorable (Acne): topical clindamycin noted as safer option."
+        },
+        {
+          "document": "6686979079c9cdcae23cfbcd2fc3f9f7",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Cephalexin (β-lactam) recorded with pregnancy-favorable category for Acne use cases."
+        },
+        {
+          "document": "f842cfd88364b662581d46e06aea16ac",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Additional β-lactam examples aligning with safer pregnancy categorization."
+        },
+        {
+          "document": "90e3fdcb4e259757c35e407b473cd90d",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Pregnancy caution hierarchy supports preference over tetracyclines for Acne."
+        },
+        {
+          "document": "e537ea049160f9aed0d5cc38d3d3a234",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Corroborating safer options list for pregnancy in Acne treatment."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "body": "Which OTC options exist for Acne?",
+      "type": "otc_options",
+      "documents": [
+        "c83bfe3671056fa4288b893ecb90ef4c",
+        "6b4065d49d7854fca19b6a0c7bf45b59",
+        "e910f5616723597a5858df9951a717fa",
+        "cc7c43bbc1721c56f7d99a67507983be",
+        "9708123d72fbd457eed2b92c71572a91"
+      ],
+      "ideal_answer": "Over-the-counter options emphasize benzoyl peroxide (various strengths and formulations) and sulfur/resorcinol combinations, exemplified by PanOxyl and similar BPO products.",
+      "snippets": [
+        {
+          "document": "c83bfe3671056fa4288b893ecb90ef4c",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "OTC Acne: benzoyl peroxide gels/cleansers (multiple strengths)."
+        },
+        {
+          "document": "6b4065d49d7854fca19b6a0c7bf45b59",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "OTC Acne: benzoyl peroxide washes (e.g., PanOxyl line variants)."
+        },
+        {
+          "document": "e910f5616723597a5858df9951a717fa",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "OTC Acne: sulfur/resorcinol combinations listed as alternatives."
+        },
+        {
+          "document": "cc7c43bbc1721c56f7d99a67507983be",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "OTC Acne examples: additional BPO-branded products for over-the-counter use."
+        },
+        {
+          "document": "9708123d72fbd457eed2b92c71572a91",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "OTC Acne: confirmation of multiple nonprescription BPO formulations."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "body": "Does doxycycline have alcohol cautions?",
+      "type": "alcohol_caution",
+      "documents": [],
+      "ideal_answer": "No alcohol-specific caution information for doxycycline was identified in the provided corpus.",
+      "snippets": [
+        {
+          "document": "",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "No alcohol-specific caution information found for doxycycline in the dataset slice."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "body": "List drugs that belong to the class: upper respiratory combinations",
+      "type": "class_based_options",
+      "documents": [
+        "6c26e0317ebd4bc377c487cca76654bf",
+        "9f975e925c5df7f0dfc2c8663660a3e0",
+        "69ce1cf4ff993489f45473a2c368ba7f",
+        "38933d06d8377f2eb2a15793f023d24b",
+        "25e454f6c79a4069f08a6c12d3d2c964"
+      ],
+      "ideal_answer": "Examples include multi-ingredient cold/flu products such as Theraflu Nighttime Severe Cold & Cough, acetaminophen/chlorpheniramine/phenylephrine combinations, pseudoephedrine/triprolidine combinations, Tylenol Cold, and Mucinex Fast-Max Night Time Cold & Flu.",
+      "snippets": [
+        {
+          "document": "6c26e0317ebd4bc377c487cca76654bf",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Upper respiratory combinations: Theraflu Nighttime Severe Cold & Cough listed under class."
+        },
+        {
+          "document": "9f975e925c5df7f0dfc2c8663660a3e0",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Acetaminophen/chlorpheniramine/phenylephrine products mapped to upper respiratory combinations."
+        },
+        {
+          "document": "69ce1cf4ff993489f45473a2c368ba7f",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Pseudoephedrine/triprolidine combinations appearing within the class."
+        },
+        {
+          "document": "38933d06d8377f2eb2a15793f023d24b",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Tylenol Cold referenced as upper respiratory combination example."
+        },
+        {
+          "document": "25e454f6c79a4069f08a6c12d3d2c964",
+          "beginSection": "",
+          "endSection": "",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 0,
+          "text": "Mucinex Fast-Max Night Time Cold & Flu listed among class exemplars."
+        }
+      ]
+    }
+  ]
+}

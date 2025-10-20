@@ -1,0 +1,545 @@
+{
+  "queries": [
+    {
+      "id": "query_1",
+      "type": "drug_side_effects",
+      "query": "What are the serious and common side effects of doxycycline?",
+      "params": {
+        "drug_name": "doxycycline"
+      },
+      "expected_fields": [
+        "side_effects_serious",
+        "side_effects_common"
+      ]
+    },
+    {
+      "id": "query_2",
+      "type": "condition_best_rated",
+      "query": "Among drugs used for Acne, which are best rated by patients?",
+      "params": {
+        "condition": "acne"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    },
+    {
+      "id": "query_3",
+      "type": "drug_facts",
+      "query": "Is doxycycline Rx or OTC, what is its pregnancy category, and what are its brand names?",
+      "params": {
+        "drug_name": "doxycycline"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    },
+    {
+      "id": "query_4",
+      "type": "drug_alternatives",
+      "query": "What are alternative drugs related to doxycycline (with links)?",
+      "params": {
+        "drug_name": "doxycycline"
+      },
+      "expected_fields": [
+        "related"
+      ]
+    },
+    {
+      "id": "query_5",
+      "type": "pregnancy_safe_options",
+      "query": "For Acne, which options look pregnancy-safe?",
+      "params": {
+        "condition": "acne"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    },
+    {
+      "id": "query_6",
+      "type": "otc_options",
+      "query": "Which OTC options exist for Acne?",
+      "params": {
+        "condition": "acne"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    },
+    {
+      "id": "query_7",
+      "type": "alcohol_caution",
+      "query": "Does doxycycline have alcohol cautions?",
+      "params": {
+        "drug_name": "doxycycline"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    },
+    {
+      "id": "query_8",
+      "type": "class_based_options",
+      "query": "List drugs that belong to the class: upper respiratory combinations",
+      "params": {
+        "drug_class": "upper respiratory combinations"
+      },
+      "expected_fields": [
+        "facts"
+      ]
+    }
+  ],
+  "ground_truth_top5": {
+    "query_1": [
+      "8caf0c8809e3449dbfdaabbd191ad1d1",
+      "9bdcb62f6dbc06cd6ac8ebe549b20a36"
+    ],
+    "query_2": [
+      "3ebfcc3e18938db808d6eeea889a3d9d",
+      "1efd9ef56cb6de1b3af962db4d738b6b",
+      "11da7f83453bb75dff1668755a395323",
+      "d61685e1be6d946f2252ef79cea0d355",
+      "828d40eab210338a97ee87e5959a2926"
+    ],
+    "query_3": [
+      "11da7f83453bb75dff1668755a395323"
+    ],
+    "query_4": [
+      "1bf28a071379036988f7b538fb5adedc"
+    ],
+    "query_5": [
+      "ea100227904f13d7a848b44838656295",
+      "6686979079c9cdcae23cfbcd2fc3f9f7",
+      "f842cfd88364b662581d46e06aea16ac",
+      "90e3fdcb4e259757c35e407b473cd90d",
+      "e537ea049160f9aed0d5cc38d3d3a234"
+    ],
+    "query_6": [
+      "c83bfe3671056fa4288b893ecb90ef4c",
+      "6b4065d49d7854fca19b6a0c7bf45b59",
+      "e910f5616723597a5858df9951a717fa",
+      "cc7c43bbc1721c56f7d99a67507983be",
+      "9708123d72fbd457eed2b92c71572a91"
+    ],
+    "query_7": [],
+    "query_8": [
+      "6c26e0317ebd4bc377c487cca76654bf",
+      "9f975e925c5df7f0dfc2c8663660a3e0",
+      "69ce1cf4ff993489f45473a2c368ba7f",
+      "38933d06d8377f2eb2a15793f023d24b",
+      "25e454f6c79a4069f08a6c12d3d2c964"
+    ]
+  },
+  "answers_top5": {
+    "query_1": [
+      {
+        "chunk_id": "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "preview": "Serious side effects of doxycycline: - Call your doctor at once if you have: severe stomach pain - diarrhea that is watery or bloody - throat irritation - trouble swallowing - chest pain - irregular heart rhythm - feeling short of breath - …",
+        "metadata": {
+          "doc_id": "c907cd9077f37e62ac7acf9e28b26bff",
+          "drug_name": "doxycycline",
+          "generic_name": "doxycycline",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 6.8,
+          "no_of_reviews": 760.0,
+          "drug_link": "https://www.drugs.com/doxycycline.html",
+          "chunk_kind": "side_effects_serious"
+        }
+      },
+      {
+        "chunk_id": "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+        "preview": "Common side effects of doxycycline: - nausea and vomiting - upset stomach - loss of appetite - mild diarrhea - skin rash or itching - darkened skin color - vaginal itching or discharge",
+        "metadata": {
+          "doc_id": "c907cd9077f37e62ac7acf9e28b26bff",
+          "drug_name": "doxycycline",
+          "generic_name": "doxycycline",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 6.8,
+          "no_of_reviews": 760.0,
+          "drug_link": "https://www.drugs.com/doxycycline.html",
+          "chunk_kind": "side_effects_common"
+        }
+      }
+    ],
+    "query_2": [
+      {
+        "chunk_id": "3ebfcc3e18938db808d6eeea889a3d9d",
+        "preview": "isotretinoin — Acne Classes: Miscellaneous antineoplastics, Miscellaneous uncategorized agents Brands: Absorica, Accutane, Amnesteem, Claravis, Myorisan, Sotret, Zenatane, Absorica LD Rx/OTC: Rx; Pregnancy: avoid (X) Rating: 8.0 (999 review…",
+        "metadata": {
+          "doc_id": "42d716104ebd7d582c3206acc7c4f54a",
+          "drug_name": "isotretinoin",
+          "generic_name": "isotretinoin (oral)",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 8.0,
+          "no_of_reviews": 999.0,
+          "drug_link": "https://www.drugs.com/mtm/isotretinoin.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "1efd9ef56cb6de1b3af962db4d738b6b",
+        "preview": "adapalene / benzoyl peroxide — Acne Classes: Topical acne agents Brands: Epiduo, Epiduo Forte Rx/OTC: Rx; Pregnancy: caution (C) Rating: 7.3 (909 reviews)",
+        "metadata": {
+          "doc_id": "fe4792018cd1e834160180c19e1735a0",
+          "drug_name": "adapalene / benzoyl peroxide",
+          "generic_name": "adapalene and benzoyl peroxide (topical)",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "caution",
+          "rating": 7.3,
+          "no_of_reviews": 909.0,
+          "drug_link": "https://www.drugs.com/mtm/adapalene-and-benzoyl-peroxide-topical.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "11da7f83453bb75dff1668755a395323",
+        "preview": "doxycycline — Acne Classes: Miscellaneous antimalarials, Tetracyclines Brands: Acticlate, Adoxa CK, Adoxa Pak, Adoxa TT, Alodox, Avidoxy, Doryx, Mondoxyne NL, Monodox, Morgidox, Okebo, Oracea, Oraxyl, Periostat Targadox, Vibramycin calcium,…",
+        "metadata": {
+          "doc_id": "c907cd9077f37e62ac7acf9e28b26bff",
+          "drug_name": "doxycycline",
+          "generic_name": "doxycycline",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 6.8,
+          "no_of_reviews": 760.0,
+          "drug_link": "https://www.drugs.com/doxycycline.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "d61685e1be6d946f2252ef79cea0d355",
+        "preview": "Epiduo — Acne Classes: Topical acne agents Brands: Epiduo Forte Rx/OTC: Rx; Pregnancy: caution (C) Rating: 7.3 (698 reviews)",
+        "metadata": {
+          "doc_id": "c40b43f7dbd9fe26d1eaba71db1fc835",
+          "drug_name": "Epiduo",
+          "generic_name": "adapalene and benzoyl peroxide (topical)",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "caution",
+          "rating": 7.3,
+          "no_of_reviews": 698.0,
+          "drug_link": "https://www.drugs.com/epiduo.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "828d40eab210338a97ee87e5959a2926",
+        "preview": "Accutane — Acne Classes: Miscellaneous antineoplastics, Miscellaneous uncategorized agents Rx/OTC: Rx; Pregnancy: avoid (X) Rating: 7.9 (623 reviews)",
+        "metadata": {
+          "doc_id": "e8f854aa80f6e0f2d0fbbbbb6514d6c6",
+          "drug_name": "Accutane",
+          "generic_name": "isotretinoin (oral)",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 7.9,
+          "no_of_reviews": 623.0,
+          "drug_link": "https://www.drugs.com/accutane.html",
+          "chunk_kind": "facts"
+        }
+      }
+    ],
+    "query_3": [
+      {
+        "chunk_id": "11da7f83453bb75dff1668755a395323",
+        "preview": "doxycycline — Acne Classes: Miscellaneous antimalarials, Tetracyclines Brands: Acticlate, Adoxa CK, Adoxa Pak, Adoxa TT, Alodox, Avidoxy, Doryx, Mondoxyne NL, Monodox, Morgidox, Okebo, Oracea, Oraxyl, Periostat Targadox, Vibramycin calcium,…",
+        "metadata": {
+          "doc_id": "c907cd9077f37e62ac7acf9e28b26bff",
+          "drug_name": "doxycycline",
+          "generic_name": "doxycycline",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 6.8,
+          "no_of_reviews": 760.0,
+          "drug_link": "https://www.drugs.com/doxycycline.html",
+          "chunk_kind": "facts"
+        }
+      }
+    ],
+    "query_4": [
+      {
+        "chunk_id": "1bf28a071379036988f7b538fb5adedc",
+        "preview": "Related drugs to doxycycline for Acne: - amoxicillin (https://www.drugs.com/amoxicillin.html) - prednisone (https://www.drugs.com/prednisone.html) - albuterol (https://www.drugs.com/albuterol.html) - ciprofloxacin (https://www.drugs.com/cip…",
+        "metadata": {
+          "doc_id": "c907cd9077f37e62ac7acf9e28b26bff",
+          "drug_name": "doxycycline",
+          "generic_name": "doxycycline",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "avoid",
+          "rating": 6.8,
+          "no_of_reviews": 760.0,
+          "drug_link": "https://www.drugs.com/doxycycline.html",
+          "chunk_kind": "related"
+        }
+      }
+    ],
+    "query_5": [
+      {
+        "chunk_id": "ea100227904f13d7a848b44838656295",
+        "preview": "clindamycin — Acne Classes: Topical acne agents, Vaginal anti-infectives Brands: Cleocin T, Clindacin ETZ, Clindacin P, Clindagel, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 7.4 (146 reviews)",
+        "metadata": {
+          "doc_id": "7648bd0807a12e486c926d30357e0694",
+          "drug_name": "clindamycin",
+          "generic_name": "clindamycin topical",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "rating": 7.4,
+          "no_of_reviews": 146.0,
+          "drug_link": "https://www.drugs.com/mtm/clindamycin-topical.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "6686979079c9cdcae23cfbcd2fc3f9f7",
+        "preview": "cephalexin — Acne Classes: First generation cephalosporins Brands: Keflex, Biocef Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 8.4 (8 reviews)",
+        "metadata": {
+          "doc_id": "cd02f05c018994b0032daadb3ae0fe40",
+          "drug_name": "cephalexin",
+          "generic_name": "cephalexin",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "rating": 8.4,
+          "no_of_reviews": 8.0,
+          "drug_link": "https://www.drugs.com/cephalexin.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "f842cfd88364b662581d46e06aea16ac",
+        "preview": "Keflex — Acne Classes: First generation cephalosporins Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 7.5 (4 reviews)",
+        "metadata": {
+          "doc_id": "d7fdd1e11a045b722b68e3ad27707f00",
+          "drug_name": "Keflex",
+          "generic_name": "cephalexin",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "rating": 7.5,
+          "no_of_reviews": 4.0,
+          "drug_link": "https://www.drugs.com/keflex.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "90e3fdcb4e259757c35e407b473cd90d",
+        "preview": "Cleocin T — Acne Classes: Topical acne agents Brands: Clindacin ETZ, Clindacin P, Clindagel, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B)",
+        "metadata": {
+          "doc_id": "d54b55baed591cbb1d9aa2c21e000f11",
+          "drug_name": "Cleocin T",
+          "generic_name": "clindamycin topical",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "rating": null,
+          "no_of_reviews": null,
+          "drug_link": "https://www.drugs.com/mtm/cleocin-t.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "e537ea049160f9aed0d5cc38d3d3a234",
+        "preview": "Clindagel — Acne Classes: Topical acne agents Brands: Cleocin T, Clindacin ETZ, Clindacin P, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 10.0 (2 reviews)",
+        "metadata": {
+          "doc_id": "c962fff81a2e0ea6834db1a1291d8c1e",
+          "drug_name": "Clindagel",
+          "generic_name": "clindamycin topical",
+          "medical_condition": "Acne",
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "rating": 10.0,
+          "no_of_reviews": 2.0,
+          "drug_link": "https://www.drugs.com/mtm/clindagel.html",
+          "chunk_kind": "facts"
+        }
+      }
+    ],
+    "query_6": [
+      {
+        "chunk_id": "c83bfe3671056fa4288b893ecb90ef4c",
+        "preview": "Acne Treatment — Acne Classes: Topical acne agents Brands: Clearskin Rx/OTC: OTC; Pregnancy: caution (C)",
+        "metadata": {
+          "doc_id": "19500d27120b20ea9d06b0af181f16cc",
+          "drug_name": "Acne Treatment",
+          "generic_name": "Benzoyl Peroxide Cream",
+          "medical_condition": "Acne",
+          "rx_otc": "OTC",
+          "pregnancy_category": "caution",
+          "rating": null,
+          "no_of_reviews": null,
+          "drug_link": "https://www.drugs.com/cdi/acne-treatment.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "6b4065d49d7854fca19b6a0c7bf45b59",
+        "preview": "PanOxyl — Acne Classes: Topical acne agents Brands: Acne-Clear, Benzac AC, BenzePrO, Benziq, Brevoxyl Acne Wash Kit, Clearskin, Fostex Wash 10%, NeoBenz Micro, Neutrogena Acne Mask, Oscion, Oxy Daily Wash, Oxy-10, Pacnex, PanOxyl, Persa-Gel…",
+        "metadata": {
+          "doc_id": "6f487cf00f1bcd2f10147f6556aec0ef",
+          "drug_name": "PanOxyl",
+          "generic_name": "benzoyl peroxide topical",
+          "medical_condition": "Acne",
+          "rx_otc": "OTC",
+          "pregnancy_category": "caution",
+          "rating": 8.5,
+          "no_of_reviews": 6.0,
+          "drug_link": "https://www.drugs.com/mtm/panoxyl.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "e910f5616723597a5858df9951a717fa",
+        "preview": "PanOxyl 10% Acne Foaming Wash — Acne Classes: Topical acne agents Brands: Benzac AC Wash, BP Foaming Wash, BP Wash, BPO-10 Wash, BPO-5 Wash, Desquam-X Wash, Effaclor Duo, Neutrogena Clear Pore, PanOxyl Wash, PanOxyl-4 Creamy Wash, PanOxyl-8…",
+        "metadata": {
+          "doc_id": "abc2db403f83e38a788f58bea13fdb91",
+          "drug_name": "PanOxyl 10% Acne Foaming Wash",
+          "generic_name": "Benzoyl Peroxide Wash and Cleanser",
+          "medical_condition": "Acne",
+          "rx_otc": "OTC",
+          "pregnancy_category": "caution",
+          "rating": 9.5,
+          "no_of_reviews": 2.0,
+          "drug_link": "https://www.drugs.com/cdi/panoxyl-wash.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "cc7c43bbc1721c56f7d99a67507983be",
+        "preview": "Acne-10 — Acne Classes: Topical acne agents Rx/OTC: OTC; Pregnancy: caution (C)",
+        "metadata": {
+          "doc_id": "c2015dbc17c35902464b149c56622f4f",
+          "drug_name": "Acne-10",
+          "generic_name": "benzoyl peroxide (topical route)",
+          "medical_condition": "Acne",
+          "rx_otc": "OTC",
+          "pregnancy_category": "caution",
+          "rating": null,
+          "no_of_reviews": null,
+          "drug_link": "https://www.drugs.com/cons/acne-10-gel-topical.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "9708123d72fbd457eed2b92c71572a91",
+        "preview": "Acnomel — Acne Classes: Topical acne agents Rx/OTC: OTC; Pregnancy: unknown (N) Rating: 5.0 (1 reviews)",
+        "metadata": {
+          "doc_id": "605a9a3d14f88e86374c9ab068b84988",
+          "drug_name": "Acnomel",
+          "generic_name": "resorcinol and sulfur (topical route)",
+          "medical_condition": "Acne",
+          "rx_otc": "OTC",
+          "pregnancy_category": "unknown",
+          "rating": 5.0,
+          "no_of_reviews": 1.0,
+          "drug_link": "https://www.drugs.com/cons/acnomel-skin-tone-topical.html",
+          "chunk_kind": "facts"
+        }
+      }
+    ],
+    "query_7": [],
+    "query_8": [
+      {
+        "chunk_id": "6c26e0317ebd4bc377c487cca76654bf",
+        "preview": "Theraflu Nighttime Severe Cold & Cough — Colds & Flu Classes: Upper respiratory combinations Brands: Sudafed PE Severe Cold Rx/OTC: Rx/OTC; Pregnancy: caution (C) Rating: 1.0 (1 reviews)",
+        "metadata": {
+          "doc_id": "2115fd29341435c86d63503ddc2af6f8",
+          "drug_name": "Theraflu Nighttime Severe Cold & Cough",
+          "generic_name": "acetaminophen, diphenhydramine, and phenylephrine",
+          "medical_condition": "Colds & Flu",
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "caution",
+          "rating": 1.0,
+          "no_of_reviews": 1.0,
+          "drug_link": "https://www.drugs.com/mtm/theraflu-severe-cold-cough-nighttime.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "9f975e925c5df7f0dfc2c8663660a3e0",
+        "preview": "acetaminophen / chlorpheniramine / phenylephrine — Colds & Flu Classes: Upper respiratory combinations Brands: Alka-Seltzer Plus Cold, Dristan Cold Multi Symptom Formula, Tylenol Allergy Multi-Symptom, Tylenol Children's Plus Cold, Tylenol …",
+        "metadata": {
+          "doc_id": "c6431231a101930da661a8b6213f8961",
+          "drug_name": "acetaminophen / chlorpheniramine / phenylephrine",
+          "generic_name": "acetaminophen, chlorpheniramine, and phenylephrine",
+          "medical_condition": "Colds & Flu",
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "unknown",
+          "rating": 7.3,
+          "no_of_reviews": 16.0,
+          "drug_link": "https://www.drugs.com/mtm/acetaminophen-chlorpheniramine-and-phenylephrine.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "69ce1cf4ff993489f45473a2c368ba7f",
+        "preview": "pseudoephedrine / triprolidine — Colds & Flu Classes: Upper respiratory combinations Brands: Aphedrid, A-Phedrin, Aprodine, Histafed, Vi-Sudo, Wal-Act, Actifed, Allercon, Allerfrim, Genac, Triafed, Triposed, Allerphed, Triofed, Actedril, At…",
+        "metadata": {
+          "doc_id": "142cfb785d483a884aea78429ceac567",
+          "drug_name": "pseudoephedrine / triprolidine",
+          "generic_name": "pseudoephedrine and triprolidine",
+          "medical_condition": "Colds & Flu",
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "caution",
+          "rating": 7.8,
+          "no_of_reviews": 11.0,
+          "drug_link": "https://www.drugs.com/mtm/pseudoephedrine-and-triprolidine.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "38933d06d8377f2eb2a15793f023d24b",
+        "preview": "Tylenol Cold — Colds & Flu Classes: Upper respiratory combinations Brands: EQL Severe Cold/Flu, Theracaps Cough/Cold Reliever, Tylenol Cold Rx/OTC: OTC; Pregnancy: unknown (N) Rating: 2.0 (1 reviews)",
+        "metadata": {
+          "doc_id": "3eb75e85e602e3eff2faa821b86dd894",
+          "drug_name": "Tylenol Cold",
+          "generic_name": "Acetaminophen/Chlorpheniramine/Dextromethorphan/Pseudoephedrine Caps & Tabs",
+          "medical_condition": "Colds & Flu",
+          "rx_otc": "OTC",
+          "pregnancy_category": "unknown",
+          "rating": 2.0,
+          "no_of_reviews": 1.0,
+          "drug_link": "https://www.drugs.com/cdi/tylenol-cold.html",
+          "chunk_kind": "facts"
+        }
+      },
+      {
+        "chunk_id": "25e454f6c79a4069f08a6c12d3d2c964",
+        "preview": "Mucinex Fast-Max Night Time Cold & Flu — Colds & Flu Classes: Upper respiratory combinations Brands: Sudafed PE Severe Cold Rx/OTC: Rx/OTC; Pregnancy: caution (C) Rating: 5.0 (1 reviews)",
+        "metadata": {
+          "doc_id": "03bead280e333ff665f454ed61df65bc",
+          "drug_name": "Mucinex Fast-Max Night Time Cold & Flu",
+          "generic_name": "acetaminophen, diphenhydramine, and phenylephrine",
+          "medical_condition": "Colds & Flu",
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "caution",
+          "rating": 5.0,
+          "no_of_reviews": 1.0,
+          "drug_link": "https://www.drugs.com/mtm/mucinex-fast-max-night-time-cold-and-flu.html",
+          "chunk_kind": "facts"
+        }
+      }
+    ]
+  },
+  "summaries": {
+    "query_1": "• Serious side effects of doxycycline: - Call your doctor at once if you have: severe stomach pain - diarrhea that is watery or bloody - throat irritation - trouble swallowing - ches… • Common side effects of doxycycline: - nausea and vomiting - upset stomach - loss of appetite - mild diarrhea - skin rash or itching - darkened skin color - vaginal itching or disch…",
+    "query_2": "• isotretinoin — Acne Classes: Miscellaneous antineoplastics, Miscellaneous uncategorized agents Brands: Absorica, Accutane, Amnesteem, Claravis, Myorisan, Sotret, Zenatane, Absorica… • adapalene / benzoyl peroxide — Acne Classes: Topical acne agents Brands: Epiduo, Epiduo Forte Rx/OTC: Rx; Pregnancy: caution (C) Rating: 7.3 (909 reviews) • doxycycline — Acne Classes: Miscellaneous antimalarials, Tetracyclines Brands: Acticlate, Adoxa CK, Adoxa Pak, Adoxa TT, Alodox, Avidoxy, Doryx, Mondoxyne NL, Monodox, Morgidox, Ok… • Epiduo — Acne Classes: Topical acne agents Brands: Epiduo Forte Rx/OTC: Rx; Pregnancy: caution (C) Rating: 7.3 (698 reviews) • Accutane — Acne Classes: Miscellaneous antineoplastics, Miscellaneous uncategorized agents Rx/OTC: Rx; Pregnancy: avoid (X) Rating: 7.9 (623 reviews)",
+    "query_3": "• doxycycline — Acne Classes: Miscellaneous antimalarials, Tetracyclines Brands: Acticlate, Adoxa CK, Adoxa Pak, Adoxa TT, Alodox, Avidoxy, Doryx, Mondoxyne NL, Monodox, Morgidox, Ok…",
+    "query_4": "• Related drugs to doxycycline for Acne: - amoxicillin (https://www.drugs.com/amoxicillin.html) - prednisone (https://www.drugs.com/prednisone.html) - albuterol (https://www.drugs.co…",
+    "query_5": "• clindamycin — Acne Classes: Topical acne agents, Vaginal anti-infectives Brands: Cleocin T, Clindacin ETZ, Clindacin P, Clindagel, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B)… • cephalexin — Acne Classes: First generation cephalosporins Brands: Keflex, Biocef Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 8.4 (8 reviews) • Keflex — Acne Classes: First generation cephalosporins Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 7.5 (4 reviews) • Cleocin T — Acne Classes: Topical acne agents Brands: Clindacin ETZ, Clindacin P, Clindagel, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B) • Clindagel — Acne Classes: Topical acne agents Brands: Cleocin T, Clindacin ETZ, Clindacin P, Evoclin Rx/OTC: Rx; Pregnancy: generally_safe (B) Rating: 10.0 (2 reviews)",
+    "query_6": "• Acne Treatment — Acne Classes: Topical acne agents Brands: Clearskin Rx/OTC: OTC; Pregnancy: caution (C) • PanOxyl — Acne Classes: Topical acne agents Brands: Acne-Clear, Benzac AC, BenzePrO, Benziq, Brevoxyl Acne Wash Kit, Clearskin, Fostex Wash 10%, NeoBenz Micro, Neutrogena Acne Mask… • PanOxyl 10% Acne Foaming Wash — Acne Classes: Topical acne agents Brands: Benzac AC Wash, BP Foaming Wash, BP Wash, BPO-10 Wash, BPO-5 Wash, Desquam-X Wash, Effaclor Duo, Neutrogen… • Acne-10 — Acne Classes: Topical acne agents Rx/OTC: OTC; Pregnancy: caution (C) • Acnomel — Acne Classes: Topical acne agents Rx/OTC: OTC; Pregnancy: unknown (N) Rating: 5.0 (1 reviews)",
+    "query_7": "",
+    "query_8": "• Theraflu Nighttime Severe Cold & Cough — Colds & Flu Classes: Upper respiratory combinations Brands: Sudafed PE Severe Cold Rx/OTC: Rx/OTC; Pregnancy: caution (C) Rating: 1.0 (1 re… • acetaminophen / chlorpheniramine / phenylephrine — Colds & Flu Classes: Upper respiratory combinations Brands: Alka-Seltzer Plus Cold, Dristan Cold Multi Symptom Formula, Tylenol A… • pseudoephedrine / triprolidine — Colds & Flu Classes: Upper respiratory combinations Brands: Aphedrid, A-Phedrin, Aprodine, Histafed, Vi-Sudo, Wal-Act, Actifed, Allercon, Allerfrim… • Tylenol Cold — Colds & Flu Classes: Upper respiratory combinations Brands: EQL Severe Cold/Flu, Theracaps Cough/Cold Reliever, Tylenol Cold Rx/OTC: OTC; Pregnancy: unknown (N) Rati… • Mucinex Fast-Max Night Time Cold & Flu — Colds & Flu Classes: Upper respiratory combinations Brands: Sudafed PE Severe Cold Rx/OTC: Rx/OTC; Pregnancy: caution (C) Rating: 5.0 (1 re…"
+  }
+}
