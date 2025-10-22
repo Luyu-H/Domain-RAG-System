@@ -1,0 +1,844 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "k": 5,
+  "per_query": [
+    {
+      "id": "1",
+      "type": "drug_side_effects",
+      "query": "What are the serious and common side effects of doxycycline?",
+      "k": 5,
+      "query_time_sec": 0.0545,
+      "ground_truth": [
+        "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "9bdcb62f6dbc06cd6ac8ebe549b20a36"
+      ],
+      "retrieved_ids": [
+        "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+        "fc508197aa1890fb2f570b784dba867e",
+        "d02dd5ecdb1f291afb1e1a485cb7cd1e",
+        "4ae3ed28aed36bff361cf152b26ea975"
+      ],
+      "metrics": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "hit@k": 1.0,
+        "mrr": 1.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.821941868204324,
+          "chunk_id": "8caf0c8809e3449dbfdaabbd191ad1d1",
+          "preview": "Serious side effects of doxycycline: - Call your doctor at once if you have: severe stomach pain - diarrhea that is watery or bloody - throat irritation - trouble swallowing - chest pain - irregular heart rhythm - feeling short of breath - ",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "side_effects_serious",
+            "rating": 6.8,
+            "no_of_reviews": 760.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8207325470170949,
+          "chunk_id": "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+          "preview": "Common side effects of doxycycline: - nausea and vomiting - upset stomach - loss of appetite - mild diarrhea - skin rash or itching - darkened skin color - vaginal itching or discharge",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "side_effects_common",
+            "rating": 6.8,
+            "no_of_reviews": 760.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6945423287211222,
+          "chunk_id": "fc508197aa1890fb2f570b784dba867e",
+          "preview": "Serious side effects of doxylamine: - Call your doctor at once if you have: confusion - hallucinations - severe dizziness or drowsiness - or little or no urinating",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "side_effects_serious",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6862335623660684,
+          "chunk_id": "d02dd5ecdb1f291afb1e1a485cb7cd1e",
+          "preview": "Common side effects of omadacycline: - pain - irritation - redness - swelling - or a hard lump where the medicine was injected - nausea - vomiting - diarrhea - constipation - headache - trouble sleeping - increased blood pressure - or abnor",
+          "metadata": {
+            "drug_name": "omadacycline",
+            "medical_condition": "Pneumonia",
+            "chunk_kind": "side_effects_common",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "unknown"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6758584523675362,
+          "chunk_id": "4ae3ed28aed36bff361cf152b26ea975",
+          "preview": "Common side effects of doxylamine / phenylephrine: - dizziness - drowsiness - dry mouth - nose - or throat - constipation - blurred vision - or feeling restless or excited (especially in children)",
+          "metadata": {
+            "drug_name": "doxylamine / phenylephrine",
+            "medical_condition": "Colds & Flu",
+            "chunk_kind": "side_effects_common",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "unknown"
+          }
+        }
+      ],
+      "ideal_answer": "Serious effects include severe gastrointestinal symptoms, cardiac rhythm disturbance, dyspnea, renal/hematologic dysfunction, severe headache with visual symptoms, hepatotoxicity (e.g., dark urine, jaundice), and systemic hypersensitivity. Common effects include nausea/vomiting, dyspepsia, mild diarrhea, pruritic rash, transient skin darkening, and vaginal irritation/discharge."
+    },
+    {
+      "id": "2",
+      "type": "condition_best_rated",
+      "query": "Among drugs used for Acne, which are best rated by patients?",
+      "k": 5,
+      "query_time_sec": 0.0225,
+      "ground_truth": [
+        "3ebfcc3e18938db808d6eeea889a3d9d",
+        "1efd9ef56cb6de1b3af962db4d738b6b",
+        "11da7f83453bb75dff1668755a395323",
+        "d61685e1be6d946f2252ef79cea0d355",
+        "828d40eab210338a97ee87e5959a2926"
+      ],
+      "retrieved_ids": [
+        "0d12b37abfc0e11547a9e0adbd7a9751",
+        "5e1626b383352dd44fee78582a0e2541",
+        "2d0d76364d336344d2d1c22203306ba4",
+        "1f997226a5374908c0f15555eec2b0e0",
+        "7ab09d3a46901995557e9e4b6bed96ef"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.6398632573757741,
+          "chunk_id": "0d12b37abfc0e11547a9e0adbd7a9751",
+          "preview": "Related drugs to Accutane for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/mtm/erythromycin-topical.htm",
+          "metadata": {
+            "drug_name": "Accutane",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": 7.9,
+            "no_of_reviews": 623.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6346807752088296,
+          "chunk_id": "5e1626b383352dd44fee78582a0e2541",
+          "preview": "Related drugs to Aczone for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/mtm/erythromycin-topical.html)",
+          "metadata": {
+            "drug_name": "Aczone",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": 7.4,
+            "no_of_reviews": 227.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6286767641670974,
+          "chunk_id": "2d0d76364d336344d2d1c22203306ba4",
+          "preview": "Related drugs to Neutrogena Rapid Clear Stubborn Acne for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/",
+          "metadata": {
+            "drug_name": "Neutrogena Rapid Clear Stubborn Acne",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6281151301326554,
+          "chunk_id": "1f997226a5374908c0f15555eec2b0e0",
+          "preview": "Related drugs to Neutrogena Clear Pore Cleanser/Mask for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/m",
+          "metadata": {
+            "drug_name": "Neutrogena Clear Pore Cleanser/Mask",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6219446189058523,
+          "chunk_id": "7ab09d3a46901995557e9e4b6bed96ef",
+          "preview": "Related drugs to benzoyl peroxide / salicylic acid for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/mtm",
+          "metadata": {
+            "drug_name": "benzoyl peroxide / salicylic acid",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": 8.0,
+            "no_of_reviews": 1.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "caution"
+          }
+        }
+      ],
+      "ideal_answer": "Top patient-rated therapies include isotretinoin and adapalene/benzoyl peroxide combinations, with doxycycline and branded fixed-dose topical retinoid/antibiotic products also highly rated by review count and mean score."
+    },
+    {
+      "id": "3",
+      "type": "drug_facts",
+      "query": "Is doxycycline Rx or OTC, what is its pregnancy category, and what are its brand names?",
+      "k": 5,
+      "query_time_sec": 0.0236,
+      "ground_truth": [
+        "11da7f83453bb75dff1668755a395323"
+      ],
+      "retrieved_ids": [
+        "e16dcaf3ba519f528aa6bc5178dfb36c",
+        "7574a5bc33b9bc711faf2474c1d14e12",
+        "d92316647b2e685d9e4caf79a9440b09",
+        "257c571df882dc4ccf802e2e9ee189f3",
+        "788fab2923d3aac745cd1e3ad738b626"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.7387227327050689,
+          "chunk_id": "e16dcaf3ba519f528aa6bc5178dfb36c",
+          "preview": "doxylamine — Allergies Classes: Miscellaneous anxiolytics, sedatives and hypnotics Rx/OTC: Rx/OTC; Pregnancy: generally_safe (B)",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7219901953570157,
+          "chunk_id": "7574a5bc33b9bc711faf2474c1d14e12",
+          "preview": "doxorubicin — Cancer Classes: Antibiotics / antineoplastics Brands: Adriamycin Rx/OTC: Rx; Pregnancy: avoid (D) Rating: 10.0 (2 reviews)",
+          "metadata": {
+            "drug_name": "doxorubicin",
+            "medical_condition": "Cancer",
+            "chunk_kind": "facts",
+            "rating": 10.0,
+            "no_of_reviews": 2.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.7174111196575232,
+          "chunk_id": "d92316647b2e685d9e4caf79a9440b09",
+          "preview": "omadacycline — Pneumonia Classes: Tetracyclines Brands: Nuzyra Rx/OTC: Rx; Pregnancy: unknown (n/a)",
+          "metadata": {
+            "drug_name": "omadacycline",
+            "medical_condition": "Pneumonia",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "unknown"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6949444278265413,
+          "chunk_id": "257c571df882dc4ccf802e2e9ee189f3",
+          "preview": "Moxicaine — Pain Classes: Topical anesthetics Rx/OTC: Rx; Pregnancy: generally_safe (B)",
+          "metadata": {
+            "drug_name": "Moxicaine",
+            "medical_condition": "Pain",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6948528090640966,
+          "chunk_id": "788fab2923d3aac745cd1e3ad738b626",
+          "preview": "dyclonine — Pain Rx/OTC: Rx/OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "dyclonine",
+            "medical_condition": "Pain",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        }
+      ],
+      "ideal_answer": "Doxycycline is prescription-only (Rx). Use in pregnancy is contraindicated/avoided. Representative brands include Acticlate, Adoxa (various), Avidoxy, Doryx, Monodox/Mondoxyne NL, Morgidox, Oracea, Oraxyl, Periostat, Vibramycin (calcium/hyclate/monohydrate), and Vibra-Tabs."
+    },
+    {
+      "id": "4",
+      "type": "drug_alternatives",
+      "query": "What are alternative drugs related to doxycycline (with links)?",
+      "k": 5,
+      "query_time_sec": 0.0258,
+      "ground_truth": [
+        "1bf28a071379036988f7b538fb5adedc"
+      ],
+      "retrieved_ids": [
+        "cbf3b1eaa1b28211adbaff202df65f13",
+        "175011584899b04911e014343a152e0d",
+        "1bf28a071379036988f7b538fb5adedc",
+        "c6b6d3cd3d553672ec4b7ec81fa0c4e8",
+        "a499f524aeb494af2de7ee851506e9f8"
+      ],
+      "metrics": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "hit@k": 1.0,
+        "mrr": 0.3333333333333333
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.6717535250539197,
+          "chunk_id": "cbf3b1eaa1b28211adbaff202df65f13",
+          "preview": "Related drugs to doxylamine for Allergies: - Belsomra (https://www.drugs.com/belsomra.html) - amoxicillin (https://www.drugs.com/amoxicillin.html) - prednisone (https://www.drugs.com/prednisone.html) - doxycycline (https://www.drugs.com/dox",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6703744934210616,
+          "chunk_id": "175011584899b04911e014343a152e0d",
+          "preview": "Related drugs to Uretron DS for UTI: - amoxicillin (https://www.drugs.com/amoxicillin.html) - doxycycline (https://www.drugs.com/doxycycline.html) - ciprofloxacin (https://www.drugs.com/ciprofloxacin.html) - Augmentin (https://www.drugs.com",
+          "metadata": {
+            "drug_name": "Uretron DS",
+            "medical_condition": "UTI",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.668330466435717,
+          "chunk_id": "1bf28a071379036988f7b538fb5adedc",
+          "preview": "Related drugs to doxycycline for Acne: - amoxicillin (https://www.drugs.com/amoxicillin.html) - prednisone (https://www.drugs.com/prednisone.html) - albuterol (https://www.drugs.com/albuterol.html) - ciprofloxacin (https://www.drugs.com/cip",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": 6.8,
+            "no_of_reviews": 760.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6664525208753811,
+          "chunk_id": "c6b6d3cd3d553672ec4b7ec81fa0c4e8",
+          "preview": "Related drugs to UroAv-B for UTI: - amoxicillin (https://www.drugs.com/amoxicillin.html) - doxycycline (https://www.drugs.com/doxycycline.html) - ciprofloxacin (https://www.drugs.com/ciprofloxacin.html) - Augmentin (https://www.drugs.com/au",
+          "metadata": {
+            "drug_name": "UroAv-B",
+            "medical_condition": "UTI",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6650026268395683,
+          "chunk_id": "a499f524aeb494af2de7ee851506e9f8",
+          "preview": "Related drugs to sarecycline for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/mtm/erythromycin-topical.",
+          "metadata": {
+            "drug_name": "sarecycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": 8.9,
+            "no_of_reviews": 8.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "unknown"
+          }
+        }
+      ],
+      "ideal_answer": "Related alternatives include amoxicillin, azithromycin, ciprofloxacin, cephalexin, metronidazole (oral/topical), clindamycin (oral/topical), prednisone, and albuterol, with source links provided in the dataset."
+    },
+    {
+      "id": "5",
+      "type": "pregnancy_safe_options",
+      "query": "For Acne, which options look pregnancy-safe?",
+      "k": 5,
+      "query_time_sec": 0.0281,
+      "ground_truth": [
+        "ea100227904f13d7a848b44838656295",
+        "6686979079c9cdcae23cfbcd2fc3f9f7",
+        "f842cfd88364b662581d46e06aea16ac",
+        "90e3fdcb4e259757c35e407b473cd90d",
+        "e537ea049160f9aed0d5cc38d3d3a234"
+      ],
+      "retrieved_ids": [
+        "82f0c98501138a91b134719c43ffe430",
+        "6cdd916a9def09c3236d35088ca8209e",
+        "baf8ade40ecb1debfeca3d56eeb10fc4",
+        "d17efaa47868dd948e6f3e5db86d0ae8",
+        "bfce811e8117797e302a757405abb953"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.6752838041538056,
+          "chunk_id": "82f0c98501138a91b134719c43ffe430",
+          "preview": "Adoxa Pak — Acne Rx/OTC: Rx; Pregnancy: avoid (D)",
+          "metadata": {
+            "drug_name": "Adoxa Pak",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6413064699045925,
+          "chunk_id": "6cdd916a9def09c3236d35088ca8209e",
+          "preview": "Acnomel Acne Mask — Acne Classes: Topical acne agents, Topical keratolytics Rx/OTC: Rx/OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "Acnomel Acne Mask",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6369709462493431,
+          "chunk_id": "baf8ade40ecb1debfeca3d56eeb10fc4",
+          "preview": "Clinda-Derm — Acne Classes: Topical acne agents Rx/OTC: Rx; Pregnancy: generally_safe (B)",
+          "metadata": {
+            "drug_name": "Clinda-Derm",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6349993098713086,
+          "chunk_id": "d17efaa47868dd948e6f3e5db86d0ae8",
+          "preview": "Acnomel BP 5 — Acne Classes: Topical acne agents Rx/OTC: Rx/OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "Acnomel BP 5",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6315558998713026,
+          "chunk_id": "bfce811e8117797e302a757405abb953",
+          "preview": "Tri-Previfem — Acne Classes: Contraceptives Rx/OTC: Rx; Pregnancy: avoid (X) Rating: 5.2 (36 reviews)",
+          "metadata": {
+            "drug_name": "Tri-Previfem",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": 5.2,
+            "no_of_reviews": 36.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        }
+      ],
+      "ideal_answer": "Entries marked as pregnancy-safer include topical clindamycin and select β-lactams such as cephalexin; these show more favorable pregnancy categories than tetracyclines."
+    },
+    {
+      "id": "6",
+      "type": "otc_options",
+      "query": "Which OTC options exist for Acne?",
+      "k": 5,
+      "query_time_sec": 0.0349,
+      "ground_truth": [
+        "c83bfe3671056fa4288b893ecb90ef4c",
+        "6b4065d49d7854fca19b6a0c7bf45b59",
+        "e910f5616723597a5858df9951a717fa",
+        "cc7c43bbc1721c56f7d99a67507983be",
+        "9708123d72fbd457eed2b92c71572a91"
+      ],
+      "retrieved_ids": [
+        "c83bfe3671056fa4288b893ecb90ef4c",
+        "1f997226a5374908c0f15555eec2b0e0",
+        "cc7c43bbc1721c56f7d99a67507983be",
+        "d17efaa47868dd948e6f3e5db86d0ae8",
+        "828d40eab210338a97ee87e5959a2926"
+      ],
+      "metrics": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1": 0.4000000000000001,
+        "hit@k": 1.0,
+        "mrr": 1.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.6572464408848828,
+          "chunk_id": "c83bfe3671056fa4288b893ecb90ef4c",
+          "preview": "Acne Treatment — Acne Classes: Topical acne agents Brands: Clearskin Rx/OTC: OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "Acne Treatment",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6511811304912404,
+          "chunk_id": "1f997226a5374908c0f15555eec2b0e0",
+          "preview": "Related drugs to Neutrogena Clear Pore Cleanser/Mask for Acne: - doxycycline (https://www.drugs.com/doxycycline.html) - clindamycin topical (https://www.drugs.com/mtm/clindamycin-topical.html) - erythromycin topical (https://www.drugs.com/m",
+          "metadata": {
+            "drug_name": "Neutrogena Clear Pore Cleanser/Mask",
+            "medical_condition": "Acne",
+            "chunk_kind": "related",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6500104506322907,
+          "chunk_id": "cc7c43bbc1721c56f7d99a67507983be",
+          "preview": "Acne-10 — Acne Classes: Topical acne agents Rx/OTC: OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "Acne-10",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6426732206452691,
+          "chunk_id": "d17efaa47868dd948e6f3e5db86d0ae8",
+          "preview": "Acnomel BP 5 — Acne Classes: Topical acne agents Rx/OTC: Rx/OTC; Pregnancy: caution (C)",
+          "metadata": {
+            "drug_name": "Acnomel BP 5",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6395371674528385,
+          "chunk_id": "828d40eab210338a97ee87e5959a2926",
+          "preview": "Accutane — Acne Classes: Miscellaneous antineoplastics, Miscellaneous uncategorized agents Rx/OTC: Rx; Pregnancy: avoid (X) Rating: 7.9 (623 reviews)",
+          "metadata": {
+            "drug_name": "Accutane",
+            "medical_condition": "Acne",
+            "chunk_kind": "facts",
+            "rating": 7.9,
+            "no_of_reviews": 623.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        }
+      ],
+      "ideal_answer": "Over-the-counter options emphasize benzoyl peroxide (various strengths and formulations) and sulfur/resorcinol combinations, exemplified by PanOxyl and similar BPO products."
+    },
+    {
+      "id": "7",
+      "type": "alcohol_caution",
+      "query": "Does doxycycline have alcohol cautions?",
+      "k": 5,
+      "query_time_sec": 0.0351,
+      "ground_truth": [],
+      "retrieved_ids": [
+        "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+        "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "9333cea6ad61a685cc86c08c9b02bd74",
+        "e16dcaf3ba519f528aa6bc5178dfb36c",
+        "fc508197aa1890fb2f570b784dba867e"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.5709753073490436,
+          "chunk_id": "9bdcb62f6dbc06cd6ac8ebe549b20a36",
+          "preview": "Common side effects of doxycycline: - nausea and vomiting - upset stomach - loss of appetite - mild diarrhea - skin rash or itching - darkened skin color - vaginal itching or discharge",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "side_effects_common",
+            "rating": 6.8,
+            "no_of_reviews": 760.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5625012566900973,
+          "chunk_id": "8caf0c8809e3449dbfdaabbd191ad1d1",
+          "preview": "Serious side effects of doxycycline: - Call your doctor at once if you have: severe stomach pain - diarrhea that is watery or bloody - throat irritation - trouble swallowing - chest pain - irregular heart rhythm - feeling short of breath - ",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "medical_condition": "Acne",
+            "chunk_kind": "side_effects_serious",
+            "rating": 6.8,
+            "no_of_reviews": 760.0,
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5288192772976474,
+          "chunk_id": "9333cea6ad61a685cc86c08c9b02bd74",
+          "preview": "Common side effects of doxylamine: - blurred vision - dry mouth - nose - or throat - constipation - or mild dizziness or drowsiness - Side effects such as dry mouth - and confusion may be more likely in older adults",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "side_effects_common",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5104624857819993,
+          "chunk_id": "e16dcaf3ba519f528aa6bc5178dfb36c",
+          "preview": "doxylamine — Allergies Classes: Miscellaneous anxiolytics, sedatives and hypnotics Rx/OTC: Rx/OTC; Pregnancy: generally_safe (B)",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5067263821731292,
+          "chunk_id": "fc508197aa1890fb2f570b784dba867e",
+          "preview": "Serious side effects of doxylamine: - Call your doctor at once if you have: confusion - hallucinations - severe dizziness or drowsiness - or little or no urinating",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "chunk_kind": "side_effects_serious",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe"
+          }
+        }
+      ],
+      "ideal_answer": "No alcohol-specific caution information for doxycycline was identified in the provided corpus."
+    },
+    {
+      "id": "8",
+      "type": "class_based_options",
+      "query": "List drugs that belong to the class: upper respiratory combinations",
+      "k": 5,
+      "query_time_sec": 0.0325,
+      "ground_truth": [
+        "6c26e0317ebd4bc377c487cca76654bf",
+        "9f975e925c5df7f0dfc2c8663660a3e0",
+        "69ce1cf4ff993489f45473a2c368ba7f",
+        "38933d06d8377f2eb2a15793f023d24b",
+        "25e454f6c79a4069f08a6c12d3d2c964"
+      ],
+      "retrieved_ids": [
+        "e9da554e1b138c8c8d6cb9069106f72c",
+        "dd2c0903e184e8d6aa1dbda9a3b23653",
+        "d53e7251a9da39f203fb6c61ce0e7d05",
+        "7243e419f66db6f2bc2eeb20e466cc99",
+        "69ce1cf4ff993489f45473a2c368ba7f"
+      ],
+      "metrics": {
+        "precision": 0.2,
+        "recall": 0.2,
+        "f1": 0.20000000000000004,
+        "hit@k": 1.0,
+        "mrr": 0.2
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.6040456700895404,
+          "chunk_id": "e9da554e1b138c8c8d6cb9069106f72c",
+          "preview": "brompheniramine / pseudoephedrine — Hayfever Classes: Upper respiratory combinations Brands: Bromaline, Brotapp, Lodrane D, Shellcap, Allent, Shellcap PD, Lodrane LD, Bromfed PD, Nalfed PD, Respahist, Iofed PD, Ultrabrom PD, Pseubrom-PD, Br",
+          "metadata": {
+            "drug_name": "brompheniramine / pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "chunk_kind": "facts",
+            "rating": 10.0,
+            "no_of_reviews": 3.0,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5897581159509048,
+          "chunk_id": "dd2c0903e184e8d6aa1dbda9a3b23653",
+          "preview": "codeine / guaifenesin / pseudoephedrine — Colds & Flu Classes: Upper respiratory combinations Brands: Ambifed CD, Biotussin DAC, Cheratussin DAC, Guaifen DAC, Lortuss EX, Maxifed-G CD, Nucofed Pediatric Expectorant, Tricode GF, Tusnel C, Vi",
+          "metadata": {
+            "drug_name": "codeine / guaifenesin / pseudoephedrine",
+            "medical_condition": "Colds & Flu",
+            "chunk_kind": "facts",
+            "rating": 2.0,
+            "no_of_reviews": 1.0,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5878314926011317,
+          "chunk_id": "d53e7251a9da39f203fb6c61ce0e7d05",
+          "preview": "chlorpheniramine / pseudoephedrine — Hayfever Classes: Upper respiratory combinations Brands: Allerest Maximum Strength, Dicel, LoHist-D, Clorfed, Histalet, Fedahist, Tanafed, Novafed A, Chlorafed H.S. Timecelles, Codimal-LA, Kronofed-A-Jr,",
+          "metadata": {
+            "drug_name": "chlorpheniramine / pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "chunk_kind": "facts",
+            "rating": 8.9,
+            "no_of_reviews": 9.0,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5829349591817582,
+          "chunk_id": "7243e419f66db6f2bc2eeb20e466cc99",
+          "preview": "brompheniramine / phenylephrine — Hayfever Classes: Upper respiratory combinations Brands: Brohist D, Dimetane Decongestant, Ru-Hist D, Rynex PE, Bromfenex PE, Bromfenex PE Pediatric, Bromfed, Bromfed-PD Capsules, Rhinabid, Brovex-D, Rhinab",
+          "metadata": {
+            "drug_name": "brompheniramine / phenylephrine",
+            "medical_condition": "Hayfever",
+            "chunk_kind": "facts",
+            "rating": null,
+            "no_of_reviews": null,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5668847441972531,
+          "chunk_id": "69ce1cf4ff993489f45473a2c368ba7f",
+          "preview": "pseudoephedrine / triprolidine — Colds & Flu Classes: Upper respiratory combinations Brands: Aphedrid, A-Phedrin, Aprodine, Histafed, Vi-Sudo, Wal-Act, Actifed, Allercon, Allerfrim, Genac, Triafed, Triposed, Allerphed, Triofed, Actedril, At",
+          "metadata": {
+            "drug_name": "pseudoephedrine / triprolidine",
+            "medical_condition": "Colds & Flu",
+            "chunk_kind": "facts",
+            "rating": 7.8,
+            "no_of_reviews": 11.0,
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution"
+          }
+        }
+      ],
+      "ideal_answer": "Examples include multi-ingredient cold/flu products such as Theraflu Nighttime Severe Cold & Cough, acetaminophen/chlorpheniramine/phenylephrine combinations, pseudoephedrine/triprolidine combinations, Tylenol Cold, and Mucinex Fast-Max Night Time Cold & Flu."
+    }
+  ],
+  "overall": {
+    "precision": 0.15,
+    "recall": 0.325,
+    "f1": 0.1881,
+    "hit@k": 0.5,
+    "mrr": 0.3167
+  }
+}
