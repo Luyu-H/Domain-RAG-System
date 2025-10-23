@@ -104,5 +104,6 @@ if __name__ == "__main__":
         corpus_path,
         output_json_path="bioasq_subset.json",
         output_corpus_path="corpus_subset.jsonl",
-        sample_size=50
+        sample_size=50,
+        min_corpus_size=3000
     )
