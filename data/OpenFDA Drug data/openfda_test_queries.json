@@ -1,0 +1,171 @@
+{
+  "questions": [
+    {
+      "body": "What are the side effects and warnings for acetaminophen and codeine combination drugs?",
+      "documents": [
+        "d9b90990-529a-42ff-95dc-3b775fa46b76",
+        "c731175a-04a5-5d25-e053-2995a90a6082",
+        "0cf87661-ee5a-e1d5-e063-6294a90ae270"
+      ],
+      "ideal_answer": [
+        "Acetaminophen and codeine combination drugs have several serious side effects and warnings including: respiratory depression, addiction and misuse risks, life-threatening respiratory depression, risks from concomitant use with benzodiazepines and other CNS depressants, neonatal opioid withdrawal syndrome, hepatotoxicity from acetaminophen overdose, and contraindications for children under 12 years of age. The drugs should be used with caution in patients with chronic pulmonary disease, elderly patients, and those with increased intracranial pressure."
+      ],
+      "type": "summary",
+      "id": "openfda_001",
+      "snippets": [
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 200,
+          "text": "Acetaminophen and codeine phosphate tablets contain codeine. Codeine in combination with acetaminophen, is a Schedule III controlled substance. As an opioid, acetaminophen and codeine phosphate tablets expose users to the risks of addiction, abuse, and misuse",
+          "beginSection": "warnings",
+          "document": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "endSection": "warnings"
+        },
+        {
+          "offsetInBeginSection": 200,
+          "offsetInEndSection": 400,
+          "text": "Serious, life-threatening, or fatal respiratory depression has been reported with the use of opioids, even when used as recommended. Respiratory depression, if not immediately recognized and treated, may lead to respiratory arrest and death",
+          "beginSection": "warnings",
+          "document": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "endSection": "warnings"
+        },
+        {
+          "offsetInBeginSection": 400,
+          "offsetInEndSection": 600,
+          "text": "Acetaminophen has been associated with cases of acute liver failure, at times resulting in liver transplant and death. Most of the cases of liver injury are associated with the use of acetaminophen at doses that exceed 4,000 milligrams per day",
+          "beginSection": "warnings",
+          "document": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "endSection": "warnings"
+        }
+      ]
+    },
+    {
+      "body": "What are the dosage recommendations for ADHD medications in children?",
+      "documents": [
+        "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6"
+      ],
+      "ideal_answer": [
+        "For ADHD medications in children, the dosage recommendations vary by age: Pediatric patients (ages 6 to 17): 10 mg once daily in the morning, with maximum dose for children 6 to 12 years of age being 30 mg once daily. For children 6 to 12 years starting treatment, begin with 10 mg once daily in the morning, with daily dosage adjustable in increments of 5 mg or 10 mg at weekly intervals. The maximum recommended dose for children 6 to 12 years of age is 30 mg/day."
+      ],
+      "type": "summary",
+      "id": "openfda_002",
+      "snippets": [
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 150,
+          "text": "Pediatric patients (ages 6 to 17): 10 mg once daily in the morning. Maximum dose for children 6 to 12 years of age is 30 mg once daily",
+          "beginSection": "dosage",
+          "document": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "endSection": "dosage"
+        },
+        {
+          "offsetInBeginSection": 150,
+          "offsetInEndSection": 300,
+          "text": "In pediatric patients 6 to 12 years of age with ADHD and are either starting treatment for the first time or switching from another medication, start with 10 mg once daily in the morning; daily dosage may be adjusted in increments of 5 mg or 10 mg at weekly intervals",
+          "beginSection": "dosage",
+          "document": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "endSection": "dosage"
+        }
+      ]
+    },
+    {
+      "body": "What are the active ingredients in topical pain relief medications?",
+      "documents": [
+        "41351a7e-d341-1a4f-e063-6394a90a897d",
+        "3c3218d5-794b-c0a8-e063-6294a90a177a"
+      ],
+      "ideal_answer": [
+        "Topical pain relief medications contain various active ingredients including: Capsaicin (Nonivamide) 0.12% for temporary relief of minor aches and pains, and in sunscreen products, active ingredients like Octocrylene 4.00%, Octisalate 5.00%, Homosalate 10.00%, and Avobenzone 3.00%."
+      ],
+      "type": "summary",
+      "id": "openfda_003",
+      "snippets": [
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "text": "Active Ingredient Capsaicin (Nonivamide) 0.12",
+          "beginSection": "active_ingredients",
+          "document": "41351a7e-d341-1a4f-e063-6394a90a897d",
+          "endSection": "active_ingredients"
+        },
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "text": "Active Ingredients Octocrylene 4.00 Octisalate 5.00 Homosalate 10.00 Avobenzone 3.00",
+          "beginSection": "active_ingredients",
+          "document": "3c3218d5-794b-c0a8-e063-6294a90a177a",
+          "endSection": "active_ingredients"
+        }
+      ]
+    },
+    {
+      "body": "What are the indications and usage for fluocinolone acetonide oil?",
+      "documents": [
+        "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6"
+      ],
+      "ideal_answer": [
+        "Fluocinolone acetonide oil is indicated for the topical treatment of chronic eczematous external otitis in adults and pediatric patients 2 years of age and older. It is a corticosteroid specifically designed for otic administration only and should not be used orally, ophthalmically, or intravaginally."
+      ],
+      "type": "summary",
+      "id": "openfda_004",
+      "snippets": [
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 150,
+          "text": "Fluocinolone acetonide oil is indicated for the topical treatment of chronic eczematous external otitis in adults and pediatric patients 2 years of age and older",
+          "beginSection": "indications",
+          "document": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "endSection": "indications"
+        },
+        {
+          "offsetInBeginSection": 150,
+          "offsetInEndSection": 300,
+          "text": "Fluocinolone acetonide oil is for otic administration only. Not for oral, ophthalmic, or intravaginal use",
+          "beginSection": "dosage",
+          "document": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "endSection": "dosage"
+        }
+      ]
+    },
+    {
+      "body": "What are the pregnancy and breastfeeding warnings for drug use?",
+      "documents": [
+        "c731175a-04a5-5d25-e053-2995a90a6082",
+        "41351a7e-d341-1a4f-e063-6394a90a897d",
+        "d9b90990-529a-42ff-95dc-3b775fa46b76"
+      ],
+      "ideal_answer": [
+        "Pregnancy and breastfeeding warnings for drug use include: If pregnant or breastfeeding, ask a health professional before use. Some drugs like acetaminophen and codeine have specific warnings about neonatal opioid withdrawal syndrome when used during pregnancy. Breastfeeding is not recommended during treatment with certain medications like acetaminophen and codeine phosphate tablets. Patients should consult healthcare professionals before use during pregnancy or breastfeeding."
+      ],
+      "type": "summary",
+      "id": "openfda_005",
+      "snippets": [
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "text": "If pregnant or breastfeeding, ask a health professional before use",
+          "beginSection": "pregnancy",
+          "document": "c731175a-04a5-5d25-e053-2995a90a6082",
+          "endSection": "pregnancy"
+        },
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "text": "If pregnant or breastfeeding Consult a healthcare professional before use",
+          "beginSection": "pregnancy",
+          "document": "41351a7e-d341-1a4f-e063-6394a90a897d",
+          "endSection": "pregnancy"
+        },
+        {
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 150,
+          "text": "Use of acetaminophen and codeine phosphate tablets for an extended period of time during pregnancy can result in withdrawal in the neonate. Neonatal opioid withdrawal syndrome, unlike opioid withdrawal syndrome in adults, may be life-threatening if not recognized and treated",
+          "beginSection": "warnings",
+          "document": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "endSection": "warnings"
+        }
+      ]
+    }
+  ]
+}

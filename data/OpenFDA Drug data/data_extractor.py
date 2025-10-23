@@ -17,8 +17,8 @@ logger = logging.getLogger(__name__)
 class DrugDataExtractor:
     """Drug data extractor"""
     
-    def __init__(self, input_file: str):
-        self.input_file = input_file
+    def __init__(self, input_files: List[str]):
+        self.input_files = input_files
         self.extracted_data = []
         
     def clean_text(self, text: str) -> str:
@@ -32,39 +32,58 @@ class DrugDataExtractor:
         text = re.sub(r'[^\w\s.,;:!?()-]', '', text)
         return text
     
-    def extract_drug_documents(self, limit: int = 1000) -> List[Dict[str, Any]]:
-        """Extract drug document data"""
-        logger.info(f"Starting drug data extraction, limited to {limit} records")
+    def extract_drug_documents(self, limit: int = 3000) -> List[Dict[str, Any]]:
+        """Extract drug document data from multiple files"""
+        logger.info(f"Starting drug data extraction, limited to {limit} records from {len(self.input_files)} files")
         
-        try:
-            with open(self.input_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+        processed_count = 0
+        records_per_file = limit // len(self.input_files)
+        
+        for file_idx, input_file in enumerate(self.input_files):
+            logger.info(f"Processing file {file_idx + 1}/{len(self.input_files)}: {input_file}")
             
-            results = data.get('results', [])
-            logger.info(f"Found {len(results)} original records")
-            
-            processed_count = 0
-            for record in results[:limit]:
-                try:
-                    # Extract key fields
-                    doc = self._extract_document(record)
-                    if doc:
-                        self.extracted_data.append(doc)
-                        processed_count += 1
-                        
-                        if processed_count % 100 == 0:
-                            logger.info(f"Processed {processed_count} records")
+            try:
+                with open(input_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                results = data.get('results', [])
+                logger.info(f"Found {len(results)} records in {input_file}")
+                
+                # Calculate how many records to process from this file
+                remaining_limit = limit - processed_count
+                file_limit = min(records_per_file, remaining_limit, len(results))
+                
+                for record in results[:file_limit]:
+                    try:
+                        # Extract key fields
+                        doc = self._extract_document(record)
+                        if doc:
+                            self.extracted_data.append(doc)
+                            processed_count += 1
                             
-                except Exception as e:
-                    logger.error(f"Error processing record: {e}")
-                    continue
-            
-            logger.info(f"Successfully extracted {len(self.extracted_data)} drug documents")
-            return self.extracted_data
-            
-        except Exception as e:
-            logger.error(f"Error reading file: {e}")
-            return []
+                            if processed_count % 100 == 0:
+                                logger.info(f"Processed {processed_count} records")
+                            
+                            # Stop if we've reached the limit
+                            if processed_count >= limit:
+                                break
+                                
+                    except Exception as e:
+                        logger.error(f"Error processing record: {e}")
+                        continue
+                
+                logger.info(f"Processed {file_limit} records from {input_file}")
+                
+                # Stop if we've reached the limit
+                if processed_count >= limit:
+                    break
+                    
+            except Exception as e:
+                logger.error(f"Error reading file {input_file}: {e}")
+                continue
+        
+        logger.info(f"Successfully extracted {len(self.extracted_data)} drug documents")
+        return self.extracted_data
     
     def _extract_document(self, record: Dict[str, Any]) -> Dict[str, Any]:
         """Extract document from single record"""
@@ -196,12 +215,15 @@ class DrugDataExtractor:
 
 def main():
     """Main function"""
-    input_file = "drug-label-0001-of-0013.json"
-    output_file = "extracted_drug_documents.json"
+    input_files = [
+        "drug-label-0001-of-0013.json",
+        "drug-label-0002-of-0013.json"
+    ]
+    output_file = "OpenFDA_corpus.json"
     
     # Extract data
-    extractor = DrugDataExtractor(input_file)
-    extractor.extract_drug_documents(limit=1000)  # Limit to 1000 records for testing
+    extractor = DrugDataExtractor(input_files)
+    extractor.extract_drug_documents(limit=3000)  # Extract 3000 records total
     extractor.save_extracted_data(output_file)
     
     # Display statistics
