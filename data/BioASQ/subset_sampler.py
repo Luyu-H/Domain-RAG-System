@@ -95,7 +95,6 @@ def sample_bioasq_and_corpus(
     print("Sampling completed successfully!")
 
 
-# Example usage
 if __name__ == "__main__":
     input_json_path = "/Users/lorraine/Documents/courses/25-26fall/cse291a_yiying_LLM_agent/project/Domain-RAG-System/data/BioASQ/bioasq_data_cleaned.json"
     corpus_path = "/Users/lorraine/Documents/courses/25-26fall/cse291a_yiying_LLM_agent/project/Domain-RAG-System/data/BioASQ/corpus_pubmed.jsonl"
@@ -107,3 +106,17 @@ if __name__ == "__main__":
         sample_size=50,
         min_corpus_size=3000
     )
+
+    import json
+
+    def jsonl_to_json(jsonl_path, json_path):
+        data = []
+        with open(jsonl_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.strip():
+                    data.append(json.loads(line))
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+
+    jsonl_to_json('data/BioASQ/corpus_subset.jsonl', 'data/BioASQ/corpus_subset.json')

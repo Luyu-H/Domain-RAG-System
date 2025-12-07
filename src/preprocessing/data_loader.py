@@ -73,6 +73,7 @@ class DataLoader:
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
+        documents = []
         for item in data:
             title = item.get('brand_name', '')
             if item.get('generic_name'):
@@ -135,7 +136,7 @@ class DataLoader:
             )
             documents.append(doc)
         
-        print(f"💊 Kaggle Drug Data: {len(documents)} 条")
+        print(f"Kaggle Drug Data: {len(documents)} docs")
         return documents
     
     def _build_kaggle_content(self, item: Dict) -> str:
@@ -238,14 +239,17 @@ class DataLoader:
         return '\n\n'.join(sections)
 
 
-# if __name__ == '__main__':
-#     loader = DataLoader('data/raw')
-#     documents = loader.load_all()
+if __name__ == '__main__':
+    loader = DataLoader(
+        pubmed_path='data/BioASQ/corpus_subset.json',
+        openfda_path='data/OpenFDA Drug data/OpenFDA_corpus.json',
+        kaggle_path='data/kaggle_drug_data/processed/extracted_docs.json'
+    )
+    documents = loader.load_all()
     
-#     # 查看示例
-#     for doc in documents[:3]:
-#         print(f"\n{'='*60}")
-#         print(f"ID: {doc.doc_id}")
-#         print(f"Source: {doc.source}")
-#         print(f"Title: {doc.title}")
-#         print(f"Content: {doc.content[:200]}...")
+    for doc in documents[:3]:
+        print(f"\n{'='*60}")
+        print(f"ID: {doc.doc_id}")
+        print(f"Source: {doc.source}")
+        print(f"Title: {doc.title}")
+        print(f"Content: {doc.content[:200]}...")
