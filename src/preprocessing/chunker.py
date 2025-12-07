@@ -1,6 +1,7 @@
 import re
 from typing import List, Dict
 from dataclasses import dataclass
+from tqdm import tqdm
 
 import scispacy
 import spacy
@@ -46,7 +47,8 @@ class DocumentChunker:
         """Chunk all documents based on their source"""
         all_chunks = []
         
-        for doc in documents:
+        # Use tqdm to show progress
+        for doc in tqdm(documents, desc="Chunking documents", unit="doc"):
             if doc.source == 'pubmed':
                 chunks = self._chunk_pubmed(doc)
             elif doc.source == 'openfda':
@@ -58,7 +60,7 @@ class DocumentChunker:
             
             all_chunks.extend(chunks)
         
-        print(f"Generated {len(all_chunks)} chunks in total")
+        print(f"\nGenerated {len(all_chunks)} chunks in total")
         return all_chunks
 
     def _chunk_pubmed(self, doc) -> List[Chunk]:
@@ -410,6 +412,8 @@ class DocumentChunker:
 
 if __name__ == '__main__':
     import sys
+    import json
+    from pathlib import Path
     sys.path.append('.')
     
     from data_loader import DataLoader
@@ -477,3 +481,25 @@ if __name__ == '__main__':
             
             if len(shown_types) >= 10:
                 break
+    
+    # Save chunks to JSON file
+    print("\n" + "="*60)
+    print("Saving chunks to JSON...")
+    print("="*60)
+    
+    output_dir = Path('data/processed')
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    output_file = output_dir / 'all_chunks.json'
+    
+    # Convert chunks to dict with progress bar
+    print("Converting chunks to dictionary format...")
+    chunks_data = [chunk.to_dict() for chunk in tqdm(chunks, desc="Converting", unit="chunk")]
+    
+    # Save to JSON file
+    print("Writing to JSON file...")
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(chunks_data, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n✓ Successfully saved {len(chunks)} chunks to: {output_file}")
+    print(f"  File size: {output_file.stat().st_size / 1024 / 1024:.2f} MB")
