@@ -102,9 +102,7 @@ class VectorIndexer:
             print(f"Error creating collection: {e}")
             raise
     
-    def index_chunks(self, 
-                     chunks: List,
-                     batch_size: int = 100):
+    def index_chunks(self, chunks: List, batch_size: int = 100):
         """
         Index chunks with embeddings
         
