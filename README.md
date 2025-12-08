@@ -20,3 +20,11 @@ python scripts/preprocess_data.py \
 - `data/processed/chunks.jsonl` - Document chunks
 - `data/processed/drug_mapping.json` - Drug name mappings
 - `data/processed/preprocessing_stats.json` - Statistics
+
+### 2. Build Index
+```bash
+python scripts/build_index.py \
+    --chunks_path data/processed_for_our_rag/chunks.jsonl \
+    --embedding_model pritamdeka/S-PubMedBert-MS-MARCO \
+    --output_dir data/indices
+```
