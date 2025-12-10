@@ -109,3 +109,16 @@ python scripts/rag.py \
 - `--cross_model`: encode model from Hugging Face or local
 - `--output`: Save results to JSON file
 - `--verbose`: Show detailed retrieval results
+
+### 5. Run Comprehensive Evaluation
+Evaluate the RAG system on test datasets and compare with baseline results:
+
+```bash
+python evaluation/comprehensive_evaluation.py
+```
+
+**Output Files:**
+- `results/openfda_rag_test_results.json` - RAG system results for OpenFDA
+- `results/kaggle_rag_test_results.json` - RAG system results for Kaggle
+- `results/comprehensive_evaluation.json` - Complete evaluation report
+- `results/comprehensive_evaluation_report.md` - Markdown summary report
