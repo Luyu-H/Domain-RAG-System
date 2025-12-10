@@ -1,0 +1,30 @@
+{
+  "num_documents": 8907,
+  "num_chunks": 91853,
+  "num_drug_mappings": 2088,
+  "sources": {
+    "pubmed": 3000,
+    "openfda": 2976,
+    "kaggle": 2931
+  },
+  "chunk_types": {
+    "title": 7466,
+    "abstract": 15006,
+    "drug_names": 1535,
+    "active_ingredients": 4101,
+    "indications": 6566,
+    "dosage": 14996,
+    "warnings": 7132,
+    "purpose": 2843,
+    "pregnancy": 490,
+    "overdosage": 4343,
+    "other_info": 396,
+    "basic_info": 2931,
+    "brand_names": 1721,
+    "side_effects": 3685,
+    "side_effects_raw": 9354,
+    "safety_info": 2931,
+    "related_drugs": 1462,
+    "condition_info": 4895
+  }
+}
