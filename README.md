@@ -41,7 +41,10 @@ Test retrieval without generation:
 python scripts/query.py \
     --query "What are the side effects of aspirin?" \
     --top_k 5 \
-    --fusion_method rrf
+    --fusion_method rrf \
+    --reranker_kind crossencoder \
+    --rerank_top_n 30 \
+    --cross_model cross-encoder/ms-marco-MiniLM-L-6-v2
 ```
 
 **Options:**
@@ -51,6 +54,12 @@ python scripts/query.py \
 - `--vector_weight`: Weight for vector search (for weighted fusion)
 - `--bm25_weight`: Weight for BM25 search (for weighted fusion)
 - `--output`: Save results to JSON file
+Reranking (optional):
+- `--reranker_kind`: none | simple | crossencoder.
+simple: cosine on current embedder (fast, no extra deps).
+crossencoder: pairwise Cross-Encoder scoring (best accuracy).
+- `--rerank_top_n`: Size of candidate pool to rerank. Typical range: 20–50.
+- `--cross_model`: encode model from Hugging Face or local
 
 ### 4. Complete RAG Pipeline (Retrieval + Generation)
 Run the complete RAG system with answer generation:
