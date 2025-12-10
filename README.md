@@ -54,7 +54,6 @@ python scripts/query.py \
 - `--vector_weight`: Weight for vector search (for weighted fusion)
 - `--bm25_weight`: Weight for BM25 search (for weighted fusion)
 - `--output`: Save results to JSON file
-Reranking (optional):
 - `--reranker_kind`: none | simple | crossencoder.
 simple: cosine on current embedder (fast, no extra deps).
 crossencoder: pairwise Cross-Encoder scoring (best accuracy).
