@@ -541,6 +541,205 @@ def run_rag_evaluation_kaggle(
     print(f"RAG evaluation results saved to {output_path}")
     return results
 
+def run_rag_evaluation_bioasq(
+    indices_dir: str = "data/indices",
+    drug_mapping_path: str = "data/processed_for_our_rag/drug_mapping.json",
+    top_k: int = 10,
+    fusion_method: str = "rrf",
+    reranker_kind: str = "simple",
+    rerank_top_n: int = 50,
+    output_path: str = "results/bioasq_rag_test_results.json"
+) -> Dict[str, Any]:
+    """Run RAG system evaluation on BioASQ dataset"""
+    print("Running RAG system evaluation for BioASQ...")
+    
+    try:
+        project_root = Path(__file__).parent.parent
+        sys.path.insert(0, str(project_root / 'src'))
+        
+        from preprocessing import MedicalTermNormalizer, QueryPreprocessor
+        from reranker import build_reranker
+    except Exception as e:
+        print(f"Error importing RAG system modules: {e}")
+        print("Please ensure the RAG system is properly set up.")
+        import traceback
+        traceback.print_exc()
+        return None
+    
+    # Load queries
+    queries_path = "data/BioASQ/bioasq_subset.json"
+    queries = load_json(queries_path)
+    
+    # Load index
+    metadata_path = Path(indices_dir) / 'index_metadata.json'
+    if not metadata_path.exists():
+        print(f"Error: Index metadata not found at {metadata_path}")
+        print("Please run build_index.py first to build the index.")
+        return None
+    
+    print(f"Loading index from {indices_dir}...")
+    metadata = load_index_metadata(str(metadata_path))
+    hybrid_indexer = load_hybrid_indexer_local(
+        indices_dir=indices_dir,
+        metadata=metadata,
+        drug_mapping_path=drug_mapping_path if Path(drug_mapping_path).exists() else None
+    )
+    
+    # Initialize query preprocessor
+    normalizer = MedicalTermNormalizer()
+    if Path(drug_mapping_path).exists():
+        with open(drug_mapping_path, 'r') as f:
+            normalizer.drug_mapping = json.load(f)
+    query_preprocessor = QueryPreprocessor(medical_normalizer=normalizer)
+    
+    # Build reranker if needed
+    reranker = None
+    if reranker_kind != 'none':
+        reranker = build_reranker(
+            kind=reranker_kind,
+            top_n=rerank_top_n,
+            cross_model="cross-encoder/ms-marco-MiniLM-L-6-v2",
+            embedder=hybrid_indexer.vector_indexer.embedder
+        )
+    
+    # Extract PubMed ID from URL
+    def extract_pubmed_id(url: str) -> str:
+        if isinstance(url, str) and "pubmed" in url:
+            return url.split("/")[-1]
+        return url
+    
+    # Evaluate each query
+    per_query_results = []
+    questions = queries.get("questions", [])
+    
+    for q in questions:
+        qid = q.get("id", "")
+        query_text = q.get("body", "")
+        # Ground truth documents - extract PubMed IDs from URLs
+        gt_docs = [extract_pubmed_id(url) for url in q.get("documents", [])]
+        qtype = q.get("type", "unknown")
+        
+        print(f"Processing query {qid} ({qtype}): {query_text[:60]}...")
+        
+        # Preprocess query
+        preprocessed = query_preprocessor.preprocess(query_text)
+        search_query = preprocessed.get('cleaned') or query_text
+        if preprocessed.get('normalized') and len(preprocessed['normalized']) < len(search_query) * 2:
+            search_query = preprocessed['normalized']
+        
+        # Retrieve
+        start_time = time.time()
+        fetch_k = max(top_k, rerank_top_n if reranker_kind != 'none' else top_k)
+        retrieved_results = hybrid_indexer.search(
+            query=search_query,
+            top_k=fetch_k,
+            fusion_method=fusion_method,
+            vector_weight=0.5,
+            bm25_weight=0.5
+        )
+        
+        # Rerank if needed
+        if reranker and retrieved_results:
+            retrieved_results = reranker.rerank(query_text, retrieved_results, top_k=top_k)
+        else:
+            retrieved_results = retrieved_results[:top_k]
+        
+        query_time = time.time() - start_time
+        
+        # Extract document IDs
+        # For BioASQ, we need to extract PubMed IDs from doc_id
+        # The doc_id in retrieval results should be the PubMed ID (numeric string)
+        retrieved_ids = []
+        topk = []
+        for rank, r in enumerate(retrieved_results, start=1):
+            # Get doc_id (should be PubMed ID for BioASQ documents)
+            doc_id = r.get('doc_id', '')
+            
+            # If doc_id is empty, try chunk_id or source
+            if not doc_id:
+                doc_id = r.get('chunk_id', '') or r.get('source', '')
+            
+            # Remove source prefix if present (e.g., "pubmed_30242830" -> "30242830")
+            if doc_id and '_' in doc_id:
+                parts = doc_id.split('_', 1)
+                if len(parts) == 2 and parts[0] in ['openfda', 'kaggle', 'pubmed']:
+                    doc_id = parts[1]  # Remove prefix
+            
+            # For BioASQ, doc_id should be a PubMed ID (numeric string)
+            # If it's not numeric, try to extract from metadata
+            if doc_id:
+                if doc_id.isdigit():
+                    # It's a PubMed ID
+                    retrieved_ids.append(doc_id)
+                else:
+                    # Try to extract PubMed ID from metadata
+                    metadata = r.get('metadata', {})
+                    # Check metadata for doc_id or pubmed_id
+                    meta_doc_id = metadata.get('doc_id', '') or metadata.get('pubmed_id', '')
+                    if meta_doc_id and str(meta_doc_id).isdigit():
+                        retrieved_ids.append(str(meta_doc_id))
+                    elif doc_id:
+                        # Use as is (might be a chunk ID, but we'll try to match)
+                        retrieved_ids.append(doc_id)
+                
+                topk.append({
+                    'rank': rank,
+                    'score': float(r.get('score', 0.0)),
+                    'doc_id': doc_id,
+                    'preview': r.get('text', '')[:240],
+                    'metadata': r.get('metadata', {})
+                })
+        
+        # Calculate metrics
+        metrics = calculate_retrieval_metrics(gt_docs, retrieved_ids)
+        
+        per_query_results.append({
+            'id': qid,
+            'type': qtype,
+            'query': query_text,
+            'k': top_k,
+            'query_time_sec': query_time,
+            'ground_truth': gt_docs,
+            'retrieved_ids': retrieved_ids,
+            'metrics': {
+                'precision': metrics['precision'],
+                'recall': metrics['recall'],
+                'f1': metrics['f1'],
+                'hit@k': metrics['hit@k'],
+                'mrr': metrics['mrr']
+            },
+            'topk': topk,
+            'ideal_answer': q.get('ideal_answer', [])
+        })
+    
+    # Calculate overall metrics
+    if per_query_results:
+        overall = {
+            'precision': statistics.mean([r['metrics']['precision'] for r in per_query_results]),
+            'recall': statistics.mean([r['metrics']['recall'] for r in per_query_results]),
+            'f1': statistics.mean([r['metrics']['f1'] for r in per_query_results]),
+            'hit@k': statistics.mean([r['metrics']['hit@k'] for r in per_query_results]),
+            'mrr': statistics.mean([r['metrics']['mrr'] for r in per_query_results])
+        }
+    else:
+        overall = {}
+    
+    results = {
+        'model': 'RAG System (Hybrid + Reranker)',
+        'k': top_k,
+        'per_query': per_query_results,
+        'overall': overall
+    }
+    
+    # Save results
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    
+    print(f"RAG evaluation results saved to {output_path}")
+    return results
+
 def evaluate_openfda(run_rag: bool = True):
     """Evaluate OpenFDA dataset using RAG system results"""
     print("=" * 80)
@@ -734,8 +933,8 @@ def evaluate_kaggle(run_rag: bool = True):
         "per_query": per_query_metrics
     }
 
-def evaluate_bioasq():
-    """Evaluate BioASQ dataset"""
+def evaluate_bioasq(run_rag: bool = True):
+    """Evaluate BioASQ dataset using RAG system results"""
     print("=" * 80)
     print("Evaluating BioASQ Dataset")
     print("=" * 80)
@@ -743,18 +942,44 @@ def evaluate_bioasq():
     corpus_path = "data/BioASQ/corpus_subset.json"
     queries_path = "data/BioASQ/bioasq_subset.json"
     
-    # Try to find retrieval results file
-    possible_result_paths = [
-        "results/bioasq_test_results.json",
-        "results/bioasq_retrieval_results.json",
-        "data/BioASQ/bioasq_test_results.json"
-    ]
+    # Try to load RAG system results first
+    rag_results_path = "results/bioasq_rag_test_results.json"
+    results_path = rag_results_path
     
-    results_path = None
-    for path in possible_result_paths:
-        if Path(path).exists():
-            results_path = path
-            break
+    if run_rag and not Path(rag_results_path).exists():
+        print("RAG system results not found. Running RAG system evaluation...")
+        rag_results = run_rag_evaluation_bioasq()
+        if rag_results is None:
+            print("Warning: Failed to run RAG evaluation. Checking for other result files...")
+            # Try to find other retrieval results file
+            possible_result_paths = [
+                "results/bioasq_test_results.json",
+                "results/bioasq_retrieval_results.json",
+                "data/BioASQ/bioasq_test_results.json"
+            ]
+            results_path = None
+            for path in possible_result_paths:
+                if Path(path).exists():
+                    results_path = path
+                    break
+        else:
+            results_path = rag_results_path
+    elif not Path(rag_results_path).exists():
+        print("RAG system results not found. Checking for other result files...")
+        # Try to find other retrieval results file
+        possible_result_paths = [
+            "results/bioasq_test_results.json",
+            "results/bioasq_retrieval_results.json",
+            "data/BioASQ/bioasq_test_results.json"
+        ]
+        results_path = None
+        for path in possible_result_paths:
+            if Path(path).exists():
+                results_path = path
+                break
+    else:
+        print(f"Loading RAG system results from {rag_results_path}")
+        results_path = rag_results_path
     
     corpus = load_json(corpus_path)
     queries_data = load_json(queries_path)

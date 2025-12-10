@@ -120,5 +120,16 @@ python evaluation/comprehensive_evaluation.py
 **Output Files:**
 - `results/openfda_rag_test_results.json` - RAG system results for OpenFDA
 - `results/kaggle_rag_test_results.json` - RAG system results for Kaggle
+- `results/bioasq_rag_test_results.json` - RAG system results for BioASQ (if run separately)
 - `results/comprehensive_evaluation.json` - Complete evaluation report
 - `results/comprehensive_evaluation_report.md` - Markdown summary report
+
+**Run BioASQ Evaluation Separately:**
+To run BioASQ evaluation separately (it has 200 queries and may take longer):
+```bash
+python evaluation/run_bioasq_evaluation.py
+```
+
+This will generate `results/bioasq_rag_test_results.json` which will be automatically used by the comprehensive evaluation script.
+
+**Note:** The evaluation script automatically runs RAG system evaluation if result files don't exist. To force re-evaluation, delete the existing result files in the `results/` directory.
