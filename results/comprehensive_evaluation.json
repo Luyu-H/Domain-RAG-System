@@ -1,0 +1,413 @@
+{
+  "evaluation_summary": {
+    "date": "1765363182.3355515",
+    "datasets": [
+      "OpenFDA Drug Data",
+      "Kaggle Drug Data",
+      "BioASQ"
+    ]
+  },
+  "openfda": {
+    "dataset": "OpenFDA Drug Data",
+    "overall": {
+      "precision": 0.26,
+      "recall": 1.8333333333333333,
+      "f1": 0.44638694638694637,
+      "hit@k": 0.6,
+      "mrr": 0.35,
+      "avg_query_time": 2.0233357906341554,
+      "total_queries": 5
+    },
+    "per_query": [
+      {
+        "id": "openfda_001",
+        "query": "What are the side effects and warnings for acetaminophen and codeine combination drugs?",
+        "type": "summary",
+        "precision": 0.2,
+        "recall": 0.6666666666666666,
+        "f1": 0.30769230769230765,
+        "hit@k": 1.0,
+        "mrr": 0.25,
+        "query_id": "openfda_001",
+        "query_time": 2.6549768447875977,
+        "total_relevant": 3,
+        "total_retrieved": 10,
+        "relevant_retrieved": 1
+      },
+      {
+        "id": "openfda_002",
+        "query": "What are the dosage recommendations for ADHD medications in children?",
+        "type": "summary",
+        "precision": 0.5,
+        "recall": 2.5,
+        "f1": 0.8333333333333334,
+        "hit@k": 1.0,
+        "mrr": 0.5,
+        "query_id": "openfda_002",
+        "query_time": 2.179821252822876,
+        "total_relevant": 2,
+        "total_retrieved": 10,
+        "relevant_retrieved": 1
+      },
+      {
+        "id": "openfda_003",
+        "query": "What are the active ingredients in topical pain relief medications?",
+        "type": "summary",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "openfda_003",
+        "query_time": 1.5683329105377197,
+        "total_relevant": 2,
+        "total_retrieved": 10,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "openfda_004",
+        "query": "What are the indications and usage for fluocinolone acetonide oil?",
+        "type": "summary",
+        "precision": 0.6,
+        "recall": 6.0,
+        "f1": 1.0909090909090908,
+        "hit@k": 1.0,
+        "mrr": 1.0,
+        "query_id": "openfda_004",
+        "query_time": 1.4273450374603271,
+        "total_relevant": 1,
+        "total_retrieved": 10,
+        "relevant_retrieved": 1
+      },
+      {
+        "id": "openfda_005",
+        "query": "What are the pregnancy and breastfeeding warnings for drug use?",
+        "type": "summary",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "openfda_005",
+        "query_time": 2.286202907562256,
+        "total_relevant": 3,
+        "total_retrieved": 10,
+        "relevant_retrieved": 0
+      }
+    ]
+  },
+  "kaggle": {
+    "dataset": "Kaggle Drug Data",
+    "overall": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "hit@k": 0.0,
+      "mrr": 0.0,
+      "avg_query_time": 1.371430516242981,
+      "total_queries": 8
+    },
+    "per_type": {
+      "drug_side_effects": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "condition_best_rated": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "drug_facts": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "drug_alternatives": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "pregnancy_safe_options": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "otc_options": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "alcohol_caution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      },
+      "class_based_options": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "count": 1
+      }
+    },
+    "per_query": [
+      {
+        "id": "1",
+        "query": "What are the serious and common side effects of doxycycline?",
+        "type": "drug_side_effects",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "1",
+        "query_time": 2.227666139602661,
+        "total_relevant": 2,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "2",
+        "query": "Among drugs used for Acne, which are best rated by patients?",
+        "type": "condition_best_rated",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "2",
+        "query_time": 1.237804889678955,
+        "total_relevant": 5,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "3",
+        "query": "Is doxycycline Rx or OTC, what is its pregnancy category, and what are its brand names?",
+        "type": "drug_facts",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "3",
+        "query_time": 1.4505600929260254,
+        "total_relevant": 1,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "4",
+        "query": "What are alternative drugs related to doxycycline (with links)?",
+        "type": "drug_alternatives",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "4",
+        "query_time": 1.149571180343628,
+        "total_relevant": 1,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "5",
+        "query": "For Acne, which options look pregnancy-safe?",
+        "type": "pregnancy_safe_options",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "5",
+        "query_time": 1.2405109405517578,
+        "total_relevant": 5,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "6",
+        "query": "Which OTC options exist for Acne?",
+        "type": "otc_options",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "6",
+        "query_time": 0.9411559104919434,
+        "total_relevant": 5,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "7",
+        "query": "Does doxycycline have alcohol cautions?",
+        "type": "alcohol_caution",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "7",
+        "query_time": 1.3236961364746094,
+        "total_relevant": 0,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      },
+      {
+        "id": "8",
+        "query": "List drugs that belong to the class: upper respiratory combinations",
+        "type": "class_based_options",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0,
+        "query_id": "8",
+        "query_time": 1.4004788398742676,
+        "total_relevant": 5,
+        "total_retrieved": 5,
+        "relevant_retrieved": 0
+      }
+    ]
+  },
+  "bioasq": {
+    "dataset": "BioASQ",
+    "statistics": {
+      "total_questions": 200,
+      "total_documents": 3000,
+      "question_types": {
+        "summary": 50,
+        "list": 50,
+        "yesno": 50,
+        "factoid": 50
+      },
+      "avg_documents_per_question": 9.43,
+      "questions_with_ideal_answer": 200,
+      "questions_with_snippets": 200
+    },
+    "note": "BioASQ dataset retrieval results not found. Please run retrieval evaluation first to get full metrics."
+  },
+  "comparison": {
+    "openfda_vs_kaggle": {
+      "precision": {
+        "openfda": 0.26,
+        "kaggle": 0.0,
+        "difference": -0.26
+      },
+      "recall": {
+        "openfda": 1.8333333333333333,
+        "kaggle": 0.0,
+        "difference": -1.8333333333333333
+      },
+      "f1": {
+        "openfda": 0.44638694638694637,
+        "kaggle": 0.0,
+        "difference": -0.44638694638694637
+      },
+      "hit@k": {
+        "openfda": 0.6,
+        "kaggle": 0.0,
+        "difference": -0.6
+      },
+      "mrr": {
+        "openfda": 0.35,
+        "kaggle": 0.0,
+        "difference": -0.35
+      }
+    }
+  },
+  "baseline_comparison": {
+    "openfda": {
+      "dataset": "OpenFDA",
+      "baseline": {
+        "precision": 0.04,
+        "recall": 0.3,
+        "f1": 0.0696969696969697,
+        "hit@k": 0.4,
+        "mrr": 0.3,
+        "avg_query_time": 0.08815665245056152
+      },
+      "current": {
+        "precision": 0.26,
+        "recall": 1.8333333333333333,
+        "f1": 0.44638694638694637,
+        "hit@k": 0.6,
+        "mrr": 0.35,
+        "avg_query_time": 2.0233357906341554
+      },
+      "improvement": {
+        "precision": 0.22,
+        "recall": 1.5333333333333332,
+        "f1": 0.37668997668997667,
+        "hit@k": 0.19999999999999996,
+        "mrr": 0.04999999999999999,
+        "avg_query_time": 1.9351791381835939
+      },
+      "relative_improvement": {
+        "precision": 550.0,
+        "recall": 511.1111111111111,
+        "f1": 540.4682274247491,
+        "hit@k": 49.999999999999986,
+        "mrr": 16.666666666666664,
+        "avg_query_time": 2195.159507977968
+      }
+    },
+    "kaggle": {
+      "dataset": "Kaggle",
+      "baseline": {
+        "precision": 0.15,
+        "recall": 0.325,
+        "f1": 0.1881,
+        "hit@k": 0.5,
+        "mrr": 0.3167
+      },
+      "current": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "improvement": {
+        "precision": -0.15,
+        "recall": -0.325,
+        "f1": -0.1881,
+        "hit@k": -0.5,
+        "mrr": -0.3167
+      },
+      "relative_improvement": {
+        "precision": -100.0,
+        "recall": -100.0,
+        "f1": -100.0,
+        "hit@k": -100.0,
+        "mrr": -100.0
+      }
+    }
+  }
+}

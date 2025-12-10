@@ -1,0 +1,1427 @@
+{
+  "model": "RAG System (Hybrid + Reranker)",
+  "k": 5,
+  "per_query": [
+    {
+      "id": "1",
+      "type": "drug_side_effects",
+      "query": "What are the serious and common side effects of doxycycline?",
+      "k": 5,
+      "query_time_sec": 2.227666139602661,
+      "ground_truth": [
+        "8caf0c8809e3449dbfdaabbd191ad1d1",
+        "9bdcb62f6dbc06cd6ac8ebe549b20a36"
+      ],
+      "retrieved_ids": [
+        "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_2",
+        "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_3",
+        "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_1",
+        "kaggle_da8eaad8bf64e605e54b278a4569d875_side_effects_raw",
+        "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_warnings_6"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.01639344262295082,
+          "chunk_id": "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_2",
+          "preview": "Doxycycline may cause serious side effects. Call your doctor at once if you have: severe stomach pain, diarrhea that is watery or bloody; throat irritation, trouble swallowing; chest pain, irregular heart rhythm, feeling short of breath; li",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "generic_name": "doxycycline",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [
+              "Acticlate",
+              "Adoxa CK",
+              "Adoxa Pak",
+              "Adoxa TT",
+              "Alodox",
+              "Avidoxy",
+              "Doryx",
+              "Mondoxyne NL",
+              "Monodox",
+              "Morgidox",
+              "Okebo",
+              "Oracea",
+              "Oraxyl",
+              "Periostat Targadox",
+              "Vibramycin calcium",
+              "Vibramycin Hyclate",
+              "Vibramycin monohydrate",
+              "Vibra-Tabs"
+            ],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 6.8,
+            "activity": "87%",
+            "no_of_reviews": 760.0,
+            "links": {
+              "drug": "https://www.drugs.com/doxycycline.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "side_effects_raw",
+            "chunk_index": 2
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.016129032258064516,
+          "chunk_id": "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_3",
+          "preview": "Call your doctor at once if you have: severe stomach pain, diarrhea that is watery or bloody; throat irritation, trouble swallowing; chest pain, irregular heart rhythm, feeling short of breath; little or no urination; low white blood cell c",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "generic_name": "doxycycline",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [
+              "Acticlate",
+              "Adoxa CK",
+              "Adoxa Pak",
+              "Adoxa TT",
+              "Alodox",
+              "Avidoxy",
+              "Doryx",
+              "Mondoxyne NL",
+              "Monodox",
+              "Morgidox",
+              "Okebo",
+              "Oracea",
+              "Oraxyl",
+              "Periostat Targadox",
+              "Vibramycin calcium",
+              "Vibramycin Hyclate",
+              "Vibramycin monohydrate",
+              "Vibra-Tabs"
+            ],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 6.8,
+            "activity": "87%",
+            "no_of_reviews": 760.0,
+            "links": {
+              "drug": "https://www.drugs.com/doxycycline.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "side_effects_raw",
+            "chunk_index": 3
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.015873015873015872,
+          "chunk_id": "kaggle_c907cd9077f37e62ac7acf9e28b26bff_side_effects_raw_1",
+          "preview": "Symptoms may include: skin rash, fever, swollen glands, flu-like symptoms, muscle aches, severe weakness, unusual bruising, or yellowing of your skin or eyes. This reaction may occur several weeks after you began using doxycycline. Doxycycl",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "generic_name": "doxycycline",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [
+              "Acticlate",
+              "Adoxa CK",
+              "Adoxa Pak",
+              "Adoxa TT",
+              "Alodox",
+              "Avidoxy",
+              "Doryx",
+              "Mondoxyne NL",
+              "Monodox",
+              "Morgidox",
+              "Okebo",
+              "Oracea",
+              "Oraxyl",
+              "Periostat Targadox",
+              "Vibramycin calcium",
+              "Vibramycin Hyclate",
+              "Vibramycin monohydrate",
+              "Vibra-Tabs"
+            ],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 6.8,
+            "activity": "87%",
+            "no_of_reviews": 760.0,
+            "links": {
+              "drug": "https://www.drugs.com/doxycycline.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "side_effects_raw",
+            "chunk_index": 1
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.015625,
+          "chunk_id": "kaggle_da8eaad8bf64e605e54b278a4569d875_side_effects_raw",
+          "preview": "hives; difficulty breathing; swelling of your face, lips, tongue, or throat. Doxylamine may cause serious side effects. Call your doctor at once if you have: confusion, hallucinations; severe dizziness or drowsiness; or little or no urinati",
+          "metadata": {
+            "drug_name": "doxylamine",
+            "generic_name": "doxylamine",
+            "medical_condition": "Allergies",
+            "drug_classes": [
+              "Miscellaneous anxiolytics",
+              "sedatives and hypnotics"
+            ],
+            "brand_names": [],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "generally_safe",
+            "pregnancy_category_raw": "B",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": null,
+            "activity": "9%",
+            "no_of_reviews": null,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/doxylamine.html",
+              "condition": "https://www.drugs.com/condition/allergies.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "side_effects_raw"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.015384615384615385,
+          "chunk_id": "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_warnings_6",
+          "preview": "Severe skin reactions, such as exfoliative dermatitis, erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug reaction with eosinophilia and systemic symptoms (DRESS) have been reported in patients receiving dox",
+          "metadata": {
+            "fda_id": "2a937989-4dd4-58d5-e063-6294a90a4ea9",
+            "set_id": "f39365f9-eb64-00cb-e053-2995a90a8d80",
+            "brand_name": "Doxycycline",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20241231",
+            "version": "3",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": false,
+            "has_indications": false,
+            "section": "warnings",
+            "chunk_index": 6
+          }
+        }
+      ],
+      "ideal_answer": "Serious effects include severe gastrointestinal symptoms, cardiac rhythm disturbance, dyspnea, renal/hematologic dysfunction, severe headache with visual symptoms, hepatotoxicity (e.g., dark urine, jaundice), and systemic hypersensitivity. Common effects include nausea/vomiting, dyspepsia, mild diarrhea, pruritic rash, transient skin darkening, and vaginal irritation/discharge."
+    },
+    {
+      "id": "2",
+      "type": "condition_best_rated",
+      "query": "Among drugs used for Acne, which are best rated by patients?",
+      "k": 5,
+      "query_time_sec": 1.237804889678955,
+      "ground_truth": [
+        "3ebfcc3e18938db808d6eeea889a3d9d",
+        "1efd9ef56cb6de1b3af962db4d738b6b",
+        "11da7f83453bb75dff1668755a395323",
+        "d61685e1be6d946f2252ef79cea0d355",
+        "828d40eab210338a97ee87e5959a2926"
+      ],
+      "retrieved_ids": [
+        "openfda_ff2974d3-39df-0fcc-e053-6294a90a0f3e_indications",
+        "openfda_e3514af1-f9ba-c251-e053-2a95a90ac80e_indications",
+        "openfda_401d4be1-4d7e-f466-e063-6294a90ad526_purpose",
+        "openfda_b06f5525-9500-4742-afb6-e31939da9dd9_purpose",
+        "openfda_31e2ff2b-9c0a-9ec1-e063-6294a90a680e_purpose"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.01639344262295082,
+          "chunk_id": "openfda_ff2974d3-39df-0fcc-e053-6294a90a0f3e_indications",
+          "preview": "For treatment of acne",
+          "metadata": {
+            "fda_id": "ff2974d3-39df-0fcc-e053-6294a90a0f3e",
+            "set_id": "ff2974d3-39e0-0fcc-e053-6294a90a0f3e",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20230627",
+            "version": "1",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.016129032258064516,
+          "chunk_id": "openfda_e3514af1-f9ba-c251-e053-2a95a90ac80e_indications",
+          "preview": "For treatment of acne",
+          "metadata": {
+            "fda_id": "e3514af1-f9ba-c251-e053-2a95a90ac80e",
+            "set_id": "e3514af1-f9b9-c251-e053-2a95a90ac80e",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20220708",
+            "version": "1",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.02736726874657909,
+          "chunk_id": "openfda_401d4be1-4d7e-f466-e063-6294a90ad526_purpose",
+          "preview": "Acne medication",
+          "metadata": {
+            "fda_id": "401d4be1-4d7e-f466-e063-6294a90ad526",
+            "set_id": "f7fd3f24-7c27-b45b-e053-6394a90a50ae",
+            "brand_name": "Acne Spot Treatment",
+            "generic_name": "SALICYLIC ACID",
+            "effective_time": "20251001",
+            "version": "3",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "purpose"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.015625,
+          "chunk_id": "openfda_b06f5525-9500-4742-afb6-e31939da9dd9_purpose",
+          "preview": "Acne medication",
+          "metadata": {
+            "fda_id": "b06f5525-9500-4742-afb6-e31939da9dd9",
+            "set_id": "3146cd53-86b8-4c6f-a07f-66cdeb6cc808",
+            "brand_name": "benzoyl peroxide",
+            "generic_name": "BENZOYL PEROXIDE",
+            "effective_time": "20250212",
+            "version": "7",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "purpose"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.015384615384615385,
+          "chunk_id": "openfda_31e2ff2b-9c0a-9ec1-e063-6294a90a680e_purpose",
+          "preview": "Acne medication",
+          "metadata": {
+            "fda_id": "31e2ff2b-9c0a-9ec1-e063-6294a90a680e",
+            "set_id": "3149260c-b92b-43a7-8f57-897517102fa8",
+            "brand_name": "Oil Free Acne Wash",
+            "generic_name": "SALICYLIC ACID 2",
+            "effective_time": "20250403",
+            "version": "14",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "purpose"
+          }
+        }
+      ],
+      "ideal_answer": "Top patient-rated therapies include isotretinoin and adapalene/benzoyl peroxide combinations, with doxycycline and branded fixed-dose topical retinoid/antibiotic products also highly rated by review count and mean score."
+    },
+    {
+      "id": "3",
+      "type": "drug_facts",
+      "query": "Is doxycycline Rx or OTC, what is its pregnancy category, and what are its brand names?",
+      "k": 5,
+      "query_time_sec": 1.4505600929260254,
+      "ground_truth": [
+        "11da7f83453bb75dff1668755a395323"
+      ],
+      "retrieved_ids": [
+        "kaggle_8657f393fb30c5dce1bffde3d13a9d60_basic_info",
+        "kaggle_c907cd9077f37e62ac7acf9e28b26bff_basic_info",
+        "kaggle_6d5b59c88a0d16dfc5e8fae1d4ece26a_basic_info",
+        "kaggle_720fce150070b1c02a3796cfe8290a13_basic_info",
+        "kaggle_a1a551887827b5ff754706a365b95553_basic_info"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.01639344262295082,
+          "chunk_id": "kaggle_8657f393fb30c5dce1bffde3d13a9d60_basic_info",
+          "preview": "Drug Name: Doryx\nGeneric Name: doxycycline (oral route)\nMedical Condition: Acne\nDrug Classes: Miscellaneous antimalarials, Tetracyclines\nPrescription Type: Rx\nUser Rating: 7.5/10\nActivity Score: 9%\nNumber of Reviews: 57",
+          "metadata": {
+            "drug_name": "Doryx",
+            "generic_name": "doxycycline (oral route)",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 7.5,
+            "activity": "9%",
+            "no_of_reviews": 57.0,
+            "links": {
+              "drug": "https://www.drugs.com/cons/doryx.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.016129032258064516,
+          "chunk_id": "kaggle_c907cd9077f37e62ac7acf9e28b26bff_basic_info",
+          "preview": "Drug Name: doxycycline\nMedical Condition: Acne\nDrug Classes: Miscellaneous antimalarials, Tetracyclines\nPrescription Type: Rx\nUser Rating: 6.8/10\nActivity Score: 87%\nNumber of Reviews: 760",
+          "metadata": {
+            "drug_name": "doxycycline",
+            "generic_name": "doxycycline",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [
+              "Acticlate",
+              "Adoxa CK",
+              "Adoxa Pak",
+              "Adoxa TT",
+              "Alodox",
+              "Avidoxy",
+              "Doryx",
+              "Mondoxyne NL",
+              "Monodox",
+              "Morgidox",
+              "Okebo",
+              "Oracea",
+              "Oraxyl",
+              "Periostat Targadox",
+              "Vibramycin calcium",
+              "Vibramycin Hyclate",
+              "Vibramycin monohydrate",
+              "Vibra-Tabs"
+            ],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 6.8,
+            "activity": "87%",
+            "no_of_reviews": 760.0,
+            "links": {
+              "drug": "https://www.drugs.com/doxycycline.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.014925373134328358,
+          "chunk_id": "kaggle_6d5b59c88a0d16dfc5e8fae1d4ece26a_basic_info",
+          "preview": "Drug Name: Adoxa\nGeneric Name: Doxycycline Tablets and Capsules\nMedical Condition: Acne\nDrug Classes: Miscellaneous antimalarials, Tetracyclines\nPrescription Type: Rx\nUser Rating: 8.8/10\nActivity Score: 5%\nNumber of Reviews: 5",
+          "metadata": {
+            "drug_name": "Adoxa",
+            "generic_name": "Doxycycline Tablets and Capsules",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [
+              "Acticlate",
+              "Avidoxy",
+              "Monodox",
+              "Morgidox",
+              "Oraxyl",
+              "TargaDOX",
+              "Vibramycin"
+            ],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 8.8,
+            "activity": "5%",
+            "no_of_reviews": 5.0,
+            "links": {
+              "drug": "https://www.drugs.com/cdi/adoxa.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.015625,
+          "chunk_id": "kaggle_720fce150070b1c02a3796cfe8290a13_basic_info",
+          "preview": "Drug Name: Doxy 100\nGeneric Name: Doxycycline Injection\nMedical Condition: Acne\nDrug Classes: Miscellaneous antimalarials, Tetracyclines\nPrescription Type: Rx\nUser Rating: 9.0/10\nActivity Score: 7%\nNumber of Reviews: 5",
+          "metadata": {
+            "drug_name": "Doxy 100",
+            "generic_name": "Doxycycline Injection",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Miscellaneous antimalarials",
+              "Tetracyclines"
+            ],
+            "brand_names": [],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 9.0,
+            "activity": "7%",
+            "no_of_reviews": 5.0,
+            "links": {
+              "drug": "https://www.drugs.com/cdi/doxy-100.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.019622641509433963,
+          "chunk_id": "kaggle_a1a551887827b5ff754706a365b95553_basic_info",
+          "preview": "Drug Name: Doryx MPC\nGeneric Name: doxycycline (oral route)\nMedical Condition: Acne\nPrescription Type: Rx\nActivity Score: 5%",
+          "metadata": {
+            "drug_name": "Doryx MPC",
+            "generic_name": "doxycycline (oral route)",
+            "medical_condition": "Acne",
+            "drug_classes": [],
+            "brand_names": [],
+            "rx_otc": "Rx",
+            "pregnancy_category": "avoid",
+            "pregnancy_category_raw": "D",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": null,
+            "activity": "5%",
+            "no_of_reviews": null,
+            "links": {
+              "drug": "https://www.drugs.com/cons/doryx-mpc.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        }
+      ],
+      "ideal_answer": "Doxycycline is prescription-only (Rx). Use in pregnancy is contraindicated/avoided. Representative brands include Acticlate, Adoxa (various), Avidoxy, Doryx, Monodox/Mondoxyne NL, Morgidox, Oracea, Oraxyl, Periostat, Vibramycin (calcium/hyclate/monohydrate), and Vibra-Tabs."
+    },
+    {
+      "id": "4",
+      "type": "drug_alternatives",
+      "query": "What are alternative drugs related to doxycycline (with links)?",
+      "k": 5,
+      "query_time_sec": 1.149571180343628,
+      "ground_truth": [
+        "1bf28a071379036988f7b538fb5adedc"
+      ],
+      "retrieved_ids": [
+        "openfda_b99072cd-f6d8-4d24-9014-f76e327dd6d3_indications_10",
+        "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_indications_10",
+        "openfda_f7c0355d-78a2-430a-b9f9-c64a1d2047af_indications_0",
+        "openfda_b429a1e9-5bbc-8b27-e053-2a95a90a089f_indications_0",
+        "openfda_f7c0355d-78a2-430a-b9f9-c64a1d2047af_indications_10"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.02738245361196181,
+          "chunk_id": "openfda_b99072cd-f6d8-4d24-9014-f76e327dd6d3_indications_10",
+          "preview": "When penicillin is contraindicated, doxycycline is an alternative drug in the treatment of infections due to: Neisseria gonorrhoeae and N. meningitidis, Treponema pallidum and Treponema pallidum subspecie s pertenue (syphilis and yaws), Lis",
+          "metadata": {
+            "fda_id": "b99072cd-f6d8-4d24-9014-f76e327dd6d3",
+            "set_id": "7ce80f6e-3c0d-4978-b626-5fd3f3ff349e",
+            "brand_name": "Doxycycline",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20250101",
+            "version": "10",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 10
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.026984126984126985,
+          "chunk_id": "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_indications_10",
+          "preview": "When penicillin is contraindicated, doxycycline is an alternative drug in the treatment of infections due to: Neisseria gonorrhoeae and N. meningitidis . Treponema pallidum and Treponema pallidum subspecies pertenue (syphilis and yaws). Lis",
+          "metadata": {
+            "fda_id": "d3631394-b84d-4dc2-b870-e7c3aa2573b4",
+            "set_id": "acb84610-5e26-4b0c-89e5-42bc0f8fa00d",
+            "brand_name": "DOXYCYCLINE",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20250319",
+            "version": "10",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 10
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.02307347670250896,
+          "chunk_id": "openfda_f7c0355d-78a2-430a-b9f9-c64a1d2047af_indications_0",
+          "preview": "To reduce the development of drug-resistant bacteria and maintain the effectiveness of doxycycline tablets and other antibacterial drugs, doxycycline tablets should be used only to treat or prevent infections that are proven or strongly sus",
+          "metadata": {
+            "fda_id": "f7c0355d-78a2-430a-b9f9-c64a1d2047af",
+            "set_id": "30246241-a757-49fe-9cae-8b75aab54296",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20241216",
+            "version": "6",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 0
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.026494565217391304,
+          "chunk_id": "openfda_b429a1e9-5bbc-8b27-e053-2a95a90a089f_indications_0",
+          "preview": "To reduce the development of drug-resistant bacteria and maintain effectiveness of doxycycline and other antibacterial drugs, doxycycline should be used only to treat or prevent infections that are proven or strongly suspected to be caused ",
+          "metadata": {
+            "fda_id": "b429a1e9-5bbc-8b27-e053-2a95a90a089f",
+            "set_id": "b429a1e9-5bbb-8b27-e053-2a95a90a089f",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20201115",
+            "version": "1",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 0
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.015384615384615385,
+          "chunk_id": "openfda_f7c0355d-78a2-430a-b9f9-c64a1d2047af_indications_10",
+          "preview": "When penicillin is contraindicated, doxycycline is an alternative drug in the treatment of the following infections: Uncomplicated gonorrhea caused by Neisseria gonorrhoeae . Syphilis caused by Treponema pallidum . Yaws caused by Treponema ",
+          "metadata": {
+            "fda_id": "f7c0355d-78a2-430a-b9f9-c64a1d2047af",
+            "set_id": "30246241-a757-49fe-9cae-8b75aab54296",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20241216",
+            "version": "6",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 10
+          }
+        }
+      ],
+      "ideal_answer": "Related alternatives include amoxicillin, azithromycin, ciprofloxacin, cephalexin, metronidazole (oral/topical), clindamycin (oral/topical), prednisone, and albuterol, with source links provided in the dataset."
+    },
+    {
+      "id": "5",
+      "type": "pregnancy_safe_options",
+      "query": "For Acne, which options look pregnancy-safe?",
+      "k": 5,
+      "query_time_sec": 1.2405109405517578,
+      "ground_truth": [
+        "ea100227904f13d7a848b44838656295",
+        "6686979079c9cdcae23cfbcd2fc3f9f7",
+        "f842cfd88364b662581d46e06aea16ac",
+        "90e3fdcb4e259757c35e407b473cd90d",
+        "e537ea049160f9aed0d5cc38d3d3a234"
+      ],
+      "retrieved_ids": [
+        "pubmed_21120498_abstract_1",
+        "openfda_8105505f-9df6-4bc4-b201-7281a2d3af00_indications_1",
+        "openfda_8475631f-7d35-47e8-9b93-26357f757277_warnings_20",
+        "pubmed_21120498_abstract_0",
+        "openfda_8b8a3310-04e1-4930-8c69-9f8d470b8925_warnings_3"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.01639344262295082,
+          "chunk_id": "pubmed_21120498_abstract_1",
+          "preview": "Drugs that may be safely used during pregnancy include NSAIDs, corticosteroids, plus several DMARDs, including sulfasalazine and hydroxychloroquine. Drugs recommended to be stopped before pregnancy include methotrexate and leflunomide, plus",
+          "metadata": {
+            "link": "http://www.ncbi.nlm.nih.gov/pubmed/21120498",
+            "pubmed_id": "21120498",
+            "section": "abstract",
+            "chunk_index": 1
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.016129032258064516,
+          "chunk_id": "openfda_8105505f-9df6-4bc4-b201-7281a2d3af00_indications_1",
+          "preview": "Because of significant adverse effects associated with its use, Amnesteem should be reserved for patients with severe nodular acne who are unresponsive to conventional therapy, including systemic antibiotics . In addition, Amnesteem is indi",
+          "metadata": {
+            "fda_id": "8105505f-9df6-4bc4-b201-7281a2d3af00",
+            "set_id": "b2cb63c9-f825-4991-9a2c-6260f1bbcc2c",
+            "brand_name": "Amnesteem",
+            "generic_name": "ISOTRETINOIN",
+            "effective_time": "20240623",
+            "version": "23",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications",
+            "chunk_index": 1
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.015873015873015872,
+          "chunk_id": "openfda_8475631f-7d35-47e8-9b93-26357f757277_warnings_20",
+          "preview": "Since there is no adequate experience in children who have received this drug, safety and efficacy in children have not been established. Usage In Pregnancy The safety for the use of this drug during pregnancy has not been established; ther",
+          "metadata": {
+            "fda_id": "8475631f-7d35-47e8-9b93-26357f757277",
+            "set_id": "8caa3896-cde1-4cb1-9332-2e92bcf5c1f6",
+            "brand_name": "fluphenazine decanoate",
+            "generic_name": "FLUPHENAZINE DECANOATE",
+            "effective_time": "20241212",
+            "version": "5",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "warnings",
+            "chunk_index": 20
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.032018442622950824,
+          "chunk_id": "pubmed_21120498_abstract_0",
+          "preview": "There are a wide variety of medications available to treat patients with rheumatoid arthritis, many of which are considered unsafe during pregnancy. It is important to tailor a treatment regimen that stabilises the woman's disease prior to ",
+          "metadata": {
+            "link": "http://www.ncbi.nlm.nih.gov/pubmed/21120498",
+            "pubmed_id": "21120498",
+            "section": "abstract",
+            "chunk_index": 0
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.02528560548362529,
+          "chunk_id": "openfda_8b8a3310-04e1-4930-8c69-9f8d470b8925_warnings_3",
+          "preview": "Usage in Pregnancy The safe use of chlorzoxazone has not been established with respect to the possible adverse effects upon fetal development. Therefore, it should be used in women of childbearing potential only when, in the judgment of the",
+          "metadata": {
+            "fda_id": "8b8a3310-04e1-4930-8c69-9f8d470b8925",
+            "set_id": "0a8ee5fa-f393-4568-81bd-269f9a4cecd6",
+            "brand_name": "CHLORZOXAZONE",
+            "generic_name": "CHLORZOXAZONE",
+            "effective_time": "20250301",
+            "version": "2",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "warnings",
+            "chunk_index": 3
+          }
+        }
+      ],
+      "ideal_answer": "Entries marked as pregnancy-safer include topical clindamycin and select β-lactams such as cephalexin; these show more favorable pregnancy categories than tetracyclines."
+    },
+    {
+      "id": "6",
+      "type": "otc_options",
+      "query": "Which OTC options exist for Acne?",
+      "k": 5,
+      "query_time_sec": 0.9411559104919434,
+      "ground_truth": [
+        "c83bfe3671056fa4288b893ecb90ef4c",
+        "6b4065d49d7854fca19b6a0c7bf45b59",
+        "e910f5616723597a5858df9951a717fa",
+        "cc7c43bbc1721c56f7d99a67507983be",
+        "9708123d72fbd457eed2b92c71572a91"
+      ],
+      "retrieved_ids": [
+        "kaggle_19500d27120b20ea9d06b0af181f16cc_title",
+        "openfda_ff2974d3-39df-0fcc-e053-6294a90a0f3e_indications",
+        "openfda_e3514af1-f9ba-c251-e053-2a95a90ac80e_indications",
+        "kaggle_9448aff58778d0f7267147517c6581b2_title",
+        "openfda_401d4be1-4d7e-f466-e063-6294a90ad526_purpose"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.02301595917924221,
+          "chunk_id": "kaggle_19500d27120b20ea9d06b0af181f16cc_title",
+          "preview": "Acne Treatment for Acne",
+          "metadata": {
+            "drug_name": "Acne Treatment",
+            "generic_name": "Benzoyl Peroxide Cream",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Topical acne agents"
+            ],
+            "brand_names": [
+              "Clearskin"
+            ],
+            "rx_otc": "OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "",
+            "rating": null,
+            "activity": "1%",
+            "no_of_reviews": null,
+            "links": {
+              "drug": "https://www.drugs.com/cdi/acne-treatment.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "title"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.016129032258064516,
+          "chunk_id": "openfda_ff2974d3-39df-0fcc-e053-6294a90a0f3e_indications",
+          "preview": "For treatment of acne",
+          "metadata": {
+            "fda_id": "ff2974d3-39df-0fcc-e053-6294a90a0f3e",
+            "set_id": "ff2974d3-39e0-0fcc-e053-6294a90a0f3e",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20230627",
+            "version": "1",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.015873015873015872,
+          "chunk_id": "openfda_e3514af1-f9ba-c251-e053-2a95a90ac80e_indications",
+          "preview": "For treatment of acne",
+          "metadata": {
+            "fda_id": "e3514af1-f9ba-c251-e053-2a95a90ac80e",
+            "set_id": "e3514af1-f9b9-c251-e053-2a95a90ac80e",
+            "brand_name": "",
+            "generic_name": "",
+            "effective_time": "20220708",
+            "version": "1",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "indications"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.015625,
+          "chunk_id": "kaggle_9448aff58778d0f7267147517c6581b2_title",
+          "preview": "Acnex for Acne",
+          "metadata": {
+            "drug_name": "Acnex",
+            "generic_name": "salicylic acid (topical route)",
+            "medical_condition": "Acne",
+            "drug_classes": [
+              "Topical acne agents",
+              "Topical keratolytics"
+            ],
+            "brand_names": [],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "",
+            "rating": 10.0,
+            "activity": "1%",
+            "no_of_reviews": 1.0,
+            "links": {
+              "drug": "https://www.drugs.com/cons/acnex-topical.html",
+              "condition": "https://www.drugs.com/condition/acne.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "title"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.024001072673639046,
+          "chunk_id": "openfda_401d4be1-4d7e-f466-e063-6294a90ad526_purpose",
+          "preview": "Acne medication",
+          "metadata": {
+            "fda_id": "401d4be1-4d7e-f466-e063-6294a90ad526",
+            "set_id": "f7fd3f24-7c27-b45b-e053-6394a90a50ae",
+            "brand_name": "Acne Spot Treatment",
+            "generic_name": "SALICYLIC ACID",
+            "effective_time": "20251001",
+            "version": "3",
+            "has_active_ingredients": true,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "purpose"
+          }
+        }
+      ],
+      "ideal_answer": "Over-the-counter options emphasize benzoyl peroxide (various strengths and formulations) and sulfur/resorcinol combinations, exemplified by PanOxyl and similar BPO products."
+    },
+    {
+      "id": "7",
+      "type": "alcohol_caution",
+      "query": "Does doxycycline have alcohol cautions?",
+      "k": 5,
+      "query_time_sec": 1.3236961364746094,
+      "ground_truth": [],
+      "retrieved_ids": [
+        "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_title",
+        "openfda_b99072cd-f6d8-4d24-9014-f76e327dd6d3_title",
+        "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_drug_names",
+        "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_drug_names",
+        "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_title"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.030621785881252923,
+          "chunk_id": "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_title",
+          "preview": "DOXYCYCLINE (DOXYCYCLINE)",
+          "metadata": {
+            "fda_id": "d3631394-b84d-4dc2-b870-e7c3aa2573b4",
+            "set_id": "acb84610-5e26-4b0c-89e5-42bc0f8fa00d",
+            "brand_name": "DOXYCYCLINE",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20250319",
+            "version": "10",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "title"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.030158730158730156,
+          "chunk_id": "openfda_b99072cd-f6d8-4d24-9014-f76e327dd6d3_title",
+          "preview": "Doxycycline (DOXYCYCLINE)",
+          "metadata": {
+            "fda_id": "b99072cd-f6d8-4d24-9014-f76e327dd6d3",
+            "set_id": "7ce80f6e-3c0d-4978-b626-5fd3f3ff349e",
+            "brand_name": "Doxycycline",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20250101",
+            "version": "10",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "title"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.029906956136464335,
+          "chunk_id": "openfda_d3631394-b84d-4dc2-b870-e7c3aa2573b4_drug_names",
+          "preview": "DOXYCYCLINE (DOXYCYCLINE)",
+          "metadata": {
+            "fda_id": "d3631394-b84d-4dc2-b870-e7c3aa2573b4",
+            "set_id": "acb84610-5e26-4b0c-89e5-42bc0f8fa00d",
+            "brand_name": "DOXYCYCLINE",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20250319",
+            "version": "10",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": true,
+            "has_indications": true,
+            "section": "drug_names"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.029709507042253523,
+          "chunk_id": "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_drug_names",
+          "preview": "Doxycycline (DOXYCYCLINE)",
+          "metadata": {
+            "fda_id": "2a937989-4dd4-58d5-e063-6294a90a4ea9",
+            "set_id": "f39365f9-eb64-00cb-e053-2995a90a8d80",
+            "brand_name": "Doxycycline",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20241231",
+            "version": "3",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": false,
+            "has_indications": false,
+            "section": "drug_names"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.029083245521601686,
+          "chunk_id": "openfda_2a937989-4dd4-58d5-e063-6294a90a4ea9_title",
+          "preview": "Doxycycline (DOXYCYCLINE)",
+          "metadata": {
+            "fda_id": "2a937989-4dd4-58d5-e063-6294a90a4ea9",
+            "set_id": "f39365f9-eb64-00cb-e053-2995a90a8d80",
+            "brand_name": "Doxycycline",
+            "generic_name": "DOXYCYCLINE",
+            "effective_time": "20241231",
+            "version": "3",
+            "has_active_ingredients": false,
+            "has_warnings": true,
+            "has_dosage": false,
+            "has_indications": false,
+            "section": "title"
+          }
+        }
+      ],
+      "ideal_answer": "No alcohol-specific caution information for doxycycline was identified in the provided corpus."
+    },
+    {
+      "id": "8",
+      "type": "class_based_options",
+      "query": "List drugs that belong to the class: upper respiratory combinations",
+      "k": 5,
+      "query_time_sec": 1.4004788398742676,
+      "ground_truth": [
+        "6c26e0317ebd4bc377c487cca76654bf",
+        "9f975e925c5df7f0dfc2c8663660a3e0",
+        "69ce1cf4ff993489f45473a2c368ba7f",
+        "38933d06d8377f2eb2a15793f023d24b",
+        "25e454f6c79a4069f08a6c12d3d2c964"
+      ],
+      "retrieved_ids": [
+        "kaggle_371585f87c44e387c9cae71ee081306c_basic_info",
+        "kaggle_8ebb9a5ba11ececbb96181266e8cff4a_basic_info",
+        "kaggle_3a93f545c97679e4aa44fe6faf4d2053_basic_info",
+        "kaggle_487377a751ae09ee5a3f6c9e1b4861e4_basic_info",
+        "kaggle_38124cdcc62aef21ce5c50612d2bef51_basic_info"
+      ],
+      "metrics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "hit@k": 0.0,
+        "mrr": 0.0
+      },
+      "topk": [
+        {
+          "rank": 1,
+          "score": 0.015873015873015872,
+          "chunk_id": "kaggle_371585f87c44e387c9cae71ee081306c_basic_info",
+          "preview": "Drug Name: cetirizine / pseudoephedrine\nGeneric Name: cetirizine and pseudoephedrine\nMedical Condition: Hayfever\nDrug Classes: Upper respiratory combinations\nPrescription Type: Rx/OTC\nUser Rating: 9.4/10\nActivity Score: 2%\nNumber of Reviews",
+          "metadata": {
+            "drug_name": "cetirizine / pseudoephedrine",
+            "generic_name": "cetirizine and pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "drug_classes": [
+              "Upper respiratory combinations"
+            ],
+            "brand_names": [
+              "All Day Allergy-D",
+              "ZyrTEC-D",
+              "Wal-Zyr D",
+              "Allergy D-12",
+              "Allergy Relief Nasal Decongestant",
+              "Leader Allergy Relief D"
+            ],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 9.4,
+            "activity": "2%",
+            "no_of_reviews": 5.0,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/cetirizine-and-pseudoephedrine.html",
+              "condition": "https://www.drugs.com/condition/allergic-rhinitis.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.01639344262295082,
+          "chunk_id": "kaggle_8ebb9a5ba11ececbb96181266e8cff4a_basic_info",
+          "preview": "Drug Name: chlorpheniramine / pseudoephedrine\nGeneric Name: chlorpheniramine and pseudoephedrine\nMedical Condition: Hayfever\nDrug Classes: Upper respiratory combinations\nPrescription Type: Rx/OTC\nUser Rating: 8.9/10\nActivity Score: 0%\nNumbe",
+          "metadata": {
+            "drug_name": "chlorpheniramine / pseudoephedrine",
+            "generic_name": "chlorpheniramine and pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "drug_classes": [
+              "Upper respiratory combinations"
+            ],
+            "brand_names": [
+              "Allerest Maximum Strength",
+              "Dicel",
+              "LoHist-D",
+              "Clorfed",
+              "Histalet",
+              "Fedahist",
+              "Tanafed",
+              "Novafed A",
+              "Chlorafed H.S. Timecelles",
+              "Codimal-LA",
+              "Kronofed-A-Jr",
+              "Dura-Tap/PD",
+              "Fedahist Timecaps",
+              "Orlenta",
+              "Chlorphedrin SR",
+              "Colfed-A",
+              "D-Amine-SR",
+              "Deconomed S.R.",
+              "Pseudocot-C",
+              "Duralex",
+              "Rinade-B.I.D.",
+              "Suphenamine-SR",
+              "Isophen-DF",
+              "Kronofed-A",
+              "ND Clear",
+              "Chlordrine SR",
+              "Anamine T.D.",
+              "Time-Hist",
+              "Chlorafed Timecelles",
+              "Brexin L.A.",
+              "Rescon-Ed",
+              "Deconamine SR",
+              "Pseudochlor",
+              "Cophene No. 2",
+              "Anaplex",
+              "Anamine",
+              "Klerist-D",
+              "Codimal-LA Half",
+              "Fedahist Gyrocaps",
+              "Deconamine",
+              "Clorfed II",
+              "Curaler",
+              "Sudafed Plus",
+              "Chlorafed",
+              "Histafed LA",
+              "Chlor Trimeton Allergy Decongestant",
+              "Aller-Chlor Decongestant",
+              "Sudogest Plus",
+              "Ryna Liquid",
+              "Genaphed Plus",
+              "Dayquil Allergy",
+              "Hayfebrol Liquid",
+              "Suphedrine Plus",
+              "Atrohist Pediatric Capsule",
+              "Triaminic Softchew Cold and Allergy",
+              "Chlor-Trimeton Allergy Decongestant SR",
+              "Tavist-DA",
+              "Biohist LA",
+              "Dynahist-ER Pediatric",
+              "Pediacare Cold and Allergy",
+              "CP-Tannic",
+              "Durafed",
+              "Histade",
+              "Duotan",
+              "Mintex",
+              "QDall",
+              "Suclor",
+              "Sudafed Sinus/Allergy",
+              "Re2+30",
+              "Sudal-12",
+              "Pediox Chewable",
+              "C-Phed Tannate",
+              "De-Congestine",
+              "Sudal-12 Chewable",
+              "Sudal-12 Tannate",
+              "SudaHist",
+              "Triaminic Softchews Allergy Nose and Congestion",
+              "Duratuss DA",
+              "Neutrahist Drops",
+              "AccuHist Drops",
+              "Sudogest Cold & Allergy",
+              "SudoGest Sinus and Allergy",
+              "Dicel Chewables"
+            ],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 8.9,
+            "activity": "0%",
+            "no_of_reviews": 9.0,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/chlorpheniramine-and-pseudoephedrine.html",
+              "condition": "https://www.drugs.com/condition/allergic-rhinitis.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.015384615384615385,
+          "chunk_id": "kaggle_3a93f545c97679e4aa44fe6faf4d2053_basic_info",
+          "preview": "Drug Name: fexofenadine / pseudoephedrine\nGeneric Name: fexofenadine and pseudoephedrine\nMedical Condition: Hayfever\nDrug Classes: Upper respiratory combinations\nPrescription Type: Rx/OTC\nUser Rating: 6.6/10\nActivity Score: 1%\nNumber of Rev",
+          "metadata": {
+            "drug_name": "fexofenadine / pseudoephedrine",
+            "generic_name": "fexofenadine and pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "drug_classes": [
+              "Upper respiratory combinations"
+            ],
+            "brand_names": [
+              "Allegra-D 12 Hour",
+              "Allegra-D 24 Hour"
+            ],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "",
+            "rating": 6.6,
+            "activity": "1%",
+            "no_of_reviews": 56.0,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/fexofenadine-and-pseudoephedrine.html",
+              "condition": "https://www.drugs.com/condition/allergic-rhinitis.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.015151515151515152,
+          "chunk_id": "kaggle_487377a751ae09ee5a3f6c9e1b4861e4_basic_info",
+          "preview": "Drug Name: loratadine / pseudoephedrine\nGeneric Name: loratadine and pseudoephedrine\nMedical Condition: Hayfever\nDrug Classes: Upper respiratory combinations\nPrescription Type: OTC\nUser Rating: 3.6/10\nActivity Score: 1%\nNumber of Reviews: 3",
+          "metadata": {
+            "drug_name": "loratadine / pseudoephedrine",
+            "generic_name": "loratadine and pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "drug_classes": [
+              "Upper respiratory combinations"
+            ],
+            "brand_names": [
+              "Claritin-D 12 Hour",
+              "Claritin-D 24 Hour",
+              "Leader Allergy Relief D-24",
+              "Loratadine-D 12 Hour",
+              "Loratadine-D 24 Hour",
+              "Clear-Atadine-D",
+              "Wal-itin D 24 Hour",
+              "Allergy and Congestion Relief",
+              "Wal-itin D",
+              "Allergy Relief-D 24 Hour",
+              "Allergy Relief and Nasal Decongestant"
+            ],
+            "rx_otc": "OTC",
+            "pregnancy_category": "generally_safe",
+            "pregnancy_category_raw": "B",
+            "csa": "N",
+            "alcohol": "",
+            "rating": 3.6,
+            "activity": "1%",
+            "no_of_reviews": 35.0,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/loratadine-and-pseudoephedrine.html",
+              "condition": "https://www.drugs.com/condition/allergic-rhinitis.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.014925373134328358,
+          "chunk_id": "kaggle_38124cdcc62aef21ce5c50612d2bef51_basic_info",
+          "preview": "Drug Name: brompheniramine / pseudoephedrine\nGeneric Name: brompheniramine and pseudoephedrine\nMedical Condition: Hayfever\nDrug Classes: Upper respiratory combinations\nPrescription Type: Rx/OTC\nUser Rating: 10.0/10\nActivity Score: 0%\nNumber",
+          "metadata": {
+            "drug_name": "brompheniramine / pseudoephedrine",
+            "generic_name": "brompheniramine and pseudoephedrine",
+            "medical_condition": "Hayfever",
+            "drug_classes": [
+              "Upper respiratory combinations"
+            ],
+            "brand_names": [
+              "Bromaline",
+              "Brotapp",
+              "Lodrane D",
+              "Shellcap",
+              "Allent",
+              "Shellcap PD",
+              "Lodrane LD",
+              "Bromfed PD",
+              "Nalfed PD",
+              "Respahist",
+              "Iofed PD",
+              "Ultrabrom PD",
+              "Pseubrom-PD",
+              "Bromfenex PD",
+              "M-Hist T.D.",
+              "Ultrabrom",
+              "Iofed",
+              "Pseubrom",
+              "Bromfenex",
+              "Lodrane Liquid",
+              "Nalfed",
+              "Touro Allergy",
+              "Bromfed SR",
+              "Histex SR",
+              "Andehist NR Syrup",
+              "Dimetapp Elixir",
+              "Bromaxefed RF Syrup",
+              "Brofed",
+              "Sildec",
+              "Q-Tapp",
+              "Bromhist Pediatric Drops",
+              "Lodrane 12D",
+              "AccuHist Pediatric",
+              "Unit-Tex 10/120 ER",
+              "Unit-Hist Drops",
+              "Di-Bromm",
+              "Bromhist-NR",
+              "Bidhist-D",
+              "Dimaphen",
+              "Brovex SR",
+              "Lodrane 24D",
+              "LoHist-PD",
+              "LoHist-12D",
+              "J-TanD PD",
+              "B-Vex PD",
+              "BroveX PSE",
+              "BroveX PD",
+              "BroveX PSB",
+              "LoHist PSB"
+            ],
+            "rx_otc": "Rx/OTC",
+            "pregnancy_category": "caution",
+            "pregnancy_category_raw": "C",
+            "csa": "N",
+            "alcohol": "X",
+            "rating": 10.0,
+            "activity": "0%",
+            "no_of_reviews": 3.0,
+            "links": {
+              "drug": "https://www.drugs.com/mtm/brompheniramine-and-pseudoephedrine.html",
+              "condition": "https://www.drugs.com/condition/allergic-rhinitis.html"
+            },
+            "has_side_effects": true,
+            "has_condition_summary": true,
+            "section": "basic_info"
+          }
+        }
+      ],
+      "ideal_answer": "Examples include multi-ingredient cold/flu products such as Theraflu Nighttime Severe Cold & Cough, acetaminophen/chlorpheniramine/phenylephrine combinations, pseudoephedrine/triprolidine combinations, Tylenol Cold, and Mucinex Fast-Max Night Time Cold & Flu."
+    }
+  ],
+  "overall": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "hit@k": 0.0,
+    "mrr": 0.0
+  }
+}

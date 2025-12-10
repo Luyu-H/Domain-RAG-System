@@ -1,0 +1,1256 @@
+{
+  "openfda_001": {
+    "query": "What are the side effects and warnings for acetaminophen and codeine combination drugs?",
+    "ideal_answer": [
+      "Acetaminophen and codeine combination drugs have several serious side effects and warnings including: respiratory depression, addiction and misuse risks, life-threatening respiratory depression, risks from concomitant use with benzodiazepines and other CNS depressants, neonatal opioid withdrawal syndrome, hepatotoxicity from acetaminophen overdose, and contraindications for children under 12 years of age. The drugs should be used with caution in patients with chronic pulmonary disease, elderly patients, and those with increased intracranial pressure."
+    ],
+    "ground_truth_docs": [
+      "d9b90990-529a-42ff-95dc-3b775fa46b76",
+      "c731175a-04a5-5d25-e053-2995a90a6082",
+      "0cf87661-ee5a-e1d5-e063-6294a90ae270"
+    ],
+    "query_time": 2.6549768447875977,
+    "retrieved_docs": [
+      {
+        "doc_id": "b099443ab7f3045658831e6179bfbee8",
+        "score": 0.01639344262295082,
+        "text_preview": "Acetaminophen and codeine may cause serious side effects. Call your doctor at once if you have: noisy breathing, sighing, shallow breathing, breathing that stops; a light-headed feeling, like you might pass out; confusion, severe drowsiness; liver problems-- nausea , upper stomach pain, itching, los...",
+        "metadata": {
+          "drug_name": "acetaminophen / codeine",
+          "generic_name": "acetaminophen and codeine",
+          "medical_condition": "Osteoarthritis",
+          "drug_classes": [
+            "Narcotic analgesic combinations"
+          ],
+          "brand_names": [
+            "Tylenol with Codeine #3",
+            "Tylenol with Codeine #4",
+            "Tylenol with Codeine",
+            "Capital and Codeine Suspension",
+            "Tylenol with Codeine #2",
+            "Cocet",
+            "Cocet Plus"
+          ],
+          "rx_otc": "Rx",
+          "pregnancy_category": "caution",
+          "pregnancy_category_raw": "C",
+          "csa": "M",
+          "alcohol": "X",
+          "rating": 7.0,
+          "activity": "3%",
+          "no_of_reviews": 10.0,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-and-codeine.html",
+            "condition": "https://www.drugs.com/condition/osteoarthritis.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "a94eb846c22f0dba8ffc5807d4bdc04b",
+        "score": 0.016129032258064516,
+        "text_preview": "Acetaminophen and caffeine may cause serious side effects. Stop using acetaminophen and caffeine and call your doctor at once if you have: low fever with nausea, stomach pain, and loss of appetite; dark urine, clay-colored stools; or jaundice (yellowing of the skin or eyes). Common side effects of a...",
+        "metadata": {
+          "drug_name": "acetaminophen / caffeine",
+          "generic_name": "acetaminophen and caffeine",
+          "medical_condition": "Colds & Flu",
+          "drug_classes": [
+            "Analgesic combinations"
+          ],
+          "brand_names": [
+            "Excedrin Mild Headache",
+            "Excedrin Tension Headache",
+            "Excedrin Tension Headache Express Gels",
+            "Excedrin Tension Headache Geltab",
+            "Valorin Extra",
+            "Excedrin Tension Headache Express"
+          ],
+          "rx_otc": "OTC",
+          "pregnancy_category": "unknown",
+          "pregnancy_category_raw": "N",
+          "csa": "N",
+          "alcohol": "X",
+          "rating": null,
+          "activity": "0%",
+          "no_of_reviews": null,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-and-caffeine.html",
+            "condition": "https://www.drugs.com/condition/cold-symptoms.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "05169d1a84e294bd938c6c3938bc9564",
+        "score": 0.02253968253968254,
+        "text_preview": "Serious side effects may be more likely in older adults and those who are overweight , malnourished, or debilitated. Common side effects of aspirin, carisoprodol, and codeine may include: dizziness, drowsiness, tiredness; nausea, vomiting, stomach pain, constipation; or headache ....",
+        "metadata": {
+          "drug_name": "aspirin / carisoprodol / codeine",
+          "generic_name": "aspirin, carisoprodol, and codeine",
+          "medical_condition": "Pain",
+          "drug_classes": [
+            "Skeletal muscle relaxant combinations"
+          ],
+          "brand_names": [
+            "Soma Compound with Codeine"
+          ],
+          "rx_otc": "Rx",
+          "pregnancy_category": "caution",
+          "pregnancy_category_raw": "C",
+          "csa": "3",
+          "alcohol": "X",
+          "rating": 9.5,
+          "activity": "0%",
+          "no_of_reviews": 3.0,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/aspirin-carisoprodol-and-codeine.html",
+            "condition": "https://www.drugs.com/condition/pain.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 4
+        }
+      },
+      {
+        "doc_id": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+        "score": 0.015625,
+        "text_preview": "Evaluate for signs of opioid withdrawal (see PRECAUTIONS , Drug Interactions ). Risks of Concomitant Use or Discontinuation of CYP2D6 Inhibitors The concomitant use of acetaminophen and codeine phosphate tablets with all CYP2D6 inhibitors (e.g., amiodarone, quinidine) may result in an increase in co...",
+        "metadata": {
+          "fda_id": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "set_id": "79377617-686b-4640-b2b8-e1358cf82358",
+          "brand_name": "ACETAMINOPHEN AND CODEINE PHOSPHATE",
+          "generic_name": "ACETAMINOPHEN AND CODEINE PHOSPHATE",
+          "effective_time": "20240813",
+          "version": "6",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "overdosage",
+          "chunk_index": 9
+        }
+      },
+      {
+        "doc_id": "905c4616fe23768eaac1380ab7c35b99",
+        "score": 0.015384615384615385,
+        "text_preview": "Stop using this medicine and call your doctor at once if you have: fast, pounding, or uneven heartbeats; severe drowsiness; painful or difficult urination; severe headache, seizure; or liver problems--loss of appetite, stomach pain (upper right side), tiredness, itching, dark urine, clay-colored sto...",
+        "metadata": {
+          "drug_name": "acetaminophen / dextromethorphan / diphenhydramine",
+          "generic_name": "acetaminophen, dextromethorphan, and diphenhydramine",
+          "medical_condition": "Colds & Flu",
+          "drug_classes": [
+            "Upper respiratory combinations"
+          ],
+          "brand_names": [
+            "Diabetic Tussin Night Time Formula"
+          ],
+          "rx_otc": "OTC",
+          "pregnancy_category": "caution",
+          "pregnancy_category_raw": "C",
+          "csa": "N",
+          "alcohol": "X",
+          "rating": null,
+          "activity": "0%",
+          "no_of_reviews": null,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-dextromethorphan-and-diphenhydramine.html",
+            "condition": "https://www.drugs.com/condition/cold-symptoms.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 3
+        }
+      },
+      {
+        "doc_id": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+        "score": 0.0694912486938349,
+        "text_preview": "Interactions with Drugs Affecting Cytochrome P450 Isoenzymes The effects of concomitant use or discontinuation of CYP3A4 inducers, CYP3A4 inhibitors, or CYP2D6 inhibitors with codeine are complex. Use of CYP3A4 inducers, CYP3A4 inhibitors, or CYP2D6 inhibitors with acetaminophen and codeine phosphat...",
+        "metadata": {
+          "fda_id": "d9b90990-529a-42ff-95dc-3b775fa46b76",
+          "set_id": "79377617-686b-4640-b2b8-e1358cf82358",
+          "brand_name": "ACETAMINOPHEN AND CODEINE PHOSPHATE",
+          "generic_name": "ACETAMINOPHEN AND CODEINE PHOSPHATE",
+          "effective_time": "20240813",
+          "version": "6",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "overdosage",
+          "chunk_index": 1
+        }
+      },
+      {
+        "doc_id": "ea81eb37ce74d3324bf706330fe2387d",
+        "score": 0.014925373134328358,
+        "text_preview": "The medicine may cause serious side effects. Stop using the medicine and call your doctor at once if you have: redness or swelling; new or worsening symptoms; an ongoing cough with a rash or headache; or liver problems--loss of appetite, stomach pain (upper right side), tiredness, itching, dark urin...",
+        "metadata": {
+          "drug_name": "acetaminophen / dextromethorphan",
+          "generic_name": "acetaminophen and dextromethorphan",
+          "medical_condition": "Colds & Flu",
+          "drug_classes": [
+            "Upper respiratory combinations"
+          ],
+          "brand_names": [
+            "Children's Triacting",
+            "Tylenol Cough",
+            "Drixoral Cough/Sore Throat",
+            "Tylenol Cough and Sore Throat Daytime",
+            "Triaminic Cough and Sore Throat",
+            "Tylenol Childrens Plus Cough and Sore Throat",
+            "Robitussin Maximum Strength Severe Cough Plus Sore Throat"
+          ],
+          "rx_otc": "OTC",
+          "pregnancy_category": "unknown",
+          "pregnancy_category_raw": "N",
+          "csa": "N",
+          "alcohol": "X",
+          "rating": null,
+          "activity": "0%",
+          "no_of_reviews": null,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-and-dextromethorphan.html",
+            "condition": "https://www.drugs.com/condition/cold-symptoms.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "5443382561025d0e9ddaadcb93948aba",
+        "score": 0.014705882352941176,
+        "text_preview": "The medicine may cause serious side effects. Stop using the medicine and call your doctor at once if you have: severe drowsiness; painful or difficult urination; or liver problems--loss of appetite, stomach pain (upper right side), tiredness, itching, dark urine, clay-colored stools, jaundice (yello...",
+        "metadata": {
+          "drug_name": "acetaminophen / diphenhydramine",
+          "generic_name": "acetaminophen and diphenhydramine",
+          "medical_condition": "Insomnia",
+          "drug_classes": [
+            "Analgesic combinations"
+          ],
+          "brand_names": [
+            "Headache Relief PM",
+            "Legatrin PM",
+            "Midol PM",
+            "Percogesic Original Strength",
+            "Tylenol PM",
+            "Tylenol Extra Strength PM",
+            "Unisom with Pain Relief",
+            "Bayer Select Max Strength Night Time Pain",
+            "Genapap PM",
+            "Mapap PM",
+            "Excedrin PM",
+            "Excedrin PM Caplet",
+            "Sominex Pain Relief Formula",
+            "Tylenol Severe Allergy Caplet",
+            "Anacin P.M. Aspirin Free",
+            "Coricidin Night Time Cold Relief",
+            "Tylenol Extra Strength PM Vanilla",
+            "Tylenol Sore Throat Nighttime",
+            "Tylenol Cold Relief Caplet",
+            "Tylenol Cold Relief Nighttime Caplet",
+            "Percogesic Extra Strength",
+            "Tylenol Cold Relief Nighttime",
+            "Tylenol Extra Strength PM Rapid Release Gelcaps",
+            "Excedrin PM Express",
+            "Night Time Pain",
+            "Pain Relief PM Extra Strength",
+            "Aceta-Gesic"
+          ],
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "unknown",
+          "pregnancy_category_raw": "N",
+          "csa": "N",
+          "alcohol": "X",
+          "rating": 6.3,
+          "activity": "1%",
+          "no_of_reviews": 31.0,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-and-diphenhydramine.html",
+            "condition": "https://www.drugs.com/condition/insomnia.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "5e566e5f-2fef-4d70-8cfe-c24b13659b8e",
+        "score": 0.014492753623188406,
+        "text_preview": "The FDA Blueprint can be found at www.fda.govOpioidAnalgesicREMSBlueprint. Risks of Concomitant Use or Discontinuation of Cytochrome P450 3A4 Inhibitors and Inducers Concomitant use of Oxycodone and Acetaminophen Tablets with a CYP3A4 inhibitor, such as macrolide antibiotics (e.g., erythromycin), az...",
+        "metadata": {
+          "fda_id": "5e566e5f-2fef-4d70-8cfe-c24b13659b8e",
+          "set_id": "916ff456-a27e-49dc-a312-274126a8c30c",
+          "brand_name": "Oxycodone and Acetaminophen",
+          "generic_name": "OXYCODONE AND ACETAMINOPHEN",
+          "effective_time": "20240229",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 13
+        }
+      },
+      {
+        "doc_id": "1ba35c34a17dad5523cf2f3e25769037",
+        "score": 0.014285714285714285,
+        "text_preview": "Side effects such as dry mouth, constipation , and confusion may be more likely in older adults. Common side effects of acetaminophen, dextromethorphan, doxylamine, and pseudoephedrine may include: drowsiness; constipation, diarrhea , upset stomach , vomiting; or feeling restless or excited (especia...",
+        "metadata": {
+          "drug_name": "acetaminophen / dextromethorphan / doxylamine / pseudoephedrine",
+          "generic_name": "acetaminophen, dextromethorphan, doxylamine, and pseudoephedrine",
+          "medical_condition": "Colds & Flu",
+          "drug_classes": [
+            "Upper respiratory combinations"
+          ],
+          "brand_names": [
+            "Robitussin Night Cold",
+            "Tylenol Flu Night Time",
+            "Alka-Seltzer Plus Night Time Cold Liquigel",
+            "Tylenol Severe Cold and Flu Night Time",
+            "Night Time",
+            "Theraflu Nighttime Severe Cold (pseudoephedrine)",
+            "All-Nite Multi-Symptom Cold/Flu Relief",
+            "Multi-Symptom Nighttime",
+            "NyCair"
+          ],
+          "rx_otc": "OTC",
+          "pregnancy_category": "unknown",
+          "pregnancy_category_raw": "N",
+          "csa": "N",
+          "alcohol": "X",
+          "rating": 8.2,
+          "activity": "3%",
+          "no_of_reviews": 5.0,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/acetaminophen-dextromethorphan-doxylamine-and-pseudoephedrine.html",
+            "condition": "https://www.drugs.com/condition/cold-symptoms.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 4
+        }
+      }
+    ],
+    "metrics": {
+      "precision": 0.2,
+      "recall": 0.6666666666666666,
+      "f1_score": 0.30769230769230765,
+      "hit@k": 1.0,
+      "mrr": 0.25,
+      "relevant_retrieved": 1,
+      "total_retrieved": 10,
+      "total_relevant": 3
+    }
+  },
+  "openfda_002": {
+    "query": "What are the dosage recommendations for ADHD medications in children?",
+    "ideal_answer": [
+      "For ADHD medications in children, the dosage recommendations vary by age: Pediatric patients (ages 6 to 17): 10 mg once daily in the morning, with maximum dose for children 6 to 12 years of age being 30 mg once daily. For children 6 to 12 years starting treatment, begin with 10 mg once daily in the morning, with daily dosage adjustable in increments of 5 mg or 10 mg at weekly intervals. The maximum recommended dose for children 6 to 12 years of age is 30 mg/day."
+    ],
+    "ground_truth_docs": [
+      "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+      "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6"
+    ],
+    "query_time": 2.179821252822876,
+    "retrieved_docs": [
+      {
+        "doc_id": "e414bb2e-d404-44ea-931c-5998b0a4c87e",
+        "score": 0.01639344262295082,
+        "text_preview": "A single dose should not be divided. 2.3 Dosage for Treatment of ADHD The recommended starting dosage in adults and pediatric patients 6 years and older is 30 mg once daily in the morning. Dosage may be adjusted in increments of 10 mg or 20 mg at approximately weekly intervals up to maximum recommen...",
+        "metadata": {
+          "fda_id": "e414bb2e-d404-44ea-931c-5998b0a4c87e",
+          "set_id": "0e024b69-567c-4b40-9c3e-a2daec34256c",
+          "brand_name": "Lisdexamfetamine Dimesylate",
+          "generic_name": "LISDEXAMFETAMINE DIMESYLATE",
+          "effective_time": "20230712",
+          "version": "4",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 1
+        }
+      },
+      {
+        "doc_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "score": 0.024676040805073064,
+        "text_preview": "2.4 Recommended Dosage in Pediatric Patients 13 to 17 Years The recommended starting dose for pediatric patients 13 to 17 years of age with ADHD and are either starting treatment for the first time or switching from another medication is 10 mgday. The dose may be increased to 20 mgday after one week...",
+        "metadata": {
+          "fda_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "set_id": "f6dfefdf-7a4a-e104-e053-6394a90a05bd",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SULFATE, DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE SULFATE AND AMPHETAMINE ASPARTATE",
+          "effective_time": "20231220",
+          "version": "3",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 15
+        }
+      },
+      {
+        "doc_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "score": 0.015873015873015872,
+        "text_preview": "2.3 Recommended Dosage in Pediatric Patients 6 to 12 Years In pediatric patients 6 to 12 years of age with ADHD and are either starting treatment for the first time or switching from another medication, start with 10 mg once daily in the morning; daily dosage may be adjusted in increments of 5 mg or...",
+        "metadata": {
+          "fda_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "set_id": "f6dfefdf-7a4a-e104-e053-6394a90a05bd",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SULFATE, DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE SULFATE AND AMPHETAMINE ASPARTATE",
+          "effective_time": "20231220",
+          "version": "3",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 12
+        }
+      },
+      {
+        "doc_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "score": 0.02409957627118644,
+        "text_preview": "The dose may be increased to 20 mgday after one week if ADHD symptoms are not adequately controlled. 2.5 Recommended Dosage in Adults In adults with ADHD who are either starting treatment for the first time or switching from another medication, the recommended dose is 20 mgday. 2.6 Dosage in Patient...",
+        "metadata": {
+          "fda_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "set_id": "f6dfefdf-7a4a-e104-e053-6394a90a05bd",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SULFATE, DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE SULFATE AND AMPHETAMINE ASPARTATE",
+          "effective_time": "20231220",
+          "version": "3",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 16
+        }
+      },
+      {
+        "doc_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "score": 0.022426868905742147,
+        "text_preview": "Afternoon doses should be avoided because of the potential for insomnia. 2.3 Recommended Dosage in Pediatric Patients 6 to 12 Years In pediatric patients 6 to 12 years of age with ADHD and are either starting treatment for the first time or switching from another medication, start with 10 mg once da...",
+        "metadata": {
+          "fda_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "set_id": "f6dfefdf-7a4a-e104-e053-6394a90a05bd",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SULFATE, DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE SULFATE AND AMPHETAMINE ASPARTATE",
+          "effective_time": "20231220",
+          "version": "3",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 11
+        }
+      },
+      {
+        "doc_id": "4007e92c-5f78-73ea-e063-6394a90a92a3",
+        "score": 0.015151515151515152,
+        "text_preview": "Attention Deficit Disorder with Hyperactivity Not recommended for children under 3 years of age. In children from 3 to 5 years of age , start with 2.5 mg daily; daily dosage may be raised in increments of 2.5 mg at weekly intervals until optimal response is obtained. In children 6 years of age or ol...",
+        "metadata": {
+          "fda_id": "4007e92c-5f78-73ea-e063-6394a90a92a3",
+          "set_id": "26dbad66-13c4-4906-88b3-ab7ee191466c",
+          "brand_name": "Amphetamine Sulfate",
+          "generic_name": "AMPHETAMINE SULFATE",
+          "effective_time": "20250930",
+          "version": "13",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 3
+        }
+      },
+      {
+        "doc_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+        "score": 0.02292537313432836,
+        "text_preview": "Dextroamphetamine saccharate, amphetamine aspartate monohydrate, dextroamphetamine sulfate and amphetamine sulfate extended-release capsules have not been studied in children under 6 years of age. 2.4 Recommended Dosage in Pediatric Patients 13 to 17 Years The recommended starting dose for pediatric...",
+        "metadata": {
+          "fda_id": "0cf87661-ee5a-e1d5-e063-6294a90ae270",
+          "set_id": "f6dfefdf-7a4a-e104-e053-6394a90a05bd",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SULFATE, DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE SULFATE AND AMPHETAMINE ASPARTATE",
+          "effective_time": "20231220",
+          "version": "3",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 14
+        }
+      },
+      {
+        "doc_id": "8ce3fe4e-f32a-4028-a920-86d638628cca",
+        "score": 0.014705882352941176,
+        "text_preview": "Attention Deficit Hyperactivity Disorder Not recommended for children under 3 years of age. In children from 3 to 5 years of age, start with 2.5 mg daily; daily dosage may be raised in increments of 2.5 mg at weekly intervals until optimal response is obtained. In children 6 years of age and older, ...",
+        "metadata": {
+          "fda_id": "8ce3fe4e-f32a-4028-a920-86d638628cca",
+          "set_id": "ef3590cc-49ae-44f7-85a9-7c11f58d467e",
+          "brand_name": "Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate, and Amphetamine Sulfate",
+          "generic_name": "DEXTROAMPHETAMINE SACCHARATE, AMPHETAMINE ASPARTATE MONOHYDRATE, DEXTROAMPHETAMINE SULFATE, AND AMPHETAMINE SULFATE",
+          "effective_time": "20231026",
+          "version": "7",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 1
+        }
+      },
+      {
+        "doc_id": "245bc553-262e-47ff-91d0-0b7c136b6413",
+        "score": 0.022757216433105763,
+        "text_preview": "Pediatric Patients The recommended pediatric dosage is shown in Table 1 by age and estimated weight. The dosages in Table 1 are general recommendations intended for most pediatric patients. However, based on clinical requirements, some patients may require a higher dosage....",
+        "metadata": {
+          "fda_id": "245bc553-262e-47ff-91d0-0b7c136b6413",
+          "set_id": "95aa8437-10bc-4205-939f-d21d8fa52a00",
+          "brand_name": "zinc sulfate",
+          "generic_name": "ZINC SULFATE INJECTION,",
+          "effective_time": "20241206",
+          "version": "2",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 3
+        }
+      },
+      {
+        "doc_id": "e414bb2e-d404-44ea-931c-5998b0a4c87e",
+        "score": 0.014285714285714285,
+        "text_preview": "Indicated Population Initial Dose Titration Schedule Recommended Dose Maximum Dose ADHD (Adults and pediatric patients 6 years and older) ( 2.2 ) 30 mg every morning 10 mg or 20 mg weekly 30 mg to 70 mg per day 70 mg per day BED (Adults) ( 2.3 ) 30 mg every morning 20 mg weekly 50 mg to 70 mg per da...",
+        "metadata": {
+          "fda_id": "e414bb2e-d404-44ea-931c-5998b0a4c87e",
+          "set_id": "0e024b69-567c-4b40-9c3e-a2daec34256c",
+          "brand_name": "Lisdexamfetamine Dimesylate",
+          "generic_name": "LISDEXAMFETAMINE DIMESYLATE",
+          "effective_time": "20230712",
+          "version": "4",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 0
+        }
+      }
+    ],
+    "metrics": {
+      "precision": 0.5,
+      "recall": 2.5,
+      "f1_score": 0.8333333333333334,
+      "hit@k": 1.0,
+      "mrr": 0.5,
+      "relevant_retrieved": 1,
+      "total_retrieved": 10,
+      "total_relevant": 2
+    }
+  },
+  "openfda_003": {
+    "query": "What are the active ingredients in topical pain relief medications?",
+    "ideal_answer": [
+      "Topical pain relief medications contain various active ingredients including: Capsaicin (Nonivamide) 0.12% for temporary relief of minor aches and pains, and in sunscreen products, active ingredients like Octocrylene 4.00%, Octisalate 5.00%, Homosalate 10.00%, and Avobenzone 3.00%."
+    ],
+    "ground_truth_docs": [
+      "41351a7e-d341-1a4f-e063-6394a90a897d",
+      "3c3218d5-794b-c0a8-e063-6294a90a177a"
+    ],
+    "query_time": 1.5683329105377197,
+    "retrieved_docs": [
+      {
+        "doc_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+        "score": 0.06000859752410222,
+        "text_preview": "Natural ingredients have been added to these patches for a better, more refreshing smell. Scientific studies have shown that both ingredients used in this product significantly reduce pain and inflammation. i A combination of ingredients with analgesics and anesthetic properties are used in a unique...",
+        "metadata": {
+          "fda_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+          "set_id": "23843354-e242-4a8a-8818-897592d4d9a0",
+          "brand_name": "Terocin",
+          "generic_name": "LIDOCAINE, MENTHOL",
+          "effective_time": "20250930",
+          "version": "10",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 1
+        }
+      },
+      {
+        "doc_id": "ef422b09-c8b8-25ec-e053-2995a90a14ff",
+        "score": 0.016129032258064516,
+        "text_preview": "Topical Analgesic Pain Relieving...",
+        "metadata": {
+          "fda_id": "ef422b09-c8b8-25ec-e053-2995a90a14ff",
+          "set_id": "afeca961-e076-8312-e053-2995a90a9270",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20221207",
+          "version": "5",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "purpose"
+        }
+      },
+      {
+        "doc_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+        "score": 0.03149801587301587,
+        "text_preview": "These ingredients comply with The Chronic Pain Medical Treatment Guidelines and the ACOEM guidelines for pain management. vi Page 111 of the Chronic Pain Medical Treatment Guidelines concludes that topical analgesics are primarily recommended for neuropathic pain when trials of antidepressants and a...",
+        "metadata": {
+          "fda_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+          "set_id": "23843354-e242-4a8a-8818-897592d4d9a0",
+          "brand_name": "Terocin",
+          "generic_name": "LIDOCAINE, MENTHOL",
+          "effective_time": "20250930",
+          "version": "10",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+        "score": 0.032018442622950824,
+        "text_preview": "More importantly, this patch gives physicians an option to provide effective pain relief treatment while avoiding the addictive properties of conventional oral medications. It can also be supplemented with other topical pain lotions. In addition, it avoids messy application and reduces risk of getti...",
+        "metadata": {
+          "fda_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+          "set_id": "23843354-e242-4a8a-8818-897592d4d9a0",
+          "brand_name": "Terocin",
+          "generic_name": "LIDOCAINE, MENTHOL",
+          "effective_time": "20250930",
+          "version": "10",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 11
+        }
+      },
+      {
+        "doc_id": "16c906dd-6989-9a79-e063-6394a90afa71",
+        "score": 0.015384615384615385,
+        "text_preview": "Topical Analgesic....",
+        "metadata": {
+          "fda_id": "16c906dd-6989-9a79-e063-6394a90afa71",
+          "set_id": "f664eb79-8897-3a49-e053-2995a90a37b4",
+          "brand_name": "JUST CBD - CBD AND THC ULTRA RELIEF",
+          "generic_name": "MENTHOL, CAMPHOR",
+          "effective_time": "20240423",
+          "version": "3",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "purpose"
+        }
+      },
+      {
+        "doc_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+        "score": 0.02190827190827191,
+        "text_preview": "vi Page 111 of the Chronic Pain Medical Treatment Guidelines concludes that topical analgesics are primarily recommended for neuropathic pain when trials of antidepressants and anticonvulsants have failed (Namaka, 2004). In addition to this, these agents are applied locally to painful areas with adv...",
+        "metadata": {
+          "fda_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+          "set_id": "23843354-e242-4a8a-8818-897592d4d9a0",
+          "brand_name": "Terocin",
+          "generic_name": "LIDOCAINE, MENTHOL",
+          "effective_time": "20250930",
+          "version": "10",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 3
+        }
+      },
+      {
+        "doc_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+        "score": 0.014925373134328358,
+        "text_preview": "In addition, it avoids messy application and reduces risk of getting ingredients in eyes or other mucous membranes. Product Information and Data: Pharmacists that have been in the field of pain management for many years used research from all parts of the world to carefully formulate this patch in o...",
+        "metadata": {
+          "fda_id": "d290994e-ebcf-404a-b9c5-3aa528599328",
+          "set_id": "23843354-e242-4a8a-8818-897592d4d9a0",
+          "brand_name": "Terocin",
+          "generic_name": "LIDOCAINE, MENTHOL",
+          "effective_time": "20250930",
+          "version": "10",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "active_ingredients",
+          "chunk_index": 12
+        }
+      },
+      {
+        "doc_id": "c0360a7c-b90b-4ad0-9a0f-c2a2c607f8ea",
+        "score": 0.03971214365049981,
+        "text_preview": "Topical Analgesic...",
+        "metadata": {
+          "fda_id": "c0360a7c-b90b-4ad0-9a0f-c2a2c607f8ea",
+          "set_id": "01d0cd23-0e61-4df8-8190-c84fc2d281f3",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20250115",
+          "version": "5",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "purpose"
+        }
+      },
+      {
+        "doc_id": "2a83cb8f-eea0-2e45-e063-6394a90a7365",
+        "score": 0.025645240835114255,
+        "text_preview": "Topical Analgesic...",
+        "metadata": {
+          "fda_id": "2a83cb8f-eea0-2e45-e063-6394a90a7365",
+          "set_id": "86acfc88-2322-b097-e053-2a91aa0a032f",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20241230",
+          "version": "5",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "purpose"
+        }
+      },
+      {
+        "doc_id": "3c1ad278-b7b9-7859-e063-6294a90a528a",
+        "score": 0.022424242424242423,
+        "text_preview": "Topical analgesic...",
+        "metadata": {
+          "fda_id": "3c1ad278-b7b9-7859-e063-6294a90a528a",
+          "set_id": "8a3b6adf-afbb-4d77-a19b-a6514ebd3b50",
+          "brand_name": "Thera Plus Extra Strength Muscle Rub Topical Analgesic",
+          "generic_name": "MENTHOL",
+          "effective_time": "20250811",
+          "version": "3",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "purpose"
+        }
+      }
+    ],
+    "metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "hit@k": 0.0,
+      "mrr": 0.0,
+      "relevant_retrieved": 0,
+      "total_retrieved": 10,
+      "total_relevant": 2
+    }
+  },
+  "openfda_004": {
+    "query": "What are the indications and usage for fluocinolone acetonide oil?",
+    "ideal_answer": [
+      "Fluocinolone acetonide oil is indicated for the topical treatment of chronic eczematous external otitis in adults and pediatric patients 2 years of age and older. It is a corticosteroid specifically designed for otic administration only and should not be used orally, ophthalmically, or intravaginally."
+    ],
+    "ground_truth_docs": [
+      "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6"
+    ],
+    "query_time": 1.4273450374603271,
+    "retrieved_docs": [
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.03252247488101534,
+        "text_preview": "Fluocinolone Acetonide Oil (FLUOCINOLONE ACETONIDE)...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "drug_names"
+        }
+      },
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.03200204813108039,
+        "text_preview": "Fluocinolone Acetonide Oil (FLUOCINOLONE ACETONIDE)...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "title"
+        }
+      },
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.03149801587301587,
+        "text_preview": "Fluocinolone acetonide oil is indicated for the topical treatment of chronic eczematous external otitis in adults and pediatric patients 2 years of age and older. Fluocinolone acetonide oil is a corticosteroid indicated for the topical treatment of chronic eczematous external otitis in adults and pe...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "indications"
+        }
+      },
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.032018442622950824,
+        "text_preview": "Fluocinolone acetonide oil is for otic administration only. Not for oral, ophthalmic, or intravaginal use. Apply fluocinolone acetonide oil into the affected ear using the supplied ear dropper. To apply, tilt head to one side so that the ear is facing up. Then gently pull the ear lobe backward and u...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 0
+        }
+      },
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.03076923076923077,
+        "text_preview": "Do not apply to intertriginous areas due to the increased risk of local adverse reactions  see Adverse Reactions (6) and Use in Specific Populations (8.4) .  Fluocinolone acetonide oil is not for oral, ophthalmic, or intravaginal use. ( 2 )  Apply 5 drops of fluocinolone acetonide oil into the affec...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 3
+        }
+      },
+      {
+        "doc_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+        "score": 0.029857397504456328,
+        "text_preview": "Discontinue fluocinolone acetonide oil when control of disease is achieved within 2 weeks, or contact the healthcare provider if no improvement is seen within 2 weeks. Do not use on the face, axillae, or groin unless directed by the healthcare provider. Do not apply to intertriginous areas due to th...",
+        "metadata": {
+          "fda_id": "1785d85e-edcf-44cc-b84e-a7beb1e5d7b6",
+          "set_id": "79591576-1eab-48c5-b0a6-e205b3cc097e",
+          "brand_name": "Fluocinolone Acetonide Oil",
+          "generic_name": "FLUOCINOLONE ACETONIDE",
+          "effective_time": "20250825",
+          "version": "8",
+          "has_active_ingredients": false,
+          "has_warnings": false,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "6e2b7eee3f8befde139e66ea0dc516c3",
+        "score": 0.027271052146674038,
+        "text_preview": "Children can absorb larger amounts of this medicine through the skin and may be more likely to have side effects. Common side effects of fluocinolone otic may include: burning, itching, irritation, or dryness; rash around the ear in which this medicine was applied; rash or irritation around your mou...",
+        "metadata": {
+          "drug_name": "fluocinolone",
+          "generic_name": "fluocinolone otic",
+          "medical_condition": "Eczema",
+          "drug_classes": [
+            "Otic steroids"
+          ],
+          "brand_names": [
+            "DermOtic Oil"
+          ],
+          "rx_otc": "Rx",
+          "pregnancy_category": "unknown",
+          "pregnancy_category_raw": "N",
+          "csa": "N",
+          "alcohol": "",
+          "rating": null,
+          "activity": "5%",
+          "no_of_reviews": null,
+          "links": {
+            "drug": "https://www.drugs.com/mtm/fluocinolone-otic.html",
+            "condition": "https://www.drugs.com/condition/eczema.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 2
+        }
+      },
+      {
+        "doc_id": "2f23cbcd-33e5-d1d3-e063-6394a90a5c2e",
+        "score": 0.014705882352941176,
+        "text_preview": "1.1 Indication Fluocinonide Cream USP, 0.1, is indicated for the relief of the inflammatory and pruritic manifestations of corticosteroid responsive dermatoses in patients 12 years of age or older  see Use in Specific Populations (8.4) . 1.2 Limitation of Use Treatment beyond 2 consecutive weeks is ...",
+        "metadata": {
+          "fda_id": "2f23cbcd-33e5-d1d3-e063-6394a90a5c2e",
+          "set_id": "bbf178c4-adb0-5f4b-e053-2995a90ab112",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20250227",
+          "version": "4",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "indications",
+          "chunk_index": 4
+        }
+      },
+      {
+        "doc_id": "1c0cc206e950e6c344e3949906c1d7b0",
+        "score": 0.014492753623188406,
+        "text_preview": "Drug Name: fluocinonide\nGeneric Name: fluocinonide topical\nMedical Condition: Eczema\nDrug Classes: Topical steroids\nPrescription Type: Rx\nUser Rating: 8.7/10\nActivity Score: 25%\nNumber of Reviews: 8...",
+        "metadata": {
+          "drug_name": "fluocinonide",
+          "generic_name": "fluocinonide topical",
+          "medical_condition": "Eczema",
+          "drug_classes": [
+            "Topical steroids"
+          ],
+          "brand_names": [
+            "Fluocinonide-E",
+            "Vanos",
+            "Lidex",
+            "Lidex-E",
+            "Dermacin",
+            "Fluex"
+          ],
+          "rx_otc": "Rx",
+          "pregnancy_category": "caution",
+          "pregnancy_category_raw": "C",
+          "csa": "N",
+          "alcohol": "",
+          "rating": 8.7,
+          "activity": "25%",
+          "no_of_reviews": 8.0,
+          "links": {
+            "drug": "https://www.drugs.com/fluocinonide-topical.html",
+            "condition": "https://www.drugs.com/condition/eczema.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "basic_info"
+        }
+      },
+      {
+        "doc_id": "6e2b7eee3f8befde139e66ea0dc516c3",
+        "score": 0.026785714285714288,
+        "text_preview": "Drug Name: fluocinolone\nGeneric Name: fluocinolone topical\nMedical Condition: Eczema\nDrug Classes: Topical steroids\nPrescription Type: Rx/OTC\nUser Rating: 9.0/10\nActivity Score: 6%\nNumber of Reviews: 1...",
+        "metadata": {
+          "drug_name": "fluocinolone",
+          "generic_name": "fluocinolone topical",
+          "medical_condition": "Eczema",
+          "drug_classes": [
+            "Topical steroids"
+          ],
+          "brand_names": [
+            "Capex",
+            "Synalar"
+          ],
+          "rx_otc": "Rx/OTC",
+          "pregnancy_category": "caution",
+          "pregnancy_category_raw": "C",
+          "csa": "N",
+          "alcohol": "",
+          "rating": 9.0,
+          "activity": "6%",
+          "no_of_reviews": 1.0,
+          "links": {
+            "drug": "https://www.drugs.com/fluocinolone-topical.html",
+            "condition": "https://www.drugs.com/condition/eczema.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "basic_info"
+        }
+      }
+    ],
+    "metrics": {
+      "precision": 0.6,
+      "recall": 6.0,
+      "f1_score": 1.0909090909090908,
+      "hit@k": 1.0,
+      "mrr": 1.0,
+      "relevant_retrieved": 1,
+      "total_retrieved": 10,
+      "total_relevant": 1
+    }
+  },
+  "openfda_005": {
+    "query": "What are the pregnancy and breastfeeding warnings for drug use?",
+    "ideal_answer": [
+      "Pregnancy and breastfeeding warnings for drug use include: If pregnant or breastfeeding, ask a health professional before use. Some drugs like acetaminophen and codeine have specific warnings about neonatal opioid withdrawal syndrome when used during pregnancy. Breastfeeding is not recommended during treatment with certain medications like acetaminophen and codeine phosphate tablets. Patients should consult healthcare professionals before use during pregnancy or breastfeeding."
+    ],
+    "ground_truth_docs": [
+      "c731175a-04a5-5d25-e053-2995a90a6082",
+      "41351a7e-d341-1a4f-e063-6394a90a897d",
+      "d9b90990-529a-42ff-95dc-3b775fa46b76"
+    ],
+    "query_time": 2.286202907562256,
+    "retrieved_docs": [
+      {
+        "doc_id": "2839e466-e8be-41bf-e063-6394a90af413",
+        "score": 0.01639344262295082,
+        "text_preview": "Warnings As with any drug, if you are pregnant or nursing a baby, seek the advice of a health professional before using the product. Keep out of Reach of Children!...",
+        "metadata": {
+          "fda_id": "2839e466-e8be-41bf-e063-6394a90af413",
+          "set_id": "03b3b8dc-da67-4888-86ed-a8714b45e1d4",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20241030",
+          "version": "2",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings"
+        }
+      },
+      {
+        "doc_id": "fcf914e7c6e75f40140462690f78c339",
+        "score": 0.029827662395050816,
+        "text_preview": "Keep a list of your medicines and show them to your doctor and pharmacist when you get a new medicine. Pregnancy and breastfeeding Tell your doctor if you are pregnant or plan to become pregnant, are breastfeeding or plan to breastfeed....",
+        "metadata": {
+          "drug_name": "infliximab",
+          "generic_name": "infliximab, inliximab-abda, infliximab-axxq, infliximab-dyyb, infliximab-qbtx Brand names: Remicade , Avsola , Inflectra , Ixifi , Renflexis",
+          "medical_condition": "IBD (Bowel)",
+          "drug_classes": [
+            "Antirheumatics",
+            "TNF alfa inhibitors"
+          ],
+          "brand_names": [
+            "Remicade",
+            "Avsola",
+            "Inflectra",
+            "Ixifi",
+            "Renflexis"
+          ],
+          "rx_otc": "Rx",
+          "pregnancy_category": "generally_safe",
+          "pregnancy_category_raw": "B",
+          "csa": "N",
+          "alcohol": "",
+          "rating": null,
+          "activity": "38%",
+          "no_of_reviews": null,
+          "links": {
+            "drug": "https://www.drugs.com/infliximab.html",
+            "condition": "https://www.drugs.com/condition/inflammatory-bowel-disease.html"
+          },
+          "has_side_effects": true,
+          "has_condition_summary": true,
+          "section": "side_effects_raw",
+          "chunk_index": 24
+        }
+      },
+      {
+        "doc_id": "413a733a-2d82-3f83-e063-6394a90a994b",
+        "score": 0.015873015873015872,
+        "text_preview": "As with any drug, ask a doctor before use if pregnant or breast-feeding....",
+        "metadata": {
+          "fda_id": "413a733a-2d82-3f83-e063-6394a90a994b",
+          "set_id": "6a4f8662-2933-4bff-e053-2991aa0a3609",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20251015",
+          "version": "3",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "pregnancy"
+        }
+      },
+      {
+        "doc_id": "9605e808-d1e1-4121-8fac-e3fba2b3afef",
+        "score": 0.015625,
+        "text_preview": "Warnings If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children....",
+        "metadata": {
+          "fda_id": "9605e808-d1e1-4121-8fac-e3fba2b3afef",
+          "set_id": "6f4db66d-a3c7-4471-bc59-851c0467c13f",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20250115",
+          "version": "2",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings"
+        }
+      },
+      {
+        "doc_id": "d49a110f-0766-4312-9827-0e2106c5d5f5",
+        "score": 0.015384615384615385,
+        "text_preview": "Warnings If pregnant or breast-feeding , ask a health professional before use. Keep out of reach of children....",
+        "metadata": {
+          "fda_id": "d49a110f-0766-4312-9827-0e2106c5d5f5",
+          "set_id": "2911cac8-45ec-1294-e063-6294a90a4a74",
+          "brand_name": "CVS Health Gas Relief SOFTGEL",
+          "generic_name": "SIMETHICONE",
+          "effective_time": "20250822",
+          "version": "3",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings"
+        }
+      },
+      {
+        "doc_id": "f7ebab56-9515-4083-ab27-c88153de392f",
+        "score": 0.015151515151515152,
+        "text_preview": "Warnings If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children....",
+        "metadata": {
+          "fda_id": "f7ebab56-9515-4083-ab27-c88153de392f",
+          "set_id": "06dfb541-fd1f-4cee-a4a6-44252f1f65a0",
+          "brand_name": "Quality Choice Gas Relief Extra Strength Softgels",
+          "generic_name": "SIMETHICONE",
+          "effective_time": "20241218",
+          "version": "4",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings"
+        }
+      },
+      {
+        "doc_id": "29eab137-3d19-1c2e-e063-6294a90aff4a",
+        "score": 0.027745885954841176,
+        "text_preview": "Warnings For external use only . If pregnant or breastfeeding consult a healthcareprofessional before use...",
+        "metadata": {
+          "fda_id": "29eab137-3d19-1c2e-e063-6294a90aff4a",
+          "set_id": "df5b24b0-9c86-947a-e053-2a95a90a0e1d",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20241223",
+          "version": "6",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings"
+        }
+      },
+      {
+        "doc_id": "2b0f0042-f21d-174f-e063-6394a90a40ab",
+        "score": 0.014705882352941176,
+        "text_preview": "PREGNANCY - Breast Feeding Warning: If pregnant or breastfeeding, ask a physician before use. Do not use with other topical products. Do not use with heating devices. Do not use on open wounds, damaged or irritated skin Keep away from excessive heat....",
+        "metadata": {
+          "fda_id": "2b0f0042-f21d-174f-e063-6394a90a40ab",
+          "set_id": "ce4a477a-f947-422e-85ac-72b16f7b92f2",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20250106",
+          "version": "2",
+          "has_active_ingredients": true,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "pregnancy"
+        }
+      },
+      {
+        "doc_id": "8475631f-7d35-47e8-9b93-26357f757277",
+        "score": 0.021792023696181106,
+        "text_preview": "Since there is no adequate experience in children who have received this drug, safety and efficacy in children have not been established. Usage In Pregnancy The safety for the use of this drug during pregnancy has not been established; therefore, the possible hazards should be weighed against the po...",
+        "metadata": {
+          "fda_id": "8475631f-7d35-47e8-9b93-26357f757277",
+          "set_id": "8caa3896-cde1-4cb1-9332-2e92bcf5c1f6",
+          "brand_name": "fluphenazine decanoate",
+          "generic_name": "FLUPHENAZINE DECANOATE",
+          "effective_time": "20241212",
+          "version": "5",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "warnings",
+          "chunk_index": 20
+        }
+      },
+      {
+        "doc_id": "2a99aae5-c905-7940-e063-6294a90a4146",
+        "score": 0.014285714285714285,
+        "text_preview": "If this drug is used during pregnancy, or if the patient becomes pregnant while taking this drug, the patient should be apprised of the potential hazard to the fetus. Patients should also be advised that if they become pregnant during therapy or intend to become pregnant they should communicate with...",
+        "metadata": {
+          "fda_id": "2a99aae5-c905-7940-e063-6294a90a4146",
+          "set_id": "c859a5b3-36ae-3e81-e053-2995a90a8415",
+          "brand_name": "",
+          "generic_name": "",
+          "effective_time": "20241231",
+          "version": "6",
+          "has_active_ingredients": false,
+          "has_warnings": true,
+          "has_dosage": true,
+          "has_indications": true,
+          "section": "dosage",
+          "chunk_index": 14
+        }
+      }
+    ],
+    "metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "hit@k": 0.0,
+      "mrr": 0.0,
+      "relevant_retrieved": 0,
+      "total_retrieved": 10,
+      "total_relevant": 3
+    }
+  }
+}
