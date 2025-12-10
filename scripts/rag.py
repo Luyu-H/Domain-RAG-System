@@ -10,7 +10,7 @@ import argparse
 
 sys.path.append(str(Path(__file__).parent.parent / 'src'))
 
-# Import query functions (duplicated here to avoid import issues)
+# --- Imports shared with query.py ---
 def load_index_metadata(metadata_path: str):
     """Load index metadata"""
     with open(metadata_path, 'r') as f:
@@ -65,8 +65,10 @@ def load_hybrid_indexer(indices_dir: str, metadata: dict, drug_mapping_path: str
     )
     
     return hybrid_indexer
+
 from preprocessing import MedicalTermNormalizer, QueryPreprocessor
 from generation import AnswerGenerator, TemplateGenerator
+from reranker import build_reranker
 
 
 def main(args):
@@ -81,7 +83,7 @@ def main(args):
         print("Please run build_index.py first to build the index.")
         return
     
-    print(f"\n[1/4] Loading index...")
+    print(f"\n[1/5] Loading index...")
     metadata = load_index_metadata(str(metadata_path))
     print(f"   Index contains {metadata['num_chunks']} chunks")
     
@@ -92,7 +94,7 @@ def main(args):
     )
     
     # ========== Step 2: Preprocess Query ==========
-    print(f"\n[2/4] Preprocessing query...")
+    print(f"\n[2/5] Preprocessing query...")
     print(f"   Query: {args.query}")
     
     normalizer = MedicalTermNormalizer()
@@ -107,20 +109,23 @@ def main(args):
     if preprocessed['medical_terms']:
         print(f"   Medical terms: {preprocessed['medical_terms']}")
     
-    # ========== Step 3: Retrieve Relevant Documents ==========
-    print(f"\n[3/4] Retrieving relevant documents...")
-    print(f"   Top-K: {args.top_k}, Fusion: {args.fusion_method}")
-    
-    # Use cleaned query if normalized is too different, otherwise use original
-    # The normalized query might be over-normalized, so we prefer cleaned or original
+    # ========== Step 3: Retrieve ==========
+    print(f"\n[3/5] Retrieving relevant documents...")
+    print(f"   Top-K (final): {args.top_k}, Fusion: {args.fusion_method}")
+
+    # Use cleaned as primary; fallback to normalized if reasonable; else original
     search_query = preprocessed.get('cleaned') or args.query
     if preprocessed.get('normalized') and len(preprocessed['normalized']) < len(search_query) * 2:
         # Only use normalized if it's not excessively long (over-normalization check)
         search_query = preprocessed['normalized']
-    
+
+    # fetch_k ensures enough candidates for rerank pool
+    fetch_k = max(args.top_k, args.rerank_top_n if args.reranker_kind != 'none' else args.top_k)
+    print(f"   Fetch-K (for rerank pool): {fetch_k}")
+
     results = hybrid_indexer.search(
         query=search_query,
-        top_k=args.top_k,
+        top_k=fetch_k,
         fusion_method=args.fusion_method,
         vector_weight=args.vector_weight,
         bm25_weight=args.bm25_weight,
@@ -131,15 +136,44 @@ def main(args):
     
     # Display retrieval results
     if args.verbose:
-        print(f"\n   Top retrieval results:")
-        for i, result in enumerate(results[:3], 1):
-            print(f"   [{i}] {result['source']} | Score: {result['score']:.4f}")
-            print(f"       {result['text'][:100]}...")
-    
-    # ========== Step 4: Generate Answer ==========
-    print(f"\n[4/4] Generating answer...")
-    
-    # Initialize generator
+        print("\n   Top retrieval results (pre-rerank):")
+        for i, r in enumerate(results[:3], 1):
+            print(f"   [{i}] {r['source']} | {r.get('chunk_type','')} | Score: {r.get('score',0):.4f}")
+            print(f"       {r.get('text','')[:120]}...")
+
+    # ========== Step 4: Optional Rerank (same behavior as query.py) ==========
+    final_results = results
+    if args.reranker_kind != 'none' and results:
+        pool = min(len(results), args.rerank_top_n)
+        print(f"\n[4/5] Reranking (kind={args.reranker_kind}, pool={pool})...")
+        rr = build_reranker(
+            kind=args.reranker_kind,
+            top_n=args.rerank_top_n,
+            cross_model=args.cross_model,
+            embedder=hybrid_indexer.vector_indexer.embedder
+        )
+        if rr is not None:
+            final_results = rr.rerank(args.query, results, top_k=args.top_k)
+        else:
+            print("   (Warning) Reranker not created; falling back to baseline.")
+            final_results = results[:args.top_k]
+    else:
+        # No rerank → just take top_k from baseline
+        final_results = results[:args.top_k]
+
+    if args.verbose:
+        print("\n   Top results (post-rerank if enabled):")
+        for i, r in enumerate(final_results[:3], 1):
+            head = f"   [{i}] "
+            if r.get('rerank_score') is not None:
+                head += f"rerank={r['rerank_score']:.4f} | fused={r.get('score',0):.4f}"
+            else:
+                head += f"score={r.get('score',0):.4f}"
+            print(head)
+            print(f"       {r.get('text','')[:120]}...")
+
+    # ========== Step 5: Generate Answer ==========
+    print(f"\n[5/5] Generating answer...")
     if args.use_llm and args.model_type != 'template':
         generator = AnswerGenerator(
             model_type=args.model_type,
@@ -155,40 +189,38 @@ def main(args):
     # Generate answer
     answer_result = generator.generate(
         query=args.query,
-        context=results,
+        context=final_results,
         **args.generator_kwargs
     )
     
-    # ========== Display Results ==========
+    # ========== Display ==========
     print("\n" + "="*60)
     print("RAG System Results")
     print("="*60)
     
-    print(f"\n📝 Question:")
-    print(f"   {args.query}")
-    
-    print(f"\n💡 Answer:")
-    print(f"   {answer_result['answer']}")
+    print(f"\n📝 Question:\n   {args.query}")
+    print(f"\n💡 Answer:\n   {answer_result['answer']}")
     
     print(f"\n📚 Sources ({len(answer_result['sources'])} documents):")
-    for i, (source_id, result) in enumerate(zip(answer_result['sources'], results), 1):
-        print(f"   [{i}] {result['source']} | {result['chunk_type']} | Score: {result['score']:.4f}")
+    for i, (source_id, result) in enumerate(zip(answer_result['sources'], final_results), 1):
+        print(f"   [{i}] {result['source']} | {result.get('chunk_type','')} | "
+              f"{'rerank=' + format(result.get('rerank_score',0), '.4f') if result.get('rerank_score') is not None else 'score=' + format(result.get('score',0), '.4f')}")
         if args.verbose:
-            print(f"       {result['text'][:150]}...")
+            print(f"       {result.get('text','')[:150]}...")
     
     if answer_result.get('metadata'):
         print(f"\n🔧 Metadata:")
         for key, value in answer_result['metadata'].items():
             print(f"   {key}: {value}")
     
-    # ========== Save Results ==========
+    # ========== Save ==========
     if args.output:
         output_data = {
             'query': args.query,
             'preprocessed': preprocessed,
             'retrieval': {
-                'num_results': len(results),
-                'results': results
+                'num_results': len(final_results),
+                'results': final_results
             },
             'generation': answer_result
         }
@@ -227,11 +259,11 @@ Examples:
         """
     )
     
-    # Query arguments
+    # Query
     parser.add_argument('--query', type=str, required=True,
                        help='Query text')
     
-    # Index arguments
+    # Indices
     parser.add_argument('--indices_dir', type=str,
                        default='data/indices',
                        help='Directory containing indices')
@@ -239,11 +271,10 @@ Examples:
                        default='data/processed_for_our_rag/drug_mapping.json',
                        help='Path to drug mapping JSON')
     
-    # Retrieval arguments
+    # Retrieval
     parser.add_argument('--top_k', type=int, default=5,
-                       help='Number of documents to retrieve')
-    parser.add_argument('--fusion_method', type=str,
-                       default='rrf',
+                       help='Number of documents to retrieve (final)')
+    parser.add_argument('--fusion_method', type=str, default='rrf',
                        choices=['rrf', 'weighted'],
                        help='Fusion method for hybrid search')
     parser.add_argument('--vector_weight', type=float, default=0.5,
@@ -253,7 +284,17 @@ Examples:
     parser.add_argument('--filters', type=str, default=None,
                        help='Metadata filters as JSON string')
     
-    # Generation arguments
+    # Rerank (same flags as scripts/query.py)
+    parser.add_argument('--reranker_kind', type=str, default='none',
+                        choices=['none', 'simple', 'crossencoder'],
+                        help='Reranker type: none | simple (cosine) | crossencoder')
+    parser.add_argument('--rerank_top_n', type=int, default=50,
+                        help='Number of retrieved candidates to consider for rerank')
+    parser.add_argument('--cross_model', type=str,
+                        default='cross-encoder/ms-marco-MiniLM-L-6-v2',
+                        help='Cross-encoder model name or local path (if reranker_kind=crossencoder)')
+    
+    # Generation
     parser.add_argument('--use_llm', action='store_true',
                        help='Use LLM for generation (otherwise use template)')
     parser.add_argument('--model_type', type=str,
@@ -272,15 +313,15 @@ Examples:
     parser.add_argument('--generator_kwargs', type=str, default='{}',
                        help='Additional generator kwargs as JSON string')
     
-    # Output arguments
+    # Output
     parser.add_argument('--output', type=str, default=None,
                        help='Output path to save results as JSON')
     parser.add_argument('--verbose', action='store_true',
-                       help='Show detailed retrieval results')
+                       help='Show detailed retrieval/rerank results')
     
     args = parser.parse_args()
     
-    # Parse JSON arguments
+    # Parse JSON args
     if args.filters:
         args.filters = json.loads(args.filters)
     else:
@@ -292,4 +333,3 @@ Examples:
         args.generator_kwargs = {}
     
     main(args)
-
