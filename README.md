@@ -77,7 +77,9 @@ python scripts/rag.py \
     --use_llm \
     --model_type openai \
     --model_name gpt-3.5-turbo \
-    --api_key YOUR_API_KEY
+    --api_key YOUR_API_KEY \
+    --reranker_kind crossencoder \
+    --cross_model cross-encoder/ms-marco-MiniLM-L-6-v2
 ```
 
 **Using Anthropic Claude:**
@@ -87,7 +89,9 @@ python scripts/rag.py \
     --use_llm \
     --model_type anthropic \
     --model_name claude-3-sonnet-20240229 \
-    --api_key YOUR_API_KEY
+    --api_key YOUR_API_KEY \
+    --reranker_kind crossencoder \
+    --cross_model cross-encoder/ms-marco-MiniLM-L-6-v2
 ```
 
 **Options:**
@@ -100,5 +104,8 @@ python scripts/rag.py \
 - `--max_tokens`: Maximum tokens in response (default: 500)
 - `--top_k`: Number of documents to retrieve (default: 5)
 - `--fusion_method`: 'rrf' or 'weighted' (default: 'rrf')
+- `--reranker_kind`: none | simple | crossencoder.
+- `--rerank_top_n`: Size of candidate pool to rerank. Typical range: 20–50.
+- `--cross_model`: encode model from Hugging Face or local
 - `--output`: Save results to JSON file
 - `--verbose`: Show detailed retrieval results
