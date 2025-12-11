@@ -139,3 +139,11 @@ This will generate `results/bioasq_rag_test_results.json` which will be automati
 ```bash
 python baselines/faiss/FAISS_BioASQ.py
 ```
+#### For OpenFDA Dataset:
+```bash
+python baselines/faiss/openfda_faiss_test.py
+```
+#### For Kaggle Dataset:
+```bash
+python baselines/Qdrant/Qdrant_test.py
+```
