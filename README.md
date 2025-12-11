@@ -4,7 +4,7 @@
 Run the system using the scripts in /scripts. The corresponding implementation code is in the files under /src.
 
 ### 1. Preprocess Data
-Process raw data and create chunks:
+Process raw data from three different sources and create chunks:
 ```bash
 python scripts/preprocess_data.py \
     --pubmed_path "data/BioASQ/corpus_subset.json" \
@@ -110,7 +110,7 @@ python scripts/rag.py \
 - `--output`: Save results to JSON file
 - `--verbose`: Show detailed retrieval results
 
-### 5. Run Comprehensive Evaluation
+### 5. Run Comprehensive Evaluation of Designed RAG System
 Evaluate the RAG system on test datasets and compare with baseline results:
 
 ```bash
@@ -133,3 +133,9 @@ python evaluation/run_bioasq_evaluation.py
 This will generate `results/bioasq_rag_test_results.json` which will be automatically used by the comprehensive evaluation script.
 
 **Note:** The evaluation script automatically runs RAG system evaluation if result files don't exist. To force re-evaluation, delete the existing result files in the `results/` directory.
+
+### 6. Run Evaluation of Baselines
+#### For BioASQ Dataset:
+```bash
+python baselines/faiss/FAISS_BioASQ.py
+```
