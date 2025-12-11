@@ -25,7 +25,10 @@ def load_json(file_path: str) -> Any:
 def calculate_retrieval_metrics(ground_truth: List[str], retrieved: List[str]) -> Dict[str, float]:
     """Calculate retrieval metrics"""
     gt_set = set(ground_truth)
-    k = len(retrieved)
+    # Remove duplicates from retrieved list while preserving order
+    # This handles cases where the same document appears multiple times (e.g., different chunks)
+    retrieved_unique = list(dict.fromkeys(retrieved))
+    k = len(retrieved_unique)
     
     if k == 0:
         return {
@@ -36,13 +39,13 @@ def calculate_retrieval_metrics(ground_truth: List[str], retrieved: List[str]) -
             "mrr": 0.0
         }
     
-    # True positives
-    tp = sum(1 for r in retrieved if r in gt_set)
+    # True positives - count unique matches
+    tp = sum(1 for r in retrieved_unique if r in gt_set)
     
-    # Precision
+    # Precision - based on unique retrieved documents
     precision = tp / k if k > 0 else 0.0
     
-    # Recall
+    # Recall - based on unique matches
     recall = tp / len(gt_set) if len(gt_set) > 0 else 0.0
     
     # F1
@@ -51,9 +54,9 @@ def calculate_retrieval_metrics(ground_truth: List[str], retrieved: List[str]) -
     # Hit@K
     hit_at_k = 1.0 if tp > 0 else 0.0
     
-    # MRR (Mean Reciprocal Rank)
+    # MRR (Mean Reciprocal Rank) - use unique retrieved list
     mrr = 0.0
-    for i, r in enumerate(retrieved, start=1):
+    for i, r in enumerate(retrieved_unique, start=1):
         if r in gt_set:
             mrr = 1.0 / i
             break
